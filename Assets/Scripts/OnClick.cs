@@ -8,11 +8,11 @@ public class OnClick : MonoBehaviour
     public bool goal = false;
    // public bool discovered = false;
     private SpriteRenderer sprite;
-    private Player player;
+    private PlayerTest player;
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
-        player = GameObject.FindWithTag("Player").GetComponent<Player>();
+        player = GameObject.FindWithTag("Player").GetComponent<PlayerTest>();
     }
     public void ChangeSpriteColor()
     {

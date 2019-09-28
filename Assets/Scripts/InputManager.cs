@@ -7,14 +7,14 @@ public class InputManager : MonoBehaviour
     private bool thereIsASelectedGameObject = false, thereIsASelectedGoal = false;
     private GameObject selectedGameObject, selectedGoal;
     private MapGenerator map;
-    private Player player;
+    private PlayerTest player;
     private bool move;
     private float t = 0;
     private int pathIndex = 1;
     private void Start()
     {
         map = GameObject.Find("Grid").GetComponent<MapGenerator>();
-        player = GameObject.FindWithTag("Player").GetComponent<Player>();
+        player = GameObject.FindWithTag("Player").GetComponent<PlayerTest>();
     }
     private void Update()
     {
