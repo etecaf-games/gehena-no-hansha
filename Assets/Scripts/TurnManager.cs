@@ -2,59 +2,72 @@
 using System.Collections.Generic;
 public class TurnManager : MonoBehaviour
 {
-    private GameObject player;
-    private GlennTalbot playerStats;
-    private int playerAgility;
-
-    private GameObject enemy;
-    private Hellhound enemyStats;
-    private int enemyAgility;
-
-    private SortedList<int, GameObject> agilitiesList = new SortedList<int, GameObject>();
+    private GameObject[] players;
+    private GameObject[] enemies;
+    private List<GameObject> turnOrder = new List<GameObject>();
+    private List<KeyValuePair<GameObject, int>> agilitiesList = new List<KeyValuePair<GameObject, int>>();
     private void Start()
     {
-        player = GameObject.FindWithTag("Player");
-        playerStats = player.GetComponent<GlennTalbot>();
-        playerAgility = playerStats.agility;
-        Debug.Log("Glenn Agility:" + playerAgility);
-
-        enemy = GameObject.FindWithTag("Enemy");
-        enemyStats = enemy.GetComponent<Hellhound>();
-        enemyAgility = enemyStats.agility;
-
-        Debug.Log("Hellhound Agility: " + enemyAgility);
-    }
-    private void DetermineTurnOrder()
-    {
-        if (playerAgility > enemyAgility)
+        players = GameObject.FindGameObjectsWithTag("Player");
+        if (players.Length > 0)
         {
-            Debug.Log("Player starts");
-        }
-        else if (playerAgility < enemyAgility)
-        {
-            Debug.Log("Enemy starts");
+            int agility;
+            for (int i = 0; i < players.Length; i++)
+            {
+                agility = players[i].GetComponent<Player>().agility;
+                KeyValuePair<GameObject, int> playerAgility = new KeyValuePair<GameObject, int>(players[i], agility);
+                agilitiesList.Add(playerAgility);
+            }
         }
         else
         {
-            int randomResult;
-            randomResult = Random.Range(1, 3);
-            switch(randomResult)
+            Debug.Log("There are no players in the scene");
+        }
+
+        enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        if (enemies.Length > 0)
+        {
+            int agility;
+            for (int i = 0; i < enemies.Length; i++)
             {
-                case 1:
-                    Debug.Log("Player starts");
-                    break;
-                case 2:
-                    Debug.Log("Enemy starts");
-                    break;
-                default:
-                    Debug.Log("You suck");
-                    break;
+                agility = enemies[i].GetComponent<Hellhound>().agility;
+                KeyValuePair<GameObject, int> enemyAgility = new KeyValuePair<GameObject, int>(enemies[i], agility);
+                agilitiesList.Add(enemyAgility);
             }
+        }
+        else
+        {
+            Debug.Log("There are no enemies in the scene");
+        }
+    }
+    private void DetermineTurnOrder()
+    {
+        for (int i = 0; i < agilitiesList.Count - 1; i++)
+        {
+            // traverse i+1 to array length 
+            for (int j = i + 1; j < agilitiesList.Count; j++)
+            {
+                // compare array element with  
+                // all next element 
+                if (agilitiesList[i].Value < agilitiesList[j].Value)
+                {
+                    KeyValuePair<GameObject, int> temp = agilitiesList[i];
+                    agilitiesList[i] = agilitiesList[j];
+                    agilitiesList[j] = temp;
+                }
+            }
+        }
+        int k = 0;
+        // print all element of array 
+        foreach (var value in agilitiesList)
+        {
+            k++;
+            Debug.Log(k + "º: " + value.Key.name + " : " + value.Value + " ");
         }
     }
     private void Update()
     {
-        if (Input.GetKey(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Return))
         {
             DetermineTurnOrder();
         }

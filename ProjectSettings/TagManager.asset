@@ -6,7 +6,6 @@ TagManager:
   tags:
   - Hex
   - Enemy
-  - hex
   layers:
   - Default
   - TransparentFX
@@ -43,4 +42,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Characters
+    uniqueID: 691014515
     locked: 0
