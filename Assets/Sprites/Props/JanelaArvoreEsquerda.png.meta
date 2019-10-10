@@ -1,0 +1,1790 @@
+fileFormatVersion: 2
+guid: 40e75a161aa35ae4e9e59bd581196493
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: JanelaArvoreEsquerda_0
+    21300002: JanelaArvoreEsquerda_1
+    21300004: JanelaArvoreEsquerda_2
+    21300006: JanelaArvoreEsquerda_3
+    21300008: JanelaArvoreEsquerda_4
+    21300010: JanelaArvoreEsquerda_5
+    21300012: JanelaArvoreEsquerda_6
+    21300014: JanelaArvoreEsquerda_7
+    21300016: JanelaArvoreEsquerda_8
+    21300018: JanelaArvoreEsquerda_9
+    21300020: JanelaArvoreEsquerda_10
+    21300022: JanelaArvoreEsquerda_11
+    21300024: JanelaArvoreEsquerda_12
+    21300026: JanelaArvoreEsquerda_13
+    21300028: JanelaArvoreEsquerda_14
+    21300030: JanelaArvoreEsquerda_15
+    21300032: JanelaArvoreEsquerda_16
+    21300034: JanelaArvoreEsquerda_17
+    21300036: JanelaArvoreEsquerda_18
+    21300038: JanelaArvoreEsquerda_19
+    21300040: JanelaArvoreEsquerda_20
+    21300042: JanelaArvoreEsquerda_21
+    21300044: JanelaArvoreEsquerda_22
+    21300046: JanelaArvoreEsquerda_23
+    21300048: JanelaArvoreEsquerda_24
+    21300050: JanelaArvoreEsquerda_25
+    21300052: JanelaArvoreEsquerda_26
+    21300054: JanelaArvoreEsquerda_27
+    21300056: JanelaArvoreEsquerda_28
+    21300058: JanelaArvoreEsquerda_29
+    21300060: JanelaArvoreEsquerda_30
+    21300062: JanelaArvoreEsquerda_31
+    21300064: JanelaArvoreEsquerda_32
+    21300066: JanelaArvoreEsquerda_33
+    21300068: JanelaArvoreEsquerda_34
+    21300070: JanelaArvoreEsquerda_35
+    21300072: JanelaArvoreEsquerda_36
+    21300074: JanelaArvoreEsquerda_37
+    21300076: JanelaArvoreEsquerda_38
+    21300078: JanelaArvoreEsquerda_39
+    21300080: JanelaArvoreEsquerda_40
+    21300082: JanelaArvoreEsquerda_41
+    21300084: JanelaArvoreEsquerda_42
+    21300086: JanelaArvoreEsquerda_43
+    21300088: JanelaArvoreEsquerda_44
+    21300090: JanelaArvoreEsquerda_45
+    21300092: JanelaArvoreEsquerda_46
+    21300094: JanelaArvoreEsquerda_47
+    21300096: JanelaArvoreEsquerda_48
+    21300098: JanelaArvoreEsquerda_49
+    21300100: JanelaArvoreEsquerda_50
+    21300102: JanelaArvoreEsquerda_51
+    21300104: JanelaArvoreEsquerda_52
+    21300106: JanelaArvoreEsquerda_53
+    21300108: JanelaArvoreEsquerda_54
+    21300110: JanelaArvoreEsquerda_55
+    21300112: JanelaArvoreEsquerda_56
+    21300114: JanelaArvoreEsquerda_57
+    21300116: JanelaArvoreEsquerda_58
+    21300118: JanelaArvoreEsquerda_59
+    21300120: JanelaArvoreEsquerda_60
+    21300122: JanelaArvoreEsquerda_61
+    21300124: JanelaArvoreEsquerda_62
+    21300126: JanelaArvoreEsquerda_63
+    21300128: JanelaArvoreEsquerda_64
+    21300130: JanelaArvoreEsquerda_65
+    21300132: JanelaArvoreEsquerda_66
+    21300134: JanelaArvoreEsquerda_67
+    21300136: JanelaArvoreEsquerda_68
+    21300138: JanelaArvoreEsquerda_69
+    21300140: JanelaArvoreEsquerda_70
+    21300142: JanelaArvoreEsquerda_71
+    21300144: JanelaArvoreEsquerda_72
+    21300146: JanelaArvoreEsquerda_73
+    21300148: JanelaArvoreEsquerda_74
+    21300150: JanelaArvoreEsquerda_75
+    21300152: JanelaArvoreEsquerda_76
+    21300154: JanelaArvoreEsquerda_77
+    21300156: JanelaArvoreEsquerda_78
+    21300158: JanelaArvoreEsquerda_79
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cdc21aaa60762f4880f291c8b120ae3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_1
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8bfe3520995ad7438a5b98cba867fca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_2
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db6b639d591cb81408c494eadf42b4f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_3
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d8e4c26d286b343a93c80b7dbf914d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_4
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a99b6710a3495e42a45f649b959a924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_5
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 272a112eec5a4cc4e8a79087c2d2fc47
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_6
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 129300ef75f13674db05edc013fc9441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_7
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b32ad05d89120a24cb233db0bd8e9c8b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_8
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8b646bdf28fac94e99ea6170c959854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_9
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d2bc68035835054eb2af4f3dcce0a66
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_10
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32fdd06bfcd6c1348b53a732f2ffb9a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_11
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 427ad1fbe4c046945b08d6b7e5e76e9e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_12
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e375bf4b1bb45184b84fa55675385182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_13
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2df25c4735063b4484f0251f294f9c1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_14
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 475a8b88b3b922547898a054cda0ea37
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_15
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440ce92020f2f1b4ba1727fd777fe78a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_16
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa191e28d8bfc34eabb9b23bb1d3abb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_17
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a337557420d6a884e9ebb43b9db681ca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_18
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a401f3a18969b8e4b8762f530eb58356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_19
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7afce2651146f094cb49915795a3b259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_20
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc6f90720dd38b4daefacad60ff7855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_21
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ef3705533341c42aa785dfbece2e5b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_22
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7960a92dcc733a64d8dcb8a74b756f59
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_23
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6408b1a7745f8a8489f82e44391613a6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_24
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4955194a3aa1c3148852a5995409d531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_25
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af02cf660089550489aea46b57b4d37e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_26
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a939dee0490cbf74cb8ee7f53b108de5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_27
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aad2b2d8814f558499c38cf7b46e3482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_28
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b389aa4c1bf478f45a6ddf84b5df2138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_29
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a091b0f1b6206e4b91df84a142f29c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_30
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 806913078779f03438023e263e133327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_31
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac32b214698a8c40beb578927630fea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_32
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c9890065117e846b6d8e813e306cbe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_33
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 991d9a975b0529a469d654cbf3254bc6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_34
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bab086093bdfd442b386987b0112abe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_35
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8982f79349534ee4898b08393f340141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_36
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 720def6d381640a4a91f516d2edbf0e4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_37
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614ced18921a53f4aa2a6aa79857be9b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_38
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d124e0d2fe20334ba524d5c3cda5ded
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_39
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df5e8867a2a79c4eb6edba7d99696c2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_40
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a59d930ff4003c4485748b66d0a94b2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_41
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50dd34723de4e8e408738332c1aced2e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_42
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e1c48a04a27c04688dc7aa78dae475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_43
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd921b5c08ff4747892f9a57b392672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_44
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d891149a55fed4b885851c0bca606c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_45
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a5906f167a95049b20fee00fd0a9a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_46
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc06a6dd81416f4b8d1d66460d30b7e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_47
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87bec6fdb100e1a4ea65ebca4dd26796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_48
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d173d216070d64741b9d4ec0836c42f9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_49
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06ce5d5995960804e8f1ad1a96def8be
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_50
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 723896cd623b8f745bc004702d1ed578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_51
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea7ad727e07efd2488f0995b197acbc8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_52
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9801fbe5d64088e4eac5f6d83b589200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_53
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f422a22baaab6784ea0ab6fa7c4edc7d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_54
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d2e44a839b3d0b40a7a0d172df13fed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_55
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 619cee1a0c0c0aa4e906781abc24fea3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_56
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8361b021e5d32dc448a50938e18abf73
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_57
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25a2f489ff6373643a88925f9bde224f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_58
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a60baf53e02891c41aca44b8ab48f4df
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_59
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219009e0d7719f4429a480b7f917776b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_60
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c1b3a0e7bda9ac42a5aeed23cc045d8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_61
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c72e49bda01ce4cb83ab10220bf22f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_62
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe95266267e8984a9edaa00d3b9a168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_63
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d3b58b834793744829aa808c0bf0c4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_64
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d6c87f49d3c099468942e5ed318e73a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_65
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040b8a15ad894ef4db495addf9fe572a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_66
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29eac5b51cf2f8c4d8041c1a22d96e1f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_67
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ccd411852530e240adc8bf224a20373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_68
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ffba4e875a4e946939613694511d6e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_69
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd6d23bcce3be742ab235c4db068e8b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_70
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f4662740d1d054dad89a1904209635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_71
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70156090c88da934398ff971542d71d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_72
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 36
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3cd2ba5884bf054cade6a91e6468446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_73
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 36
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9803669019fc69647892aaa7c461bade
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_74
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 36
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8c5e0d6f3b8a9f4a96cf04af2a6d4f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_75
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 36
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fdab9f36ae14ff47b43e39e9ac2c370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_76
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 36
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65fe86a69ae539c4f9678246b2be8f8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_77
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 36
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9251c78dcbac6a84fb6420fb9a5b6bdd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_78
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 36
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2618e1bdc22a9b3478855a7b685d7e7d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreEsquerda_79
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 36
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f463e9af3ddc434aa837ef02564da8b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 66906c53ab8a818459b3d26e98c846d6
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1790 @@
+fileFormatVersion: 2
+guid: aa0ff5dda4abd884db164f9f611a44e7
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: JanelaArvoreDireita_0
+    21300002: JanelaArvoreDireita_1
+    21300004: JanelaArvoreDireita_2
+    21300006: JanelaArvoreDireita_3
+    21300008: JanelaArvoreDireita_4
+    21300010: JanelaArvoreDireita_5
+    21300012: JanelaArvoreDireita_6
+    21300014: JanelaArvoreDireita_7
+    21300016: JanelaArvoreDireita_8
+    21300018: JanelaArvoreDireita_9
+    21300020: JanelaArvoreDireita_10
+    21300022: JanelaArvoreDireita_11
+    21300024: JanelaArvoreDireita_12
+    21300026: JanelaArvoreDireita_13
+    21300028: JanelaArvoreDireita_14
+    21300030: JanelaArvoreDireita_15
+    21300032: JanelaArvoreDireita_16
+    21300034: JanelaArvoreDireita_17
+    21300036: JanelaArvoreDireita_18
+    21300038: JanelaArvoreDireita_19
+    21300040: JanelaArvoreDireita_20
+    21300042: JanelaArvoreDireita_21
+    21300044: JanelaArvoreDireita_22
+    21300046: JanelaArvoreDireita_23
+    21300048: JanelaArvoreDireita_24
+    21300050: JanelaArvoreDireita_25
+    21300052: JanelaArvoreDireita_26
+    21300054: JanelaArvoreDireita_27
+    21300056: JanelaArvoreDireita_28
+    21300058: JanelaArvoreDireita_29
+    21300060: JanelaArvoreDireita_30
+    21300062: JanelaArvoreDireita_31
+    21300064: JanelaArvoreDireita_32
+    21300066: JanelaArvoreDireita_33
+    21300068: JanelaArvoreDireita_34
+    21300070: JanelaArvoreDireita_35
+    21300072: JanelaArvoreDireita_36
+    21300074: JanelaArvoreDireita_37
+    21300076: JanelaArvoreDireita_38
+    21300078: JanelaArvoreDireita_39
+    21300080: JanelaArvoreDireita_40
+    21300082: JanelaArvoreDireita_41
+    21300084: JanelaArvoreDireita_42
+    21300086: JanelaArvoreDireita_43
+    21300088: JanelaArvoreDireita_44
+    21300090: JanelaArvoreDireita_45
+    21300092: JanelaArvoreDireita_46
+    21300094: JanelaArvoreDireita_47
+    21300096: JanelaArvoreDireita_48
+    21300098: JanelaArvoreDireita_49
+    21300100: JanelaArvoreDireita_50
+    21300102: JanelaArvoreDireita_51
+    21300104: JanelaArvoreDireita_52
+    21300106: JanelaArvoreDireita_53
+    21300108: JanelaArvoreDireita_54
+    21300110: JanelaArvoreDireita_55
+    21300112: JanelaArvoreDireita_56
+    21300114: JanelaArvoreDireita_57
+    21300116: JanelaArvoreDireita_58
+    21300118: JanelaArvoreDireita_59
+    21300120: JanelaArvoreDireita_60
+    21300122: JanelaArvoreDireita_61
+    21300124: JanelaArvoreDireita_62
+    21300126: JanelaArvoreDireita_63
+    21300128: JanelaArvoreDireita_64
+    21300130: JanelaArvoreDireita_65
+    21300132: JanelaArvoreDireita_66
+    21300134: JanelaArvoreDireita_67
+    21300136: JanelaArvoreDireita_68
+    21300138: JanelaArvoreDireita_69
+    21300140: JanelaArvoreDireita_70
+    21300142: JanelaArvoreDireita_71
+    21300144: JanelaArvoreDireita_72
+    21300146: JanelaArvoreDireita_73
+    21300148: JanelaArvoreDireita_74
+    21300150: JanelaArvoreDireita_75
+    21300152: JanelaArvoreDireita_76
+    21300154: JanelaArvoreDireita_77
+    21300156: JanelaArvoreDireita_78
+    21300158: JanelaArvoreDireita_79
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c47729fbca02e114e8eb716f1a3a9f06
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_1
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 279848de6b6a9a6429c09010caf8f0ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_2
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 598f9b1994c2ed44181e5c6c8f466535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_3
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07208b584f5694f4cb45faab92125b60
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_4
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cae61653a4f72941bc0a460fc5e13bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_5
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3967da562f37f2145947764bb84d3249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_6
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144b1f068d677c64e87cfc60ea93519b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_7
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d6cd11cae233a4dbdb0a67c1382dbc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_8
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe9cad8a826e72489dd2b2ea61865ad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_9
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d072feb3d0a0434cb9a3edf45bcae8a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_10
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01b8f46919e97f4da6c697caf68a569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_11
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed9c4ab93c217d54f8648a05147b4bac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_12
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcec1dc65222c974a9b7f37a97b57c88
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_13
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b6961f8c6d9794684070d50d63a04c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_14
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32c73e93607c9604e9a7a9153004fe11
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_15
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1012b7e73f0f6c54eafd052e3dd9ad5b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_16
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef61fc5dc66fe94e9083bf1f8c02fcf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_17
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cfa33811e8ec0f45ac1936b638e4dbb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_18
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7aa50be147b0f744928bd06e87c6a7b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_19
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d511e6124ba660544a03955514813b73
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_20
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af99a6f12dadca946a30456596d439dd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_21
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 685356cbdd263764883edb5eb41366d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_22
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d57dbf1f15398c4ab3d0206405b982e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_23
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f23a4f8b07a8c42bd5ff9a73f25193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_24
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dff0bab6dc0f914ba048f95df2fb147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_25
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f3f69eb432708542b8e67e6e4bf0c33
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_26
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82236712bd899354f99670ea9b08575a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_27
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e30cbff62b02234083915ff0d7d15a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_28
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd935146686500b49835903b12cc55c2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_29
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b52f9f3be13ef94384839e8208230b4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_30
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e7e7624d92ddb847ac10dd6a14c2a08
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_31
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee0aab45f3b9054c96927c3217633ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_32
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1030714431ed28349a037b55fef39bd0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_33
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a920f45034560b4a9a6b8e762c993a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_34
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0fa37bd33a2a0c4f843ba25d91405f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_35
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4eb46f4972d69f4db486f39d88771cb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_36
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecec17d923a8e554a846ccfd7b88cfe1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_37
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2334189779c0f64c99f1432fd98082b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_38
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2903060cbacdbaf43b63410f9c0ca575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_39
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8d5987715207df4c80dd9605345ebcc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_40
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f01d34cc3d785c409beae7280d39830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_41
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a875db0979351d747a8ee42437774b6f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_42
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 164555fd852779a439c071c415d21a1f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_43
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a3e2fd2584d7c04a82133f73e6ded9b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_44
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6efd2ba8979edb419b44788e7c99eac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_45
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7fc1ca0839a0e459dda676fb960654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_46
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6606cc629cfd99c4ca8c1ec7d24fc4f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_47
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50e41c636bc5a14449460c1805863551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_48
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 459894edc11dae145ab756c4fd6f707f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_49
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba34f6494312874fa89b020f8db9d86
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_50
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f32ff1caef97804da5a7f1ecfe7d6cf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_51
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41636e6046bb9424ca47e82d5bf7de4f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_52
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0800edba8d63be94f9d9f8619bd5d003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_53
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa204858f0c2455479ad94343c81614f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_54
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a3729769c9728a45af47e95a67692cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_55
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee394f67555de124ebf99dbadc8ebb56
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_56
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d3317a94be93f44f9fd9ef01b0806c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_57
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d17f0f8fc28d7f4e9fa3c85a102ece2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_58
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2584938642542844db002170e8acc987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_59
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54789dd7c2ce6164aab860e7c54f5ebd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_60
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 239d58df5cfb2644e908b33cf226eeea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_61
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f2a38dcbae82a240ab84c2af3f8b031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_62
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3561e5f4e6a61c949b0b9b39596ba99a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_63
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0437c98799a3e704d9986bf411eaea7b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_64
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de5052078b069d3409cba192f133580e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_65
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8e4f1bc7d79ff547a04874e74d8640d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_66
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e9b24472bd552d4c9c16d9dcecd17f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_67
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3ee6e3f2bad2ac42b2f5a13522e9059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_68
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a082e85895664574f8dff64f47c83280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_69
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac70f9acebf909a41ae8785b64ab28be
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_70
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19210177054dcbc4a963a1b2c10fafda
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_71
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a3fe4eeea526c4ea6d6fe9b5b5180a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_72
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 36
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5babd70c62f02c24bb71bdc3f32944cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_73
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 36
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca869e949d2a26b4593d02c736c0de3b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_74
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 36
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a44d46bc1dec5448aeb8f658daca794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_75
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 36
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9aa00904c0080447bdbfc951d4d9ce8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_76
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 36
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 034b3c56b87181b4a8958f98cdea0d18
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_77
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 36
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee9de69b6bcb722418b42b03b4d50569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_78
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 36
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28a3025ecc9b90f4ba1352fde6080e6a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaArvoreDireita_79
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 36
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44175198cf5d5904ebb1008ee479c987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 2853da021d1e2624d906d1f5b6419689
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

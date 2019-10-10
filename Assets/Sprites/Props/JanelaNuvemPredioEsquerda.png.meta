@@ -1,0 +1,1790 @@
+fileFormatVersion: 2
+guid: 3a82d312a3e07e2489d4cff9f358e7de
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: JanelaNuvemPredioEsquerda_0
+    21300002: JanelaNuvemPredioEsquerda_1
+    21300004: JanelaNuvemPredioEsquerda_2
+    21300006: JanelaNuvemPredioEsquerda_3
+    21300008: JanelaNuvemPredioEsquerda_4
+    21300010: JanelaNuvemPredioEsquerda_5
+    21300012: JanelaNuvemPredioEsquerda_6
+    21300014: JanelaNuvemPredioEsquerda_7
+    21300016: JanelaNuvemPredioEsquerda_8
+    21300018: JanelaNuvemPredioEsquerda_9
+    21300020: JanelaNuvemPredioEsquerda_10
+    21300022: JanelaNuvemPredioEsquerda_11
+    21300024: JanelaNuvemPredioEsquerda_12
+    21300026: JanelaNuvemPredioEsquerda_13
+    21300028: JanelaNuvemPredioEsquerda_14
+    21300030: JanelaNuvemPredioEsquerda_15
+    21300032: JanelaNuvemPredioEsquerda_16
+    21300034: JanelaNuvemPredioEsquerda_17
+    21300036: JanelaNuvemPredioEsquerda_18
+    21300038: JanelaNuvemPredioEsquerda_19
+    21300040: JanelaNuvemPredioEsquerda_20
+    21300042: JanelaNuvemPredioEsquerda_21
+    21300044: JanelaNuvemPredioEsquerda_22
+    21300046: JanelaNuvemPredioEsquerda_23
+    21300048: JanelaNuvemPredioEsquerda_24
+    21300050: JanelaNuvemPredioEsquerda_25
+    21300052: JanelaNuvemPredioEsquerda_26
+    21300054: JanelaNuvemPredioEsquerda_27
+    21300056: JanelaNuvemPredioEsquerda_28
+    21300058: JanelaNuvemPredioEsquerda_29
+    21300060: JanelaNuvemPredioEsquerda_30
+    21300062: JanelaNuvemPredioEsquerda_31
+    21300064: JanelaNuvemPredioEsquerda_32
+    21300066: JanelaNuvemPredioEsquerda_33
+    21300068: JanelaNuvemPredioEsquerda_34
+    21300070: JanelaNuvemPredioEsquerda_35
+    21300072: JanelaNuvemPredioEsquerda_36
+    21300074: JanelaNuvemPredioEsquerda_37
+    21300076: JanelaNuvemPredioEsquerda_38
+    21300078: JanelaNuvemPredioEsquerda_39
+    21300080: JanelaNuvemPredioEsquerda_40
+    21300082: JanelaNuvemPredioEsquerda_41
+    21300084: JanelaNuvemPredioEsquerda_42
+    21300086: JanelaNuvemPredioEsquerda_43
+    21300088: JanelaNuvemPredioEsquerda_44
+    21300090: JanelaNuvemPredioEsquerda_45
+    21300092: JanelaNuvemPredioEsquerda_46
+    21300094: JanelaNuvemPredioEsquerda_47
+    21300096: JanelaNuvemPredioEsquerda_48
+    21300098: JanelaNuvemPredioEsquerda_49
+    21300100: JanelaNuvemPredioEsquerda_50
+    21300102: JanelaNuvemPredioEsquerda_51
+    21300104: JanelaNuvemPredioEsquerda_52
+    21300106: JanelaNuvemPredioEsquerda_53
+    21300108: JanelaNuvemPredioEsquerda_54
+    21300110: JanelaNuvemPredioEsquerda_55
+    21300112: JanelaNuvemPredioEsquerda_56
+    21300114: JanelaNuvemPredioEsquerda_57
+    21300116: JanelaNuvemPredioEsquerda_58
+    21300118: JanelaNuvemPredioEsquerda_59
+    21300120: JanelaNuvemPredioEsquerda_60
+    21300122: JanelaNuvemPredioEsquerda_61
+    21300124: JanelaNuvemPredioEsquerda_62
+    21300126: JanelaNuvemPredioEsquerda_63
+    21300128: JanelaNuvemPredioEsquerda_64
+    21300130: JanelaNuvemPredioEsquerda_65
+    21300132: JanelaNuvemPredioEsquerda_66
+    21300134: JanelaNuvemPredioEsquerda_67
+    21300136: JanelaNuvemPredioEsquerda_68
+    21300138: JanelaNuvemPredioEsquerda_69
+    21300140: JanelaNuvemPredioEsquerda_70
+    21300142: JanelaNuvemPredioEsquerda_71
+    21300144: JanelaNuvemPredioEsquerda_72
+    21300146: JanelaNuvemPredioEsquerda_73
+    21300148: JanelaNuvemPredioEsquerda_74
+    21300150: JanelaNuvemPredioEsquerda_75
+    21300152: JanelaNuvemPredioEsquerda_76
+    21300154: JanelaNuvemPredioEsquerda_77
+    21300156: JanelaNuvemPredioEsquerda_78
+    21300158: JanelaNuvemPredioEsquerda_79
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be85e187495e014eabe5ea50226578d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_1
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a20b52cb04089e343aa9f58fdc4e6712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_2
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817f526c82f5b124bae18268081a00d1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_3
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 570411a8e6a13354e8d1f14c372b1b5b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_4
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a92b1d2a054d74db5bf2bd84a03f96
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_5
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d44912f4387f91b47bfd262bba050ca6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_6
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 348e449d2872b1747a31e1193cff4ab1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_7
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5069e1ea75668a745a1498232050b6ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_8
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a1554a80a634a7448f0562ca7fcf427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_9
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6c2461c0ce457e4db4f581778c0429d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_10
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa023c7572b23441beee40f755889bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_11
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d2d0c44af4abe41808a131b1c22414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_12
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a106ad2e853da543aaa09d689193e66
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_13
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56d4354a779eb6448acaaf3cd3e47f0e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_14
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d1c01e486e4cc428ac554ca9ba34c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_15
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 421ff9f60564cbc45881cd640f246ab8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_16
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a62815a937da2246ab13dd1914d95e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_17
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3457c23ee135c44091fdfab76255590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_18
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8757f524580533749b17763afbe27dc9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_19
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26293404066369b49889be1dc6d69852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_20
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34a540270f93e6a4b93f91cb5e7bb0bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_21
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20b439af37ad9c74eaeb18cc1fd4ce93
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_22
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea0682cb85670b64cb9bc7809282b291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_23
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22e17e22dce63d94eba4f5835dfe8197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_24
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2727fd639cf36e8418abc10fdd45ecdc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_25
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7352140f9e1284d46b36d66352f09dad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_26
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10495e3f157b7264c8a47cf3ee0097a6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_27
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0111f9e4ff4397a4e90ccb56700b4f00
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_28
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71726319ff503de46a91c168d28e10a5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_29
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c392b4b3381b39a4caf9d5b01ffb0da1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_30
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc26b49acf983c4b830acc9fd117a16
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_31
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4905fd60cd15a314e9092a6f258c7de0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_32
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 960c7970b4d7bd845872c086f0824c0a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_33
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222254e384be72540b6aa45efe0e417b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_34
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a45444f30b36aa4e9c49b998fdc0959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_35
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dc3e51dcca7f86419a6fbe623dedb54
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_36
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce2140dba0237e34ca01e1f4ea93e77d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_37
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c0bf7ebccee414b9c666defde0fac6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_38
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66715e27a260b04d876af2366e106ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_39
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af54668b5494ef844a178874f53bf90d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_40
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e52ca1d54c2a1845a0424392ad5a403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_41
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b494b3c3ff469834baf15beb9c3c085b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_42
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb8f21062f92f249b70ffe461870cb3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_43
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 490244fdda9df6b47bd8bc39f9487e42
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_44
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dda6425582dab75429f5d16c58571316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_45
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f886e2f42a16ca4181404dff3cbe153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_46
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74ac1899998cc814885b947c49a3cc93
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_47
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7634dc4c7a8bb3947b5d23f35ed2d4e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_48
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f105ef3cf3cfda04fbf39cccbefaa0f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_49
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f7febe574c8ebe4ea5d4a5212d9cd15
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_50
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e57293f2e2faf840849bd6ea676da0d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_51
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee3f31a9b0cfc1f42813b2567fcd0b1a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_52
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ebbb823ee13b6b49b5d3b30a870aeb2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_53
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef98a1b44a5869841b49643724311ded
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_54
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0f17d3f859401e4eb59a8854ed077fd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_55
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4750bb1809b01f946b86581f8d1f80e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_56
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f9ea34181105e489660bb482b17e14
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_57
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c1e70e3557a9648bcfa0bcb2835605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_58
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d94e2696c7d4f4dbae1e593f7701ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_59
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f1370e2b212ea478df55f85d34f78b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_60
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b420d2436efcde34788002414bd13429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_61
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 632953d6f869a7c4c93acd6c628a6a06
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_62
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40308ad912c8e784a86186b995096d81
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_63
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 602e517732f70504886b24a9a1752aef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_64
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7356a0c18925ea40b6413e19e3e3410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_65
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49ad1bec53e11724aa7ae50a1beeb270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_66
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed67ee9d40034a34b998597ed3dd72a1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_67
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6262fb2cd3627544eb9432ac2d8a8c6d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_68
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abdcc6866e9d778468af95dac6963382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_69
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800015a5d141a1c418aa6eee89d920ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_70
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c20f4588c243bd74f8b2f334dba048cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_71
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e94e5f3f09211bc4494654482a9e4947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_72
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 36
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d35886c6678fa46bf3afacea1ba4ae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_73
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 36
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 739d16b056823714aba6911f40fad126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_74
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 36
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5739401d15517514e8ce1ebf31f09d12
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_75
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 36
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10713386954677a489b7c5ec62a12289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_76
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 36
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04aaf57b24045e14eaf28f46ae6bd9c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_77
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 36
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704c8481a15e27b48a1eb634a20a6ec4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_78
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 36
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37aa1ca4a6dc9e54a96f1175c85fe2f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaNuvemPredioEsquerda_79
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 36
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b8b62d5b769db945a826e0a0c993251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 7132c3e450db0ad419f499a6f9525bd3
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

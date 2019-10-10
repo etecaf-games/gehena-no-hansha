@@ -11,8 +11,7 @@ GameObject:
   - component: {fileID: 6643283661181419187}
   - component: {fileID: 6643283661181419186}
   - component: {fileID: 1922924011}
-  - component: {fileID: 1922924012}
-  - component: {fileID: 1922924009}
+  - component: {fileID: 1412627147416917045}
   m_Layer: 0
   m_Name: Glenn
   m_TagString: Player
@@ -71,7 +70,7 @@ SpriteRenderer:
   m_SortingLayerID: 691014515
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 7a8fa0eb5ae221244b4812a4339ddf0e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 799aba77bc38e1349a70958f59fb965c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -101,7 +100,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1922924012
+--- !u!114 &1412627147416917045
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -110,19 +109,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 6643283661181419196}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09cb66455ddf46545938930d5a5415fa, type: 3}
+  m_Script: {fileID: 11500000, guid: 11fde51ef9348ca40b6322ead3182fa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1922924009
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6643283661181419196}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4637871bdab905a4c95466e73e134921, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  healthPoints: 16
+  soulPoints: 17
+  move: 3
+  range: 2
+  actionPoints: 4
+  strength: 2
+  attack: 3
+  resistance: 1
+  defense: 3
   agility: 3
+  magic: 2
+  spirit: 2
+  vitality: 1

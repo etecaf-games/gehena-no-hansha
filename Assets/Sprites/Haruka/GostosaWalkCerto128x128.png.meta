@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a7b41ab378fd0a9499e497fd58548811
+guid: 9476e290917d80843904e0f4b491b296
 TextureImporter:
   fileIDToRecycleName:
     21300000: GostosaWalkCerto128x128_0
@@ -71,7 +71,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -82,7 +82,18 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -93,7 +104,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -117,7 +128,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8723e3a3053fe054092fe3c2cd4106ca
+      spriteID: ad71ab87c0052224abef34e61460676d
       vertices: []
       indices: 
       edges: []
@@ -137,7 +148,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a929db418ab25248aebfc18868cb273
+      spriteID: 4879e557998d4cc488f0aa9b3a707f18
       vertices: []
       indices: 
       edges: []
@@ -157,7 +168,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdd014a65913b8944b7ea9f82f30b12e
+      spriteID: f6e00861569118b49add92ef552ce4e4
       vertices: []
       indices: 
       edges: []
@@ -177,7 +188,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd229f040bd181f4ebc138b0be5c5286
+      spriteID: 2a767d7bf599baa418d6df52a90dbea8
       vertices: []
       indices: 
       edges: []
@@ -197,7 +208,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 640d327cd6ee37642945717739c4a9c5
+      spriteID: 74d7fbf9b6115314cbad37d45bb9ae97
       vertices: []
       indices: 
       edges: []
@@ -217,7 +228,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c399404b2dd0d7a488a0390ff3f2f80d
+      spriteID: 6fd64827d55c8d54da259ec21d90d1ad
       vertices: []
       indices: 
       edges: []
@@ -237,7 +248,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e462d808f148ff640a5e55546a11d460
+      spriteID: 722d11741a67fdd4ab8365d3623aa1a7
       vertices: []
       indices: 
       edges: []
@@ -257,7 +268,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60e108fa341165f41b1347d4984b0d3e
+      spriteID: 4acfc7d7e2403ea439d57b1bca18a42c
       vertices: []
       indices: 
       edges: []
@@ -265,7 +276,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 0807500340e3ebb47a2ccaaa71e4e87a
+    spriteID: 295cd0d5b883ae34ba3b3bb836dda23c
     vertices: []
     indices: 
     edges: []

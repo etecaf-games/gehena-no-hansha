@@ -1,0 +1,1790 @@
+fileFormatVersion: 2
+guid: ec6ece7190faf7a49911f38e0f0eec4f
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: JanelaTileMovimentoNuvem_0
+    21300002: JanelaTileMovimentoNuvem_1
+    21300004: JanelaTileMovimentoNuvem_2
+    21300006: JanelaTileMovimentoNuvem_3
+    21300008: JanelaTileMovimentoNuvem_4
+    21300010: JanelaTileMovimentoNuvem_5
+    21300012: JanelaTileMovimentoNuvem_6
+    21300014: JanelaTileMovimentoNuvem_7
+    21300016: JanelaTileMovimentoNuvem_8
+    21300018: JanelaTileMovimentoNuvem_9
+    21300020: JanelaTileMovimentoNuvem_10
+    21300022: JanelaTileMovimentoNuvem_11
+    21300024: JanelaTileMovimentoNuvem_12
+    21300026: JanelaTileMovimentoNuvem_13
+    21300028: JanelaTileMovimentoNuvem_14
+    21300030: JanelaTileMovimentoNuvem_15
+    21300032: JanelaTileMovimentoNuvem_16
+    21300034: JanelaTileMovimentoNuvem_17
+    21300036: JanelaTileMovimentoNuvem_18
+    21300038: JanelaTileMovimentoNuvem_19
+    21300040: JanelaTileMovimentoNuvem_20
+    21300042: JanelaTileMovimentoNuvem_21
+    21300044: JanelaTileMovimentoNuvem_22
+    21300046: JanelaTileMovimentoNuvem_23
+    21300048: JanelaTileMovimentoNuvem_24
+    21300050: JanelaTileMovimentoNuvem_25
+    21300052: JanelaTileMovimentoNuvem_26
+    21300054: JanelaTileMovimentoNuvem_27
+    21300056: JanelaTileMovimentoNuvem_28
+    21300058: JanelaTileMovimentoNuvem_29
+    21300060: JanelaTileMovimentoNuvem_30
+    21300062: JanelaTileMovimentoNuvem_31
+    21300064: JanelaTileMovimentoNuvem_32
+    21300066: JanelaTileMovimentoNuvem_33
+    21300068: JanelaTileMovimentoNuvem_34
+    21300070: JanelaTileMovimentoNuvem_35
+    21300072: JanelaTileMovimentoNuvem_36
+    21300074: JanelaTileMovimentoNuvem_37
+    21300076: JanelaTileMovimentoNuvem_38
+    21300078: JanelaTileMovimentoNuvem_39
+    21300080: JanelaTileMovimentoNuvem_40
+    21300082: JanelaTileMovimentoNuvem_41
+    21300084: JanelaTileMovimentoNuvem_42
+    21300086: JanelaTileMovimentoNuvem_43
+    21300088: JanelaTileMovimentoNuvem_44
+    21300090: JanelaTileMovimentoNuvem_45
+    21300092: JanelaTileMovimentoNuvem_46
+    21300094: JanelaTileMovimentoNuvem_47
+    21300096: JanelaTileMovimentoNuvem_48
+    21300098: JanelaTileMovimentoNuvem_49
+    21300100: JanelaTileMovimentoNuvem_50
+    21300102: JanelaTileMovimentoNuvem_51
+    21300104: JanelaTileMovimentoNuvem_52
+    21300106: JanelaTileMovimentoNuvem_53
+    21300108: JanelaTileMovimentoNuvem_54
+    21300110: JanelaTileMovimentoNuvem_55
+    21300112: JanelaTileMovimentoNuvem_56
+    21300114: JanelaTileMovimentoNuvem_57
+    21300116: JanelaTileMovimentoNuvem_58
+    21300118: JanelaTileMovimentoNuvem_59
+    21300120: JanelaTileMovimentoNuvem_60
+    21300122: JanelaTileMovimentoNuvem_61
+    21300124: JanelaTileMovimentoNuvem_62
+    21300126: JanelaTileMovimentoNuvem_63
+    21300128: JanelaTileMovimentoNuvem_64
+    21300130: JanelaTileMovimentoNuvem_65
+    21300132: JanelaTileMovimentoNuvem_66
+    21300134: JanelaTileMovimentoNuvem_67
+    21300136: JanelaTileMovimentoNuvem_68
+    21300138: JanelaTileMovimentoNuvem_69
+    21300140: JanelaTileMovimentoNuvem_70
+    21300142: JanelaTileMovimentoNuvem_71
+    21300144: JanelaTileMovimentoNuvem_72
+    21300146: JanelaTileMovimentoNuvem_73
+    21300148: JanelaTileMovimentoNuvem_74
+    21300150: JanelaTileMovimentoNuvem_75
+    21300152: JanelaTileMovimentoNuvem_76
+    21300154: JanelaTileMovimentoNuvem_77
+    21300156: JanelaTileMovimentoNuvem_78
+    21300158: JanelaTileMovimentoNuvem_79
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e201dc035987f374791609fdaadb4b70
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_1
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c129816f8d3bd4ea34ae0fd20a89b3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_2
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a70c147fbf327a41be5b16447a7a409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_3
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4317f2e6ce185cb47a92ebaa3d886f08
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_4
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a0ca37b6bc408499745f07cd00525b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_5
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98dd44fe61b41604296e8735f60cc306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_6
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7233f83faf43c66428877ce7f15ba8dc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_7
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d3e91c3dfce8e047959a2fd746c9517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_8
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 1060
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22e28fb049ad82a499118721d3f04f13
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_9
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67baff44b9fcda849800ce3bd10230c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_10
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19fbcf7c4ccc78044a206d6bf6337be1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_11
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c08092dab2f168c429efa8e31944b0cb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_12
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e303eec5566c004b9611c3d9d674880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_13
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a4a520a6c9f05478c3fb2928d8a713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_14
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52f28aca8f2df6b43b78564a0ed62629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_15
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7919ca587af3d224fb21912f67942e46
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_16
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed52fc26bc6b934c9d0cef8e46cb02e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_17
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 932
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c7b6eea90bc69247996bbec17ceda05
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_18
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f09c2331d2d164b935e039c871b44e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_19
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef683da73cea964dbfa2275a60279ba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_20
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1935e76a551ad14fbc6841da293d70c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_21
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3fef3774a821574dac7e3775ffba51b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_22
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d669fb16c27adc24ba81a046471e267c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_23
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e5bccfc448ba3b40b31f0bee3d5ef08
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_24
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 137a8858ce357324f9653ac692866b3c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_25
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e89e686848e0e754baa34d26a0df9f02
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_26
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 804
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ffc3c7fae5da347a14291acd78b3d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_27
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c93128f4003b4c45923519ac3cf81b0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_28
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf537846d60d1546af18dca2987b727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_29
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6801724aa03cb7743a243f3c8bcfdbc5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_30
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c2ab300c42479c45afa06eae92f7c08
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_31
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5153bbbbc81e9bf42be0db9ef7089e4f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_32
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f5f71c352939e348997ad91463804ce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_33
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a68ef82df43d24a86ad956b07902c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_34
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e49dee6a7d5ed4f9467036a3c836a3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_35
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 676
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b156247623669094d9b2af782924d0e4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_36
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261f1abd549b9b14ca32aee7776c0d5b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_37
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b133fcaea2ed37a43a32b134ec9a7470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_38
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 556df492f788cdf42aa55d5317ba32d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_39
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb1f694fba7e63449bcb10860e0f3cf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_40
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1b2c0d79846db04684ee6e90ebf78dd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_41
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264840651a7201942a1440a0b13cd59f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_42
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a60aded9c5a51a47bd22da7ff18d6bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_43
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c58116ee49f9dc346ab1a030ffe5b50c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_44
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 548
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e3b2330e8d63448b5dd017e7045307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_45
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6134458b1d87c7444b95b6bba7adee99
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_46
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b9db49b0d6c7c4798caaed21a416d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_47
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd1c4ee2b8e8afa4795a7b429aca6b3c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_48
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0a89ac89d5e9a84fb196c58fe5916bb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_49
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd222ab62a95be49adb786e32edc201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_50
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a505553f64723446827e9be7737eb7e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_51
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e361ecd98ca21a4fa286b98da35f9b2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_52
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 858617fb0ba66e44a89dc6e38c6d4347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_53
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 420
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5b02e6a5bc46746ab7731c44555efe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_54
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd27ce48ddaaeb44fb0bc041ad58f260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_55
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e65e9a6d2c06949b24fbd783a57b15
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_56
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f0be06d764e4f4398326e32062a366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_57
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e7f99d5893f6f44b8016b86351682d4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_58
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531b00992db474046a51cff714b87617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_59
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb93368cdccf6b44be70d0986e4b130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_60
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf4c507c5e108f4db3c8583c1360a27
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_61
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c99201c8c7475a342809d14af93e0e41
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_62
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 292
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d1f66c531f14b14fa228eb73197ff47
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_63
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14af313e6bc9ff442980dc76db6d0dfe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_64
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3c4abbb07bdee34ba0b2886f621d406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_65
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec6efffdef73f4449b082c010ab5906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_66
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06c7a7ddc06c2844d88dc6763c8b21f9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_67
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa637173d654bc14c85dd5d893106118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_68
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb8751cbbecd44148a6854e6604d7b1a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_69
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fe9c38c0a4789241a354f2546738c06
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_70
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62cb0b9f23081a74f9539329178624e1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_71
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 164
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba031934ced646649b97bec266f95229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_72
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 36
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ee1636b292a6943b8ecdefeb4772a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_73
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 36
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7da98b2190992ac4696b30165b9c5677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_74
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 36
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a1828168dd43244e9dfb9f06c380b79
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_75
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 36
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc576cf5a2422ca4284f69c9ea8317a1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_76
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 36
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c7cce6191f7c4d47b73dd67f252e39f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_77
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 36
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 899e3afd3b23dd84aa4a3b8f3e980d56
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_78
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 36
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a947e6d3ebc2f94593663b676844292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JanelaTileMovimentoNuvem_79
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 36
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f88db84ef01b5e4680a21248a66bebb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 8043663f21ddc8a45a65e126391bd1a0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

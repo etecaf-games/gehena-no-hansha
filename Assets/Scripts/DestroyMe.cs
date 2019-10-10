@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
-
 public class DestroyMe : MonoBehaviour
 {
-    void Start()
+    private void Start()
     {
         Destroy(gameObject);
     }
