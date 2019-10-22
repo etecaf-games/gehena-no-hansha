@@ -3,6 +3,7 @@ using System.Collections.Generic;
 public class TurnManager : MonoBehaviour
 {
     public List<KeyValuePair<GameObject, int>> turnOrder = new List<KeyValuePair<GameObject, int>>();
+    [HideInInspector]
     public int turnIndex = 0;
     private UserInterfaceManager userInterfaceManager;
     private void Start()

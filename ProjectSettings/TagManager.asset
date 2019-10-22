@@ -6,7 +6,6 @@ TagManager:
   tags:
   - Hex
   - Enemy
-  - hex
   layers:
   - Default
   - TransparentFX
@@ -16,8 +15,8 @@ TagManager:
   - UI
   - 
   - 
-  - ClickabesLayer
-  - 
+  - Hex
+  - Character
   - 
   - 
   - 

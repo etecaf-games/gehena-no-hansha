@@ -83,7 +83,7 @@ public class Pathfinding : MonoBehaviour
     {
         Vector3 currentHexPosition = currentHex.transform.position;
         List<GameObject> adjacentHexesList = new List<GameObject>();
-        GameObject[,] gridHexesObjects = mapGenerator.gridHexesObjects;
+        List<GameObject> gridHexesObjects = mapGenerator.gridHexesObjects;
 
         Vector3 northWestHexPosition = new Vector3(currentHexPosition.x - 0.6f, currentHexPosition.y + 0.525f, currentHexPosition.z + 0.9f);
         Vector3 northEastHexPosition = new Vector3(currentHexPosition.x + 0.6f, currentHexPosition.y + 0.525f, currentHexPosition.z + 0.9f);
@@ -91,131 +91,33 @@ public class Pathfinding : MonoBehaviour
         Vector3 eastHexPosition = new Vector3(currentHexPosition.x + 1.2f, currentHexPosition.y, currentHexPosition.z);
         Vector3 southWestHexPosition = new Vector3(currentHexPosition.x - 0.6f, currentHexPosition.y - 0.525f, currentHexPosition.z - 0.9f);
         Vector3 southEastHexPosition = new Vector3(currentHexPosition.x + 0.6f, currentHexPosition.y - 0.525f, currentHexPosition.z - 0.9f);
-        for (int row = 0; row < 7; row++)
+
+        foreach (GameObject hex in gridHexesObjects)
         {
-            if (row == 0 || row == 6)
+            Vector3 hexPosition = hex.transform.position;
+            if (hexPosition == northWestHexPosition)
             {
-                for (int column = 0; column < 6; column++)
-                {
-                    Vector3 currentIterationHex = gridHexesObjects[row, column].transform.position;
-                    if (currentIterationHex == northWestHexPosition)
-                    {
-                        adjacentHexesList.Add(gridHexesObjects[row, column]);
-                    }
-                    else if (currentIterationHex == northEastHexPosition)
-                    {
-                        adjacentHexesList.Add(gridHexesObjects[row, column]);
-                    }
-                    else if (currentIterationHex == westHexPosition)
-                    {
-                        adjacentHexesList.Add(gridHexesObjects[row, column]);
-                    }
-                    else if (currentIterationHex == eastHexPosition)
-                    {
-                        adjacentHexesList.Add(gridHexesObjects[row, column]);
-                    }
-                    else if (currentIterationHex == southWestHexPosition)
-                    {
-                        adjacentHexesList.Add(gridHexesObjects[row, column]);
-                    }
-                    else if (currentIterationHex == southEastHexPosition)
-                    {
-                        adjacentHexesList.Add(gridHexesObjects[row, column]);
-                    }
-                }
+                adjacentHexesList.Add(hex);
             }
-            else if (row == 1 || row == 5)
+            else if (hexPosition == northEastHexPosition)
             {
-                for (int column = 0; column < 7; column++)
-                {
-                    Vector3 currentIterationHex = gridHexesObjects[row, column].transform.position;
-                    if (currentIterationHex == northWestHexPosition)
-                    {
-                        adjacentHexesList.Add(gridHexesObjects[row, column]);
-                    }
-                    else if (currentIterationHex == northEastHexPosition)
-                    {
-                        adjacentHexesList.Add(gridHexesObjects[row, column]);
-                    }
-                    else if (currentIterationHex == westHexPosition)
-                    {
-                        adjacentHexesList.Add(gridHexesObjects[row, column]);
-                    }
-                    else if (currentIterationHex == eastHexPosition)
-                    {
-                        adjacentHexesList.Add(gridHexesObjects[row, column]);
-                    }
-                    else if (currentIterationHex == southWestHexPosition)
-                    {
-                        adjacentHexesList.Add(gridHexesObjects[row, column]);
-                    }
-                    else if (currentIterationHex == southEastHexPosition)
-                    {
-                        adjacentHexesList.Add(gridHexesObjects[row, column]);
-                    }
-                }
+                adjacentHexesList.Add(hex);
             }
-            else if (row == 2 || row == 4)
+            else if (hexPosition == westHexPosition)
             {
-                for (int column = 0; column < 8; column++)
-                {
-                    Vector3 currentIterationHex = gridHexesObjects[row, column].transform.position;
-                    if (currentIterationHex == northWestHexPosition)
-                    {
-                        adjacentHexesList.Add(gridHexesObjects[row, column]);
-                    }
-                    else if (currentIterationHex == northEastHexPosition)
-                    {
-                        adjacentHexesList.Add(gridHexesObjects[row, column]);
-                    }
-                    else if (currentIterationHex == westHexPosition)
-                    {
-                        adjacentHexesList.Add(gridHexesObjects[row, column]);
-                    }
-                    else if (currentIterationHex == eastHexPosition)
-                    {
-                        adjacentHexesList.Add(gridHexesObjects[row, column]);
-                    }
-                    else if (currentIterationHex == southWestHexPosition)
-                    {
-                        adjacentHexesList.Add(gridHexesObjects[row, column]);
-                    }
-                    else if (currentIterationHex == southEastHexPosition)
-                    {
-                        adjacentHexesList.Add(gridHexesObjects[row, column]);
-                    }
-                }
+                adjacentHexesList.Add(hex);
             }
-            else if (row == 3)
+            else if (hexPosition == eastHexPosition)
             {
-                for (int column = 0; column < 9; column++)
-                {
-                    Vector3 currentIterationHex = gridHexesObjects[row, column].transform.position;
-                    if (currentIterationHex == northWestHexPosition)
-                    {
-                        adjacentHexesList.Add(gridHexesObjects[row, column]);
-                    }
-                    else if (currentIterationHex == northEastHexPosition)
-                    {
-                        adjacentHexesList.Add(gridHexesObjects[row, column]);
-                    }
-                    else if (currentIterationHex == westHexPosition)
-                    {
-                        adjacentHexesList.Add(gridHexesObjects[row, column]);
-                    }
-                    else if (currentIterationHex == eastHexPosition)
-                    {
-                        adjacentHexesList.Add(gridHexesObjects[row, column]);
-                    }
-                    else if (currentIterationHex == southWestHexPosition)
-                    {
-                        adjacentHexesList.Add(gridHexesObjects[row, column]);
-                    }
-                    else if (currentIterationHex == southEastHexPosition)
-                    {
-                        adjacentHexesList.Add(gridHexesObjects[row, column]);
-                    }
-                }
+                adjacentHexesList.Add(hex);
+            }
+            else if (hexPosition == southWestHexPosition)
+            {
+                adjacentHexesList.Add(hex);
+            }
+            else if (hexPosition == southEastHexPosition)
+            {
+                adjacentHexesList.Add(hex);
             }
         }
         return adjacentHexesList;
@@ -235,87 +137,29 @@ public class Pathfinding : MonoBehaviour
     }
     private GameObject CharacterToHexPosition(GameObject character)
     {
-        GameObject[,] gridHexesObjects = mapGenerator.gridHexesObjects;
-        for (int row = 0; row < 7; row++)
+        List<GameObject> gridHexesObjects = mapGenerator.gridHexesObjects;
+        GameObject returnHex = null;
+        foreach (GameObject hex in gridHexesObjects)
         {
-            if (row == 0 || row == 6)
+            Vector3 hexPosition = hex.transform.position;
+            if (hexPosition == character.transform.position)
             {
-                for (int column = 0; column < 6; column++)
-                {
-                    if (gridHexesObjects[row, column].transform.position == character.transform.position)
-                    {
-                        return gridHexesObjects[row, column];
-                    }
-                }
-            }
-            else if (row == 1 || row == 5)
-            {
-                for (int column = 0; column < 7; column++)
-                {
-                    if (gridHexesObjects[row, column].transform.position == character.transform.position)
-                    {
-                        return gridHexesObjects[row, column];
-                    }
-                }
-            }
-            else if (row == 2 || row == 4)
-            {
-                for (int column = 0; column < 8; column++)
-                {
-                    if (gridHexesObjects[row, column].transform.position == character.transform.position)
-                    {
-                        return gridHexesObjects[row, column];
-                    }
-                }
-            }
-            else if (row == 3)
-            {
-                for (int column = 0; column < 9; column++)
-                {
-                    if (gridHexesObjects[row, column].transform.position == character.transform.position)
-                    {
-                        return gridHexesObjects[row, column];
-                    }
-                }
+                returnHex = hex;
             }
         }
         //this should never happen
-        Debug.Log("Deu Merda no Pathfinding pra converter o personagem pra hexPosition");
-        return gridHexesObjects[0, 0];
+        if (returnHex == null)
+        {
+            Debug.Log("Deu Merda no Pathfinding pra converter o personagem pra hexPosition");
+        }
+        return returnHex;
     }
     private void ClearAllHexes()
     {
-        GameObject[,] gridHexesObjects = mapGenerator.gridHexesObjects;
-        for (int row = 0; row < 7; row++)
+        List<GameObject> gridHexesObjects = mapGenerator.gridHexesObjects;
+        foreach (GameObject hex in gridHexesObjects)
         {
-            if (row == 0 || row == 6)
-            {
-                for (int column = 0; column < 6; column++)
-                {
-                    gridHexesObjects[row, column].GetComponentsInChildren<SpriteRenderer>()[0].color = Color.white;
-                }
-            }
-            else if (row == 1 || row == 5)
-            {
-                for (int column = 0; column < 7; column++)
-                {
-                    gridHexesObjects[row, column].GetComponentsInChildren<SpriteRenderer>()[0].color = Color.white;
-                }
-            }
-            else if (row == 2 || row == 4)
-            {
-                for (int column = 0; column < 8; column++)
-                {
-                    gridHexesObjects[row, column].GetComponentsInChildren<SpriteRenderer>()[0].color = Color.white;
-                }
-            }
-            else if (row == 3)
-            {
-                for (int column = 0; column < 9; column++)
-                {
-                    gridHexesObjects[row, column].GetComponentsInChildren<SpriteRenderer>()[0].color = Color.white;
-                }
-            }
+            hex.GetComponentsInChildren<SpriteRenderer>()[0].color = Color.white;
         }
     }
     private void CheckIfEnoughMovement(List<GameObject> path)

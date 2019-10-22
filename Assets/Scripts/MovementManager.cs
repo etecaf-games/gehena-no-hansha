@@ -1,21 +1,24 @@
 ﻿using UnityEngine;
-using System.Collections.Generic;
 public class MovementManager : MonoBehaviour
 {
-    private bool canMove;
-    private GameObject currentCharacter, selectedGoal, jogadorDaVez;
     private TurnManager turnManager;
-    private Pathfinding pathfinding;
-    private List<GameObject> path = new List<GameObject>();
+    public GameObject actionWheel;
     private void Start()
     {
         turnManager = GetComponent<TurnManager>();
+        OpenActionWheel();
     }
-    private void MoveToNextHex(GameObject characterToMove, List<GameObject> hexesInPath)
+    private void OpenActionWheel()
     {
-        if (characterToMove.transform.position != selectedGoal.transform.position)
-        {
-            characterToMove.transform.position = hexesInPath[0].transform.position;
-        }
+        actionWheel.SetActive(false);
+    }
+    private void MarkCurrentCharacter()
+    {
+        GameObject currentCharacter = turnManager.turnOrder[turnManager.turnIndex].Key;
+        currentCharacter.GetComponent<SpriteRenderer>().color = Color.cyan;
+    }
+    private void MoveButton(GameObject objectToMove)
+    {
+
     }
 }

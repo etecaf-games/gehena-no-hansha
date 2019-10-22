@@ -2,11 +2,12 @@
 public class InputManager : MonoBehaviour
 {
     private bool thereIsASelectedGoal = false;
+    [HideInInspector]
     public GameObject selectedGoal;
     private void Update()
     {
         RaycastHit hit = MousePositionToRaycasHit();
-        DisplayHexAsGoal(hit);
+        //DisplayHexAsGoal(hit);
         if (Input.GetMouseButtonDown(1))
         {
             RaycastHit hitMouse = MousePositionToRaycasHit();
@@ -25,7 +26,7 @@ public class InputManager : MonoBehaviour
             hex.GetComponentsInChildren<SpriteRenderer>()[0].color = Color.cyan;
         }
     }
-    private void MarkHexAsGoal(RaycastHit hit)
+    public void MarkHexAsGoal(RaycastHit hit)
     {
         if (!thereIsASelectedGoal)
         {
@@ -66,7 +67,7 @@ public class InputManager : MonoBehaviour
             }
         }
     }
-    private RaycastHit MousePositionToRaycasHit()
+    public RaycastHit MousePositionToRaycasHit()
     {
         RaycastHit hit;
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
