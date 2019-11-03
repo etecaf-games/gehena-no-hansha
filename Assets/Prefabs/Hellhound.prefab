@@ -70,9 +70,9 @@ SpriteRenderer:
   m_SortingLayerID: 691014515
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 1dcd1eaef52831d4d8eb05726486f146, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 999e0ccdf36575e468d6c33e382859a2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 2.56, y: 1.28}
@@ -123,5 +123,5 @@ MonoBehaviour:
   defense: 2
   agility: 3
   magic: 1
-  spirit: 1
   vitality: 1
+  spirit: 1

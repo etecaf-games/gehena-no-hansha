@@ -90,6 +90,25 @@ public class TurnManager : MonoBehaviour
         }
         return agilitiesList;
     }
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.A))
+        {
+            DebugShowTurnOrder();
+        }
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            NextRound();
+        }
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            NextTurn();
+        }
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            GetCharacterInTurn();
+        }
+    }
     private void DebugShowTurnOrder()
     {
         Debug.Log("Turn Order: ");
@@ -134,8 +153,9 @@ public class TurnManager : MonoBehaviour
             Debug.Log("Something broke... the turn index is higher than the amount of playable characters in the scene");
         }
     }
-    private void WhoseTurnIsIt()
+    public GameObject GetCharacterInTurn()
     {
-        Debug.Log("It is " + turnOrder[turnIndex].Key.name + "'s turn");
+        //Debug.Log("It is " + turnOrder[turnIndex].Key.name + "'s turn");
+        return turnOrder[turnIndex].Key;
     }
 }

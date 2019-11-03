@@ -8,6 +8,9 @@ public class MapGenerator : MonoBehaviour
     [HideInInspector]
     public List<GameObject> gridHexesObjects = new List<GameObject>();
     public GameObject hexPrefab;
+    public float xDistance = 1.2f;
+    public float yDistance = 0.525f;
+    public float zDistance = 0.9f; //Distância entre o ponto central dos hexes
     private void Start()
     {
         GenerateClassroomGrid();
@@ -17,7 +20,6 @@ public class MapGenerator : MonoBehaviour
     private void GenerateClassroomGrid()
     {
         float yPosition = 1.575f, zPosition = 2.7f;//Posição inicial dos hexes(o primeiro fica no canto superior esquerdo)
-        float xDistance = 1.2f, yDistance = 0.525f, zDistance = 0.9f; //Distância entre o ponto central dos hexes
         for (int row = 0; row < 7; row++)
         {
             float xPosition;
@@ -139,8 +141,6 @@ public class MapGenerator : MonoBehaviour
     private void GenerateCorridorGrid()
     {
         float yPosition = 0.525f, zPosition = 0.9f;//Posição inicial dos hexes(o primeiro fica no canto superior esquerdo)
-        float xDistance = 1.2f, yDistance = 0.525f, zDistance = 0.9f; //Distância entre o ponto central dos hexes
-
         for (int row = 0; row < 3; row++)
         {
             float xPosition;
@@ -199,7 +199,6 @@ public class MapGenerator : MonoBehaviour
     private void GenerateTerraceGrid()
     {
         float yPosition = 2.1f, zPosition = 3.6f;//Posição inicial dos hexes(o primeiro fica no canto superior esquerdo)
-        float xDistance = 1.2f, yDistance = 0.525f, zDistance = 0.9f; //Distância entre o ponto central dos hexes
         for (int row = 0; row < 9; row++)
         {
             float xPosition;

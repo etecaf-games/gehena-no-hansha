@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Hex
   - Enemy
+  - Action Wheel
   layers:
   - Default
   - TransparentFX
@@ -48,4 +49,7 @@ TagManager:
     locked: 0
   - name: Characters
     uniqueID: 691014515
+    locked: 0
+  - name: UI
+    uniqueID: 2683059181
     locked: 0

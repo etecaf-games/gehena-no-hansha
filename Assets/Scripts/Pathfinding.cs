@@ -1,10 +1,11 @@
-﻿using UnityEngine;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using UnityEngine;
 public class Pathfinding : MonoBehaviour
 {
     private MapGenerator mapGenerator;
     private InputManager inputManager;
     private TurnManager turnManager;
+    public int movementLeft;
     private void Start()
     {
         mapGenerator = GetComponent<MapGenerator>();
@@ -21,24 +22,58 @@ public class Pathfinding : MonoBehaviour
         {
             DisplayPath();
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             Debug.Log(turnManager.turnOrder[turnManager.turnIndex].Key.transform.position);//current character position
         }
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.P))
         {
             GameObject currentCharacter = turnManager.turnOrder[turnManager.turnIndex].Key;
             GameObject currentHex = CharacterToHexPosition(currentCharacter);
             List<GameObject> path = ReturnShortestPathByBFS(currentHex, inputManager.selectedGoal);
             CheckIfEnoughMovement(path);
         }
-        //if (Input.GetKeyDown(KeyCode.J))
-        //{
-        //    GameObject currentCharacter = turnManager.turnOrder[turnManager.turnIndex].Key;
-        //    GameObject currentHex = CharacterToHexPosition(currentCharacter);
-        //    List<GameObject> path = ReturnShortestPathByBFS(currentHex, inputManager.selectedGoal);
-        //    CountPath(path);
-        //}
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            DisplayAdjacentHexes();
+        }
+    }
+    public void DisplayAdjacentHexes()
+    {
+        GameObject currentCharacter = turnManager.turnOrder[turnManager.turnIndex].Key;
+        GameObject currentHex = CharacterToHexPosition(currentCharacter);
+        List<GameObject> adjacentHexes = new List<GameObject>();
+        List<GameObject> allHexes = new List<GameObject>();
+        for (int i = 0; i < movementLeft; i++)
+        {
+            if (i == 0)
+            {
+                adjacentHexes = FindAdjacentHexes(currentHex);
+            }
+            else
+            {
+                List<GameObject> tempHexes = new List<GameObject>();
+                foreach (var adjacentHex in adjacentHexes)
+                {
+                    tempHexes = FindAdjacentHexes(adjacentHex);
+                    foreach (var tempHex in tempHexes)
+                    {
+                        if (!adjacentHexes.Contains(tempHex) && tempHex != currentHex)
+                        {
+                            allHexes.Add(tempHex);
+                        }
+                    }
+                }
+            }
+            adjacentHexes.AddRange(allHexes);
+        }
+        foreach (var item in adjacentHexes)
+        {
+            //Debug.Log(item);
+            item.GetComponent<HexProperties>().canMove = true;
+            item.GetComponentInChildren<SpriteRenderer>().color = Color.yellow;
+        }
+        currentHex.GetComponentInChildren<SpriteRenderer>().color = Color.white;
     }
     public List<GameObject> ReturnShortestPathByBFS(GameObject startHex, GameObject goalHex)
     {
@@ -135,7 +170,7 @@ public class Pathfinding : MonoBehaviour
         currentCharacter.GetComponentsInChildren<SpriteRenderer>()[0].color = Color.red;
         inputManager.selectedGoal.GetComponentsInChildren<SpriteRenderer>()[0].color = Color.green;
     }
-    private GameObject CharacterToHexPosition(GameObject character)
+    public GameObject CharacterToHexPosition(GameObject character)
     {
         List<GameObject> gridHexesObjects = mapGenerator.gridHexesObjects;
         GameObject returnHex = null;
@@ -154,12 +189,13 @@ public class Pathfinding : MonoBehaviour
         }
         return returnHex;
     }
-    private void ClearAllHexes()
+    public void ClearAllHexes()
     {
         List<GameObject> gridHexesObjects = mapGenerator.gridHexesObjects;
         foreach (GameObject hex in gridHexesObjects)
         {
             hex.GetComponentsInChildren<SpriteRenderer>()[0].color = Color.white;
+            hex.GetComponent<HexProperties>().canMove = false;
         }
     }
     private void CheckIfEnoughMovement(List<GameObject> path)

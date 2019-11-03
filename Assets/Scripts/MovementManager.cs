@@ -17,8 +17,4 @@ public class MovementManager : MonoBehaviour
         GameObject currentCharacter = turnManager.turnOrder[turnManager.turnIndex].Key;
         currentCharacter.GetComponent<SpriteRenderer>().color = Color.cyan;
     }
-    private void MoveButton(GameObject objectToMove)
-    {
-
-    }
 }

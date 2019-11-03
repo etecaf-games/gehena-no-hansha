@@ -15,22 +15,8 @@ public class CharacterPositioner : MonoBehaviour
     [SerializeField]
     private GameObject characterPositioningScreen;
     private bool characterAtValidPosition = false;
-    private void Start()
-    {
-        //Debug.Log(LayerMask.LayerToName(8));
-        //Debug.Log(LayerMask.LayerToName(9));
-    }
     private void Update()
     {
-        //if (Input.GetMouseButtonDown(0))
-        //{
-        //    Camera.main.backgroundColor = Color.black;
-        //}
-        //else
-        //{
-        //    Color32 testColor = new Color32(49, 77, 121, 0);
-        //    Camera.main.backgroundColor = testColor;
-        //}
         if (markedCharacter != null)
         {
             RaycastHit hit;
@@ -46,6 +32,7 @@ public class CharacterPositioner : MonoBehaviour
                     if (previousHex != null)
                     {
                         previousHex.GetComponentsInChildren<SpriteRenderer>()[0].color = Color.white;
+                        previousHex.GetComponent<HexProperties>().characterInHex = null;
                     }
                     if (hit.collider.gameObject.GetComponent<HexProperties>().initialHex)
                     {
@@ -98,7 +85,7 @@ public class CharacterPositioner : MonoBehaviour
                     if (hit.collider.gameObject.tag == "Player")
                     {
                         markedCharacter = hit.collider.gameObject;
-                        MarkCharacter(markedCharacter);
+                        markedCharacter.GetComponent<SpriteRenderer>().color = Color.green;
                     }
                 }
             }
@@ -111,15 +98,16 @@ public class CharacterPositioner : MonoBehaviour
         allPlayers = GameObject.FindGameObjectsWithTag("Player");
         return allPlayers;
     }
-    private void MarkCharacter(GameObject character)
-    {
-        character.GetComponent<SpriteRenderer>().color = Color.magenta;
-    }
     public void EndCharacterPositioningPhase()
     {
         this.enabled = false;
+        TurnManager turnManager = GetComponent<TurnManager>();
+        turnManager.enabled = true;
         GetComponent<TurnManager>().enabled = true;
+        GetComponent<InputManager>().enabled = true;
+        GetComponent<Pathfinding>().enabled = true;
         characterPositioningScreen.SetActive(false);
         gameScreen.SetActive(true);
+        turnManager.GetCharacterInTurn().GetComponentInChildren<Canvas>().enabled = true;
     }
 }
