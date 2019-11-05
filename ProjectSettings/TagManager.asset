@@ -7,6 +7,8 @@ TagManager:
   - Hex
   - Enemy
   - Action Wheel
+  - Interagivel
+  - Npc
   layers:
   - Default
   - TransparentFX
@@ -18,7 +20,7 @@ TagManager:
   - 
   - Hex
   - Character
-  - 
+  - Player
   - 
   - 
   - 
@@ -46,6 +48,15 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Props
+    uniqueID: 477828629
+    locked: 0
+  - name: NPC
+    uniqueID: 2344273585
+    locked: 0
+  - name: Player
+    uniqueID: 234693795
     locked: 0
   - name: Characters
     uniqueID: 691014515

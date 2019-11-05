@@ -124,7 +124,7 @@ MonoBehaviour:
   attack: 3
   resistance: 1
   defense: 3
-  agility: 4
+  agility: 3
   magic: 2
   vitality: 1
   spirit: 2
@@ -271,6 +271,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3333439804020004826, guid: d585a6942a8ab1c49a615efab8d85a71,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AttackButton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d585a6942a8ab1c49a615efab8d85a71, type: 3}
