@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 3788540933472757770}
   - component: {fileID: 1918924421}
   - component: {fileID: 4092304114762541342}
+  - component: {fileID: 113116432}
+  - component: {fileID: 9206502748888397084}
   m_Layer: 0
   m_Name: Hellhound
   m_TagString: Enemy
@@ -68,7 +70,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 691014515
-  m_SortingLayer: 1
+  m_SortingLayer: 4
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 999e0ccdf36575e468d6c33e382859a2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -112,11 +114,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11fde51ef9348ca40b6322ead3182fa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoints: 10
-  soulPoints: 10
-  move: 3
+  maxHealthPoints: 10
+  currentHealthPoints: 10
+  maxSoulPoints: 10
+  currentSoulPoints: 10
+  maxMove: 3
+  currentMove: 3
   range: 1
-  actionPoints: 3
+  maxActionPoints: 3
+  currentActionPoints: 3
   strength: 3
   attack: 3
   resistance: 2
@@ -125,3 +131,29 @@ MonoBehaviour:
   magic: 1
   vitality: 1
   spirit: 1
+--- !u!114 &113116432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3788540933472757771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40230d7b1037787449a8ea1976e9933a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bigIcon: {fileID: 21300000, guid: e3808e68aecb3af489c2b14e9b70cb38, type: 3}
+  smallIcon: {fileID: 21300000, guid: e726fdbdbef60a141b2439d2fdef572a, type: 3}
+--- !u!114 &9206502748888397084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3788540933472757771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b448fedbb3510ac46901223eaf2ea182, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

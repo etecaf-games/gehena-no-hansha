@@ -1,23 +1,25 @@
 ﻿using UnityEngine;
 public class ActionWheel : MonoBehaviour
 {
-    private Pathfinding pathfinding;
     private InputManager inputManager;
-    private void Start()
+    private Pathfinding pathfinding;
+    private void Awake()
     {
-        pathfinding = GetComponent<Pathfinding>();
         inputManager = GetComponent<InputManager>();
+        pathfinding = GetComponent<Pathfinding>();
     }
     public void MoveButton()
     {
-        inputManager.moveButtonPressed = true;
-        inputManager.attackButtonPressed = false;
+        inputManager.MoveButtonPressed = true;
+        inputManager.AttackButtonPressed = false;
+        pathfinding.ClearAllHexes();
         pathfinding.DisplayAvailableHexesToMove();
     }
-    //public void AttackButton()
-    //{
-    //    inputManager.moveButtonPressed = false;
-    //    inputManager.attackButtonPressed = true;
-    //    pathfinding.DisplayAvailableHexesToAttack();
-    //}
+    public void AttackButton()
+    {
+        inputManager.MoveButtonPressed = false;
+        inputManager.AttackButtonPressed = true;
+        pathfinding.ClearAllHexes();
+        pathfinding.DisplayAvailableHexesToAttack();
+    }
 }

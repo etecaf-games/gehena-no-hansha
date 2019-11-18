@@ -1,15 +1,20 @@
 ﻿using UnityEngine;
+using System.Collections;
 public class CharacterPositioner : MonoBehaviour
 {
     private GameObject markedCharacter;
     private GameObject previousHex;
-    public LayerMask hexLayer;
-    public LayerMask characterLayer;
-    public GameObject gameScreen;
-    public GameObject characterPositioningScreen;
+    [SerializeField]
+    private LayerMask hexLayer;
+    [SerializeField]
+    private LayerMask characterLayer;
+    [SerializeField]
+    private GameObject gameScreen;
+    [SerializeField]
+    private GameObject characterPositioningScreen;
     private bool characterAtValidPosition = false;
     private TurnManager turnManager;
-    private void Start()
+    private void Awake()
     {
         turnManager = GetComponent<TurnManager>();
     }
@@ -17,16 +22,12 @@ public class CharacterPositioner : MonoBehaviour
     {
         if (markedCharacter != null)
         {
-            RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out hit, Mathf.Infinity, hexLayer))
-            {
-                //Debug.Log("hit something");
-            }
+            RaycastHit hit = HitHexes();
             if (hit.collider != null)
             {
                 if (hit.collider.gameObject.tag == "Hex")
                 {
+                    GameObject hex = hit.collider.gameObject;
                     if (previousHex != null)
                     {
                         previousHex.GetComponentsInChildren<SpriteRenderer>()[0].color = Color.white;
@@ -37,7 +38,7 @@ public class CharacterPositioner : MonoBehaviour
                         //Debug.Log("Segue o mouse");
                         markedCharacter.transform.position = hit.collider.gameObject.transform.position;
                         markedCharacter.GetComponent<SpriteRenderer>().color = Color.green;
-                        hit.collider.gameObject.GetComponentsInChildren<SpriteRenderer>()[0].color = Color.green;
+                        hex.GetComponentsInChildren<SpriteRenderer>()[0].color = Color.green;
                         previousHex = hit.collider.gameObject;
                         characterAtValidPosition = true;
                     }
@@ -45,7 +46,7 @@ public class CharacterPositioner : MonoBehaviour
                     {
                         markedCharacter.transform.position = hit.collider.gameObject.transform.position;
                         markedCharacter.GetComponent<SpriteRenderer>().color = Color.red;
-                        hit.collider.gameObject.GetComponentsInChildren<SpriteRenderer>()[0].color = Color.red;
+                        hex.GetComponentsInChildren<SpriteRenderer>()[0].color = Color.red;
                         previousHex = hit.collider.gameObject;
                         characterAtValidPosition = false;
                     }
@@ -76,31 +77,41 @@ public class CharacterPositioner : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-                RaycastHit hit;
-                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                if (Physics.Raycast(ray, out hit, Mathf.Infinity, characterLayer))
+                RaycastHit hit = HitCharacter();
+
+                if (hit.collider.gameObject.tag == "Player")
                 {
-                    if (hit.collider.gameObject.tag == "Player")
-                    {
-                        markedCharacter = hit.collider.gameObject;
-                        markedCharacter.GetComponent<SpriteRenderer>().color = Color.green;
-                    }
+                    markedCharacter = hit.collider.gameObject;
+                    markedCharacter.GetComponent<SpriteRenderer>().color = Color.green;
                 }
             }
         }
     }
-    private GameObject[] GetAllPlayableCharactersInScene()
+    private RaycastHit HitHexes()
     {
-        int playerCount = GameObject.FindGameObjectsWithTag("Player").Length;
-        GameObject[] allPlayers = new GameObject[playerCount];
-        allPlayers = GameObject.FindGameObjectsWithTag("Player");
-        return allPlayers;
+        RaycastHit hit;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity, hexLayer))
+        {
+            //Debug.Log("hit something");
+        }
+        return hit;
+    }
+    private RaycastHit HitCharacter()
+    {
+        RaycastHit hit;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity, characterLayer))
+        {
+            //hit something;
+        }
+        return hit;
     }
     public void EndCharacterPositioningPhase()
     {
         this.enabled = false;
         characterPositioningScreen.SetActive(false);
         gameScreen.SetActive(true);
-        turnManager.GetCharacterInTurn().GetComponentInChildren<Canvas>().enabled = true;
+        turnManager.UpdateCombatUIValues(true);
     }
 }

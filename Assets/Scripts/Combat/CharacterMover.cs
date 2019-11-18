@@ -1,49 +1,83 @@
 ﻿using UnityEngine;
+using System.Collections.Generic;
 public class CharacterMover : MonoBehaviour
 {
-    //private bool moveCharacter = true;
-    //private float helpMe;
-    //private GameObject player;
-    //private Vector3 playerHexTransformPosition;
-    //private Vector3 currentHexTransformPosition;
-    //private TurnManager turnManager;
-    //private Pathfinding pathfinding;
-    //private InputManager inputManager;
-    //private void Start()
-    //{
-    //    turnManager = GetComponent<TurnManager>();
-    //    pathfinding = GetComponent<Pathfinding>();
-    //    inputManager = GetComponent<InputManager>();
-    //}
-    //private void Update()
-    //{
-    //    if (moveCharacter)
-    //    {
-    //        Debug.Log("works?");
-    //        Debug.Log(player.transform.position);
-    //        player.transform.position = Vector3.Lerp(playerHexTransformPosition, currentHexTransformPosition, helpMe);
-    //        helpMe += Time.deltaTime;
-    //        if (player.transform.position == currentHexTransformPosition)
-    //        {
-    //            moveCharacter = false;
-    //            helpMe = Time.deltaTime;
-    //        }
-    //    }
-    //}
-    //public void MoveCharacterUsingLerp(GameObject _player, GameObject startHex, GameObject goalHex)
-    //{
-    //    player = _player;
-    //    playerHexTransformPosition = startHex.transform.position;
-    //    currentHexTransformPosition = goalHex.transform.position;
-    //    moveCharacter = true;
-    //}
-    //public void MoveToNewPosition()
-    //{
-    //    GameObject player = turnManager.GetCharacterInTurn();
-    //    GameObject playerHex = pathfinding.CharacterToHexPosition(player);
-    //    //moveCharacter
-    //    MoveCharacterUsingLerp(player, playerHex, inputManager.currentHex);
-    //    // player.transform.position = currentHex.transform.position;
-
-    //}
+    [SerializeField]
+    private float speed;
+    private float interpolationAmount;
+    private GameObject character;
+    private GameObject starterHex;
+    private GameObject nextHex;
+    private GameObject endHex;
+    private CombatAnimationManager combatAnimationManager;
+    private InputManager inputManager;
+    private Pathfinding pathfinding;
+    private TurnManager turnManager;
+    public bool MoveCharacter { get; set; }
+    public List<GameObject> MovementPath { get; set; }
+    private void Awake()
+    {
+        combatAnimationManager = GetComponent<CombatAnimationManager>();
+        inputManager = GetComponent<InputManager>();
+        pathfinding = GetComponent<Pathfinding>();
+        turnManager = GetComponent<TurnManager>();
+    }
+    private void Update()
+    {
+        if (MoveCharacter)
+        {
+            character = turnManager.GetCharacterInTurn();
+            character.transform.position = Vector3.Lerp(starterHex.transform.position, nextHex.transform.position, interpolationAmount);
+            interpolationAmount += Time.deltaTime * speed;
+            if (character.transform.position == nextHex.transform.position)
+            {
+                starterHex.GetComponent<HexProperties>().characterInHex = null;
+                nextHex.GetComponent<HexProperties>().characterInHex = character;
+                interpolationAmount = 0;
+                starterHex = MovementPath[0];
+                MovementPath.RemoveAt(0);
+                if (MovementPath.Count != 0)
+                {
+                    nextHex = MovementPath[0];
+                    combatAnimationManager.TurnTowardsTarget(character, nextHex);
+                }
+                else
+                {
+                    MoveCharacter = false;
+                    inputManager.ChangeCombatButtonsTo(true);
+                    combatAnimationManager.MoveAnimation(character.GetComponent<Animator>(), false);
+                }
+            }
+        }
+    }
+    public void MoveToNewPosition()
+    {
+        MoveCharacter = true;
+        inputManager.ChangeCombatButtonsTo(false);
+        character = turnManager.GetCharacterInTurn();
+        CalculatePath();
+        ChangeMovementValues(character);
+        combatAnimationManager.MoveAnimation(character.GetComponent<Animator>(), true);
+        combatAnimationManager.TurnTowardsTarget(character, nextHex);
+        GameObject previousHex = pathfinding.CharacterToHexPosition(character);
+        previousHex.GetComponent<HexProperties>().characterInHex = null;
+        nextHex.GetComponent<HexProperties>().characterInHex = character;
+        pathfinding.ClearAllHexes();
+        pathfinding.CharacterToHexPosition(nextHex).GetComponentInChildren<SpriteRenderer>().color = Color.white; //deixa o hex em que o personagem está ,branco
+        inputManager.MoveButtonPressed = false;
+    }
+    private void CalculatePath()
+    {
+        character = turnManager.GetCharacterInTurn();
+        starterHex = pathfinding.CharacterToHexPosition(character);
+        endHex = inputManager.currentHex;
+        MovementPath = pathfinding.ReturnShortestPathByBFS(starterHex, endHex);
+        nextHex = MovementPath[0];
+    }
+    private void ChangeMovementValues(GameObject character)
+    {
+        Stats characterStats = character.GetComponent<Stats>();
+        characterStats.currentMove -= MovementPath.Count;
+        inputManager.movementPointsText.text = characterStats.currentMove.ToString();
+    }
 }

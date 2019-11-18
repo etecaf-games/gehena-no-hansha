@@ -1,127 +1,40 @@
 ﻿using UnityEngine;
 public class CombatManager : MonoBehaviour
 {
-    public int attackDamage, defenseDamage, damageReduction, totalDamage, attackHits, attackMagicHits, attackCriticalHits, defenseHits, defenseMagicHits, defenseCriticalHits, minimumDamage;
-    public Stats attacker, defender;
-    public void Start()
+    private TurnManager turnManager;
+    private void Start()
     {
-        attacker = GetComponent<Stats>();
-        defender = GetComponent<Stats>();
+        turnManager = GetComponent<TurnManager>();
     }
-    public void Update()
+    public void Combat(GameObject attacker, GameObject defender)
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        Stats attackerStats = attacker.GetComponent<Stats>();
+        int attackerMisses = 0;
+        int attackerHits = 0;
+        int attackerMagicHits = 0;
+        int attackerCriticalHits = 0;
+        int minimumDamage;
+        int attackerTotalDamage;
+        int totalDamage;
+        for (int rolls = attackerStats.attack; rolls > 0; rolls--)//rola a quantidade de attack
         {
-            Attack(attacker.strength, attacker.attack, attacker.agility, attacker.magic);//3 attacks, 6 max
-            Defense(defender.strength, defender.resistance, defender.defense, defender.agility, defender.magic);//2 attacks, 5 max
-            totalDamage = attackDamage - damageReduction;
-            Debug.Log("danoTotal = " + totalDamage + " danoDeattack = " + attackDamage + " reducaoDeDano = " + damageReduction);
-            if (totalDamage < minimumDamage)
-            {
-                totalDamage = minimumDamage;
-            }
-            defender.healthPoints -= totalDamage;
-            attackDamage = 0; //reseta os danos
-            damageReduction = 0; //reseta os danos
-            if (defender.healthPoints <= 0)
-            {
-                Debug.Log("Morreu defender kkkk");
-            }
-        }
-        if (Input.GetKeyDown(KeyCode.V))
-        {
-            Attack(attacker.strength, attacker.attack, attacker.agility, attacker.magic);//3 attacks, 6 max
-            Defense(defender.strength, defender.resistance, defender.defense, defender.agility, defender.magic);//3 attacks, 6 max
-            totalDamage = attackDamage - damageReduction;
-            Debug.Log("danoTotal = " + totalDamage + " danoDeattack = " + attackDamage + " reducaoDeDano = " + damageReduction);
-            if (totalDamage < minimumDamage)
-            {
-                totalDamage = minimumDamage;
-            }
-            defender.healthPoints -= totalDamage;
-            attackDamage = 0; // reseta os danos
-            damageReduction = 0; //reseta os danos
-            if (defender.healthPoints <= 0)
-            {
-                Debug.Log("Morreu defender kkkk");
-            }
-        }
-    }
-    public void Defense(int defenderStrength, int defenderResistance, int defenderDefense, int defenderAgility, int defenderMagic)
-    {
-        int hits = 0, criticalHits = 0;
-        for (int rolls = defenderDefense; rolls > 0; rolls--)//rola a quantidade de defesa
-        {
-            int rollResult = Roll();
-            switch (rollResult)
+            int attackerRollResult = DiceRoll();
+            switch (attackerRollResult)
             {
                 case 1:
-                    Debug.Log("1 - Erro");
-                    break;
-                case 2:
-                    defenseHits++;
-                    Debug.Log("2 - Defesa");
-                    break;
-                case 3://acerto
-                    defenseHits++;
-                    Debug.Log("3 - Defesa");
-                    break;
-                case 4://elemento
-                    defenseMagicHits++;//elemento deve ser diferente
-                    Debug.Log("4 - magic");
-                    break;
-                case 5://hansha
-                    //defender.Hansha();
-                    Debug.Log("5 - HANSHA");
-                    break;
-                case 6:
-                    defenseDamage += defenderStrength;
-                    damageReduction += defenderResistance;
-                    if (criticalHits < defenderAgility)
-                    {
-                        criticalHits++;
-                        hits++;
-                        rolls++;
-                        Debug.Log("6 - Crítico +1 Dado");
-                    }
-                    else
-                    {
-                        Debug.Log("6 - Crítico sem dados");
-                    }
-                    break;
-            }
-        }
-        damageReduction = (defenseHits * defenderResistance) + (defenseMagicHits * defenderMagic) + (defenseCriticalHits * defenderResistance);
-        Debug.Log("Dano Reduzido: " + damageReduction);
-        Debug.Log("Dano Causado por críticos na defesa: " + defenseDamage);
-        Debug.Log("Fim da Rolagem");
-    }
-    public void Attack(int attackerStrength, int attackerAttack, int attackerAgility, int attackerMagic)
-    {
-        for (int rolls = attackerAttack; rolls > 0; rolls--)//rola a quantidade de attack
-        {
-            int rollResult = Roll();
-            switch (rollResult)
-            {
-                case 1:
+                    attackerMisses++;
                     Debug.Log("1 - ERRO");
                     break;
                 case 2:
-                    attackDamage += attackerStrength;
-                    attackerAttack++;
-                    minimumDamage++;
+                    attackerHits++;
                     Debug.Log("2 - Acerto");
                     break;
                 case 3:
-                    attackDamage += attackerStrength;
-                    attackerAttack++;
-                    minimumDamage++;
+                    attackerHits++;
                     Debug.Log("3 - Acerto");
                     break;
                 case 4:
-                    attackDamage += attackerMagic;
-                    attackMagicHits++;
-                    minimumDamage++;
+                    attackerMagicHits++;
                     Debug.Log("4 - Elemento");
                     break;
                 case 5:
@@ -129,12 +42,10 @@ public class CombatManager : MonoBehaviour
                     Debug.Log("5 - Hansha");
                     break;
                 case 6:
-                    attackDamage += attackerStrength;
-                    if (attackCriticalHits < attackerAgility)
+                    if (attackerCriticalHits < attackerStats.agility)
                     {
-                        attackCriticalHits++;
+                        attackerCriticalHits++;
                         rolls++;
-                        minimumDamage++;
                         Debug.Log("6 - Crítico +1 Dado");
                     }
                     else
@@ -144,13 +55,70 @@ public class CombatManager : MonoBehaviour
                     break;
             }
         }
-        attackDamage = (attackerAttack * attackerStrength) + (attackMagicHits * attackerMagic) + (attackCriticalHits * attackerStrength);
-        Debug.Log("Dano Causado: " + attackDamage);
-        Debug.Log("Fim da Rolagem");
+        minimumDamage = attackerHits + attackerMagicHits + attackerCriticalHits;
+        attackerTotalDamage = (attackerHits * attackerStats.strength) + (attackerMagicHits * attackerStats.magic) + (attackerCriticalHits * attackerStats.strength);
+
+        Stats defenderStats = defender.GetComponent<Stats>();
+        int defenderMisses = 0;
+        int defenderHits = 0;
+        int defenderMagicHits = 0;
+        int defenderCriticalHits = 0;
+        int defenderReducedDamage;
+        for (int rolls = defenderStats.defense; rolls > 0; rolls--)
+        {
+            int defenderRollResult = DiceRoll();
+            switch (defenderRollResult)
+            {
+                case 1:
+                    defenderMisses++;
+                    Debug.Log("1 - ERRO");
+                    break;
+                case 2:
+                    defenderHits++;
+                    Debug.Log("2 - Acerto");
+                    break;
+                case 3:
+                    defenderHits++;
+                    Debug.Log("3 - Acerto");
+                    break;
+                case 4:
+                    defenderMagicHits++;
+                    Debug.Log("4 - Elemento");
+                    break;
+                case 5:
+                    //attacker.Hansha();
+                    Debug.Log("5 - Hansha");
+                    break;
+                case 6:
+                    if (defenderCriticalHits < defenderStats.agility)
+                    {
+                        defenderCriticalHits++;
+                        rolls++;
+                        Debug.Log("6 - Crítico +1 Dado");
+                    }
+                    else
+                    {
+                        Debug.Log("6 - Crítico sem dados");
+                    }
+                    break;
+            }
+        }
+        defenderReducedDamage = (defenderHits * defenderStats.resistance) + (defenderMagicHits * defenderStats.magic) + (defenderCriticalHits * defenderStats.resistance);
+        totalDamage = attackerTotalDamage - defenderReducedDamage;
+        Debug.Log("attackerTotalDamage = " + attackerTotalDamage);
+        Debug.Log("defenderReducedDamage = " + defenderReducedDamage);
+        Debug.Log("totalDamage = " + totalDamage);
+        Debug.Log("minimumDamage = " + minimumDamage);
+        if (totalDamage < minimumDamage)
+        {
+            totalDamage = minimumDamage;
+        }
+        Debug.Log("totalDamage = " + totalDamage);
+        defenderStats.currentHealthPoints -= totalDamage;
+        turnManager.UpdateCombatUIValues(false);
     }
-    public int Roll()
+    private int DiceRoll()
     {
-        Random roll = new Random();
         int rollResult = Random.Range(1, 7);
         return rollResult;
     }

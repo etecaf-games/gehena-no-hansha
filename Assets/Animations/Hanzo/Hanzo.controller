@@ -9,68 +9,26 @@ AnimatorController:
   m_Name: Hanzo
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Parado
+  - m_Name: moving
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
-  - m_Name: Atacando
+  - m_Name: attacking
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: isAlive
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
-  - m_Name: Movendo
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: PoucaVida
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: Morto
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: Dano
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: Item
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: Habilidade
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: Revive
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: Invisivel
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: TurnosInvisivel
-    m_Type: 3
+  - m_Name: defending
+    m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
@@ -78,7 +36,7 @@ AnimatorController:
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
-    m_StateMachine: {fileID: 1107862833555150460}
+    m_StateMachine: {fileID: 1107135332559512830}
     m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
@@ -88,7 +46,63 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!1101 &1101055604102116874
+--- !u!1101 &1101097569114136514
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: defending
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: isAlive
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102064361393940706}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.1
+  m_TransitionOffset: 0
+  m_ExitTime: 0.9
+  m_HasExitTime: 0
+  m_HasFixedDuration: 0
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &1101156863966819540
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: defending
+    m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: isAlive
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102550961699142998}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.1
+  m_TransitionOffset: 0
+  m_ExitTime: 0.9
+  m_HasExitTime: 0
+  m_HasFixedDuration: 0
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &1101167726996302732
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,201 +111,20 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions: []
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102166567969639546}
+  m_DstState: {fileID: 1102555118054534326}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0.1
   m_TransitionOffset: 0
-  m_ExitTime: 0.8846154
+  m_ExitTime: 0.9
   m_HasExitTime: 1
-  m_HasFixedDuration: 1
+  m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!1101 &1101058765481668678
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Habilidade
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Parado
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Movendo
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Atacando
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: PoucaVida
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Morto
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Dano
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Item
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Invisivel
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Revive
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102358732737022050}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.5
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1101 &1101083186648316366
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 3
-    m_ConditionEvent: TurnosInvisivel
-    m_EventTreshold: 2
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102705943034397724}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.75
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1101 &1101202813679890562
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: Parado
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Atacando
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Movendo
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: PoucaVida
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Morto
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Dano
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Item
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: Habilidade
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Revive
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Invisivel
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102358732737022050}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.6875
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1101 &1101273200128161378
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: Parado
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Atacando
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Movendo
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: PoucaVida
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Morto
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Dano
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Item
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Habilidade
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Parado
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Parado
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102166567969639546}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.6875
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1101 &1101288648781607622
+--- !u!1101 &1101457479229152034
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -300,176 +133,20 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions: []
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102705943034397724}
+  m_DstState: {fileID: 1102555118054534326}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0.1
   m_TransitionOffset: 0
-  m_ExitTime: 0.85
+  m_ExitTime: 0.9
   m_HasExitTime: 1
-  m_HasFixedDuration: 1
+  m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!1101 &1101365436983296878
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: Parado
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Atacando
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Movendo
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: PoucaVida
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Morto
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: Dano
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Item
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Habilidade
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Revive
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Invisivel
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102758971948879740}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.5
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1101 &1101366695701741474
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: Parado
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Atacando
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Movendo
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: PoucaVida
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Morto
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: Dano
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Item
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Habilidade
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Revive
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Invisivel
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102758971948879740}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.6875
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1101 &1101392540654144510
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: Parado
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: Atacando
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Movendo
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: PoucaVida
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Morto
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Dano
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Item
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Habilidade
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Revive
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Invisivel
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102169805625577070}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.75
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1101 &1101404932778202136
+--- !u!1101 &1101562863186643106
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -478,50 +155,23 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Parado
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Atacando
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Movendo
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: PoucaVida
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Morto
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Dano
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Item
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Habilidade
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Revive
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Invisivel
+    m_ConditionEvent: moving
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102705943034397724}
+  m_DstState: {fileID: 1102353247043733620}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0.1
   m_TransitionOffset: 0
-  m_ExitTime: 0.6666666
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
+  m_ExitTime: 0.9
+  m_HasExitTime: 0
+  m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!1101 &1101480454110520662
+--- !u!1101 &1101563780484585962
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -530,50 +180,23 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: Parado
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Atacando
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Movendo
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: PoucaVida
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Morto
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Dano
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: Item
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Habilidade
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Revive
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Invisivel
+    m_ConditionEvent: moving
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102008885506072796}
+  m_DstState: {fileID: 1102555118054534326}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0.1
   m_TransitionOffset: 0
-  m_ExitTime: 0.5
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
+  m_ExitTime: 0.9
+  m_HasExitTime: 0
+  m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!1101 &1101499638516543952
+--- !u!1101 &1101818771896764752
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -582,711 +205,55 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Parado
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Atacando
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Movendo
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: PoucaVida
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Morto
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Dano
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Item
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Habilidade
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Revive
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Invisivel
+    m_ConditionEvent: attacking
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102705943034397724}
+  m_DstState: {fileID: 1102961685883217988}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0.1
   m_TransitionOffset: 0
-  m_ExitTime: 0.7692308
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
+  m_ExitTime: 0.9
+  m_HasExitTime: 0
+  m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!1101 &1101500252907615112
+--- !u!1101 &1101909706411650228
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Movendo
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Parado
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Atacando
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: PoucaVida
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Parado
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Parado
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Parado
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Parado
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Parado
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Parado
-    m_EventTreshold: 0
+  m_Conditions: []
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102699202398183136}
+  m_DstState: {fileID: 1102555118054534326}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0.1
   m_TransitionOffset: 0
-  m_ExitTime: 0.6875
+  m_ExitTime: 0.9
   m_HasExitTime: 1
-  m_HasFixedDuration: 1
+  m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!1101 &1101539164710753462
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: Parado
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Atacando
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Movendo
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: PoucaVida
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Morto
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Dano
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Item
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Habilidade
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Revive
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Invisivel
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102867323099983654}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.6875
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1101 &1101547266594058124
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: Parado
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Atacando
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Movendo
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: PoucaVida
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Morto
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Dano
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Item
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Habilidade
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Revive
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Invisivel
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102166567969639546}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.8947368
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1101 &1101619344393835522
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Morto
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Parado
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Habilidade
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Item
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Parado
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: PoucaVida
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Movendo
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Invisivel
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Dano
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Parado
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102944451352239134}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.5
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1101 &1101632589134577930
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Parado
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Atacando
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Movendo
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: PoucaVida
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Morto
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Dano
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Item
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Habilidade
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Revive
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Invisivel
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102705943034397724}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.625
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1101 &1101671722113215628
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: Parado
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: Atacando
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Movendo
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: PoucaVida
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Morto
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Dano
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Item
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Habilidade
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Revive
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Invisivel
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102169805625577070}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.6875
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1101 &1101805757770955416
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: Parado
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Atacando
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Movendo
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: PoucaVida
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Morto
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Dano
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Item
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Habilidade
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Revive
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: Invisivel
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102327449494253252}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.75
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1101 &1101821192262803518
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Revive
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Parado
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Atacando
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Movendo
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: PoucaVida
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Morto
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Dano
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Item
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Habilidade
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Invisivel
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102081049118943680}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.91176474
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1101 &1101847168542622530
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Parado
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Atacando
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Movendo
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: PoucaVida
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Morto
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Dano
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Item
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Habilidade
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Revive
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Invisivel
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102705943034397724}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.8947368
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1101 &1101873381627455320
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: Parado
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Atacando
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Movendo
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: PoucaVida
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Morto
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Dano
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: Item
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Habilidade
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Revive
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Invisivel
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102008885506072796}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.6875
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1101 &1101891185844352926
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Atacando
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Parado
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: PoucaVida
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Movendo
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Morto
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Dano
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Item
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Habilidade
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Revive
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Invisivel
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102169805625577070}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.5
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1101 &1101945473863415592
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Parado
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Atacando
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Movendo
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: PoucaVida
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Morto
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Dano
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Item
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Habilidade
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Revive
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Invisivel
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102705943034397724}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.6875
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1101 &1101960711988029156
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Morto
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102944451352239134}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.6875
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1102 &1102008885506072796
+--- !u!1102 &1102064361393940706
 AnimatorState:
   serializedVersion: 5
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: HanzoItem
+  m_Name: Dead
   m_Speed: 1
   m_CycleOffset: 0
-  m_Transitions:
-  - {fileID: 1101847168542622530}
-  - {fileID: 1101547266594058124}
+  m_Transitions: []
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
@@ -1296,24 +263,24 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: efec6f99acb5f074abc8e47112ba26f8, type: 2}
+  m_Motion: {fileID: 7400000, guid: a2a571c28088acb408d6cee0e9c0df5f, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &1102081049118943680
+--- !u!1102 &1102101797856759836
 AnimatorState:
   serializedVersion: 5
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: HanzoRevive
+  m_Name: Transform
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: 1101288648781607622}
+  - {fileID: 1101167726996302732}
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
@@ -1323,24 +290,24 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: af341137da6d95d4e9233cb3779475e5, type: 2}
+  m_Motion: {fileID: 7400000, guid: 229317dd050cd774cb7b1e0c034acc2b, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &1102151558754541422
+--- !u!1102 &1102353247043733620
 AnimatorState:
   serializedVersion: 5
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: HanzoTransform
+  m_Name: Walk
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: 1101499638516543952}
+  - {fileID: 1101563780484585962}
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
@@ -1350,28 +317,24 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 2cc113697c4cad5439a8f5fb44287d91, type: 2}
+  m_Motion: {fileID: 7400000, guid: 14e28bf1441070648837f8b3018af8e6, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &1102166567969639546
+--- !u!1102 &1102550961699142998
 AnimatorState:
   serializedVersion: 5
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: HanzoLowLife
+  m_Name: Damage
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: 1101480454110520662}
-  - {fileID: 1101365436983296878}
-  - {fileID: 1101058765481668678}
-  - {fileID: 1101891185844352926}
-  - {fileID: 1101619344393835522}
+  - {fileID: 1101909706411650228}
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
@@ -1381,24 +344,27 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: ddbb8d3b508a30444996cd827e06aa9a, type: 2}
+  m_Motion: {fileID: 7400000, guid: 534df4e216b91674b800e2d88bfe8baa, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &1102169805625577070
+--- !u!1102 &1102555118054534326
 AnimatorState:
   serializedVersion: 5
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: HanzoAtaque
+  m_Name: Idle
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: 1101404932778202136}
+  - {fileID: 1101562863186643106}
+  - {fileID: 1101818771896764752}
+  - {fileID: 1101156863966819540}
+  - {fileID: 1101097569114136514}
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
@@ -1408,25 +374,24 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: e056d49c488585542b1e9f94ac469273, type: 2}
+  m_Motion: {fileID: 7400000, guid: b7abb44cd5bc4e64f98310a33d581c37, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &1102327449494253252
+--- !u!1102 &1102961685883217988
 AnimatorState:
   serializedVersion: 5
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: HanzoInvisivel
+  m_Name: Attack
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: 1101083186648316366}
-  - {fileID: 1101392540654144510}
+  - {fileID: 1101457479229152034}
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
@@ -1436,182 +401,13 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 5017e6555a3dd4c48b9c37f6a448643a, type: 2}
+  m_Motion: {fileID: 7400000, guid: aab83b77526141c43a5a89bd4eb039f7, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &1102358732737022050
-AnimatorState:
-  serializedVersion: 5
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: HanzoHabilidade
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions:
-  - {fileID: 1101805757770955416}
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 79a2b669783a1b84b9e15fe214dc0011, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &1102699202398183136
-AnimatorState:
-  serializedVersion: 5
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: HanzoWalk
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions:
-  - {fileID: 1101632589134577930}
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 5589394b79000eb41b3b356ac187e6d1, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &1102705943034397724
-AnimatorState:
-  serializedVersion: 5
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: HanzoIddle
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions:
-  - {fileID: 1101671722113215628}
-  - {fileID: 1101366695701741474}
-  - {fileID: 1101202813679890562}
-  - {fileID: 1101873381627455320}
-  - {fileID: 1101539164710753462}
-  - {fileID: 1101960711988029156}
-  - {fileID: 1101500252907615112}
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: b6111e74ef05bd14e9ebdc7c7187e8bb, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &1102758971948879740
-AnimatorState:
-  serializedVersion: 5
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: HanzoDamage
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions:
-  - {fileID: 1101945473863415592}
-  - {fileID: 1101273200128161378}
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 43fac4f75a7e662438e4125826a233d9, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &1102867323099983654
-AnimatorState:
-  serializedVersion: 5
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: HanzoTransformLowLife
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions:
-  - {fileID: 1101055604102116874}
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: da63d3c154f29a644b0a0231b568d833, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &1102944451352239134
-AnimatorState:
-  serializedVersion: 5
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: HanzoDeath
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions:
-  - {fileID: 1101821192262803518}
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: a9be3b78c847b964db45e50c70b72312, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1107 &1107862833555150460
+--- !u!1107 &1107135332559512830
 AnimatorStateMachine:
   serializedVersion: 5
   m_ObjectHideFlags: 1
@@ -1621,48 +417,30 @@ AnimatorStateMachine:
   m_Name: Base Layer
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: 1102151558754541422}
-    m_Position: {x: 24, y: 216, z: 0}
+    m_State: {fileID: 1102555118054534326}
+    m_Position: {x: 12, y: 240, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 1102169805625577070}
-    m_Position: {x: -408, y: 240, z: 0}
+    m_State: {fileID: 1102353247043733620}
+    m_Position: {x: -24, y: 324, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 1102758971948879740}
-    m_Position: {x: -96, y: 552, z: 0}
+    m_State: {fileID: 1102961685883217988}
+    m_Position: {x: 276, y: 180, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 1102705943034397724}
-    m_Position: {x: 24, y: 336, z: 0}
+    m_State: {fileID: 1102101797856759836}
+    m_Position: {x: 24, y: 156, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 1102327449494253252}
-    m_Position: {x: -492, y: 444, z: 0}
+    m_State: {fileID: 1102550961699142998}
+    m_Position: {x: 216, y: 360, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 1102008885506072796}
-    m_Position: {x: 144, y: 564, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 1102944451352239134}
-    m_Position: {x: 588, y: 492, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 1102166567969639546}
-    m_Position: {x: -120, y: 864, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 1102867323099983654}
-    m_Position: {x: 576, y: 696, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 1102081049118943680}
-    m_Position: {x: 768, y: 348, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 1102358732737022050}
-    m_Position: {x: -540, y: 612, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 1102699202398183136}
-    m_Position: {x: 408, y: 252, z: 0}
+    m_State: {fileID: 1102064361393940706}
+    m_Position: {x: 240, y: 276, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 50, y: 20, z: 0}
-  m_EntryPosition: {x: 50, y: 120, z: 0}
+  m_EntryPosition: {x: 36, y: 108, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 1102151558754541422}
+  m_DefaultState: {fileID: 1102101797856759836}

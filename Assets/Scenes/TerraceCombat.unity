@@ -151,10 +151,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3121cde02bd58048a6b429837dafebf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasAttacked: 0
   turnIndex: 0
   movementPointsText: {fileID: 2128133689}
+  actionPointsText: {fileID: 0}
+  healthPointsText: {fileID: 0}
+  soulPointsText: {fileID: 0}
   bigIconArea: {fileID: 230890796}
   smallIconArea: {fileID: 156113305}
+  healthBar: {fileID: 0}
+  soulBar: {fileID: 0}
 --- !u!114 &98274056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,12 +198,18 @@ MonoBehaviour:
   hexLayer:
     serializedVersion: 2
     m_Bits: 256
+  currentHex: {fileID: 0}
   moveButtonPressed: 0
   attackButtonPressed: 0
   movementPointsText: {fileID: 2128133689}
   bigIconArea: {fileID: 230890796}
   smallIconArea: {fileID: 156113305}
   pauseBackground: {fileID: 1610331057}
+  moveButton: {fileID: 0}
+  attackButton: {fileID: 0}
+  itemButton: {fileID: 0}
+  skillButton: {fileID: 0}
+  finishButton: {fileID: 0}
 --- !u!114 &98274058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,8 +276,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9588b5ba99e5b04b85cbe00ec7aa09e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementLeft: 0
-  range: 0
 --- !u!114 &98274061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,6 +322,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c44f8e1d151f5c41b5adfa2ba9ed57b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveCharacter: 0
+  speed: 0
+  movementPath: []
 --- !u!82 &98274064
 AudioSource:
   m_ObjectHideFlags: 0
@@ -440,22 +453,22 @@ PrefabInstance:
     - target: {fileID: 3788540933472757771, guid: 8a6e51beed7513a4bbe22d78cbb075e8,
         type: 3}
       propertyPath: m_Name
-      value: Hellhound (2)
+      value: Hellhound
       objectReference: {fileID: 0}
     - target: {fileID: 3788540933472757773, guid: 8a6e51beed7513a4bbe22d78cbb075e8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3
+      value: 5.3
       objectReference: {fileID: 0}
     - target: {fileID: 3788540933472757773, guid: 8a6e51beed7513a4bbe22d78cbb075e8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.575
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3788540933472757773, guid: 8a6e51beed7513a4bbe22d78cbb075e8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3788540933472757773, guid: 8a6e51beed7513a4bbe22d78cbb075e8,
         type: 3}
@@ -746,11 +759,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1412627147416917045, guid: 6fc3c5cf135e8b640b453e812abe4d2c,
-        type: 3}
-      propertyPath: agility
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 6643283661181419186, guid: 6fc3c5cf135e8b640b453e812abe4d2c,
         type: 3}
       propertyPath: m_WasSpriteAssigned
@@ -771,6 +779,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FlipX
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1412627147416917045, guid: 6fc3c5cf135e8b640b453e812abe4d2c,
+        type: 3}
+      propertyPath: agility
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1922924011, guid: 6fc3c5cf135e8b640b453e812abe4d2c, type: 3}
       propertyPath: m_Controller
@@ -1977,11 +1990,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1412627147416917045, guid: 6fc3c5cf135e8b640b453e812abe4d2c,
-        type: 3}
-      propertyPath: agility
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 6643283661181419186, guid: 6fc3c5cf135e8b640b453e812abe4d2c,
         type: 3}
       propertyPath: m_WasSpriteAssigned
@@ -2002,6 +2010,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FlipX
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1412627147416917045, guid: 6fc3c5cf135e8b640b453e812abe4d2c,
+        type: 3}
+      propertyPath: agility
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1922924011, guid: 6fc3c5cf135e8b640b453e812abe4d2c, type: 3}
       propertyPath: m_Controller
@@ -5522,7 +5535,7 @@ PrefabInstance:
     - target: {fileID: 6643283661181419187, guid: 6fc3c5cf135e8b640b453e812abe4d2c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.8
+      value: -5.5
       objectReference: {fileID: 0}
     - target: {fileID: 6643283661181419187, guid: 6fc3c5cf135e8b640b453e812abe4d2c,
         type: 3}

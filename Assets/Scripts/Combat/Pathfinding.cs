@@ -5,14 +5,13 @@ public class Pathfinding : MonoBehaviour
     private MapGenerator mapGenerator;
     private InputManager inputManager;
     private TurnManager turnManager;
-    public int range;
     private void Start()
     {
         mapGenerator = GetComponent<MapGenerator>();
         inputManager = GetComponent<InputManager>();
         turnManager = GetComponent<TurnManager>();
     }
-    public void FindHexAvailableForMovement(int movementLeft)
+    public List<GameObject> FindHexesAvailableForMovement(int movementLeft)
     {
         GameObject currentCharacter = turnManager.GetCharacterInTurn();
         GameObject currentHex = CharacterToHexPosition(currentCharacter);
@@ -22,15 +21,15 @@ public class Pathfinding : MonoBehaviour
         {
             if (i == 0)
             {
-                adjacentHexes = FindAdjacentHexes(currentHex);
+                adjacentHexes = FindAdjacentHexes(currentHex,false);
             }
             else
             {
-                List<GameObject> tempHexes = new List<GameObject>();
-                foreach (var adjacentHex in adjacentHexes)
+                foreach (GameObject adjacentHex in adjacentHexes)
                 {
-                    tempHexes = FindAdjacentHexes(adjacentHex);
-                    foreach (var tempHex in tempHexes)
+                    List<GameObject> tempHexes = new List<GameObject>();
+                    tempHexes = FindAdjacentHexes(adjacentHex,false);
+                    foreach (GameObject tempHex in tempHexes)
                     {
                         if (!adjacentHexes.Contains(tempHex) && tempHex != currentHex)
                         {
@@ -41,57 +40,115 @@ public class Pathfinding : MonoBehaviour
             }
             adjacentHexes.AddRange(allHexes);
         }
+        return adjacentHexes;
+    }
+    public List<GameObject> FindHexesAvailableForAttack(int range)
+    {
+        GameObject currentCharacter = turnManager.GetCharacterInTurn();
+        GameObject currentHex = CharacterToHexPosition(currentCharacter);
+        List<GameObject> adjacentHexes = new List<GameObject>();
+        List<GameObject> allHexes = new List<GameObject>();
+        List<GameObject> gridHexesObjects = mapGenerator.gridHexesObjects;
+        bool hasNorthWestSight = true;
+        bool hasNorthEastSight = true;
+        bool hasWestSight = true;
+        bool hasEastSight = true;
+        bool hasSouthWestSight = true;
+        bool hasSouthEastSight = true;
+        for (int i = 1; i <= range; i++)
+        {
+            Vector3 currentHexPosition = currentHex.transform.position;
+            Vector3 northWestHexPosition = new Vector3(currentHexPosition.x - (0.6f * i), currentHexPosition.y + (0.525f * i), currentHexPosition.z + (0.9f * i));
+            Vector3 northEastHexPosition = new Vector3(currentHexPosition.x + (0.6f * i), currentHexPosition.y + (0.525f * i), currentHexPosition.z + (0.9f * i));
+            Vector3 westHexPosition = new Vector3(currentHexPosition.x - (1.2f * i), currentHexPosition.y, currentHexPosition.z);
+            Vector3 eastHexPosition = new Vector3(currentHexPosition.x + (1.2f * i), currentHexPosition.y, currentHexPosition.z);
+            Vector3 southWestHexPosition = new Vector3(currentHexPosition.x - (0.6f * i), currentHexPosition.y - (0.525f * i), currentHexPosition.z - (0.9f * i));
+            Vector3 southEastHexPosition = new Vector3(currentHexPosition.x + (0.6f * i), currentHexPosition.y - (0.525f * i), currentHexPosition.z - (0.9f * i));
+            foreach (GameObject hex in gridHexesObjects)
+            {
+                Vector3 hexPosition = hex.transform.position;
+                if (hex != currentHex)
+                {
+                    if (hexPosition == northWestHexPosition && hasNorthWestSight)
+                    {
+                        if (hex.gameObject.GetComponent<HexProperties>().characterInHex != null)
+                        {
+                            hasNorthWestSight = false;
+                        }
+                        allHexes.Add(hex);
+                    }
+                    else if (hexPosition == northEastHexPosition && hasNorthEastSight)
+                    {
+                        if (hex.gameObject.GetComponent<HexProperties>().characterInHex != null)
+                        {
+                            hasNorthEastSight = false;
+                        }
+                        allHexes.Add(hex);
+                    }
+                    else if (hexPosition == westHexPosition && hasWestSight)
+                    {
+                        if (hex.gameObject.GetComponent<HexProperties>().characterInHex != null)
+                        {
+                            hasWestSight = false;
+                        }
+                        allHexes.Add(hex);
+                    }
+                    else if (hexPosition == eastHexPosition && hasEastSight)
+                    {
+                        if (hex.gameObject.GetComponent<HexProperties>().characterInHex != null)
+                        {
+                            hasEastSight = false;
+                        }
+                        allHexes.Add(hex);
+                    }
+                    else if (hexPosition == southWestHexPosition && hasSouthWestSight)
+                    {
+                        if (hex.gameObject.GetComponent<HexProperties>().characterInHex != null)
+                        {
+                            hasSouthWestSight = false;
+                        }
+                        allHexes.Add(hex);
+                    }
+                    else if (hexPosition == southEastHexPosition && hasSouthEastSight)
+                    {
+                        if (hex.gameObject.GetComponent<HexProperties>().characterInHex != null)
+                        {
+                            hasSouthEastSight = false;
+                        }
+                        allHexes.Add(hex);
+                    }
+                }
+                adjacentHexes.AddRange(allHexes);
+            }
+        }
+        return adjacentHexes;
     }
     public void DisplayAvailableHexesToMove()
     {
         GameObject currentCharacter = turnManager.GetCharacterInTurn();
         GameObject currentHex = CharacterToHexPosition(currentCharacter);
-        List<GameObject> moveableHexes = new List<GameObject>();
-        foreach (var item in moveableHexes)
+        Stats currentCharacterStats = currentCharacter.GetComponent<Stats>();
+        List<GameObject> moveableHexes = FindHexesAvailableForMovement(currentCharacterStats.currentMove);
+        foreach (GameObject item in moveableHexes)
         {
-            //Debug.Log(item);
             item.GetComponent<HexProperties>().canMove = true;
             item.GetComponentInChildren<SpriteRenderer>().color = Color.yellow;
         }
         currentHex.GetComponentInChildren<SpriteRenderer>().color = Color.white;
     }
-    //public void DisplayAvailableHexesToAttack()
-    //{
-    //    GameObject currentCharacter = turnManager.GetCharacterInTurn();
-    //    GameObject currentHex = CharacterToHexPosition(currentCharacter);
-    //    List<GameObject> adjacentHexes = new List<GameObject>();
-    //    List<GameObject> allHexes = new List<GameObject>();
-    //    for (int i = 0; i < range; i++)
-    //    {
-    //        if (i == 0)
-    //        {
-    //            adjacentHexes = FindAdjacentHexes(currentHex);
-    //        }
-    //        else
-    //        {
-    //            List<GameObject> tempHexes = new List<GameObject>();
-    //            foreach (var adjacentHex in adjacentHexes)
-    //            {
-    //                tempHexes = FindAdjacentHexes(adjacentHex);
-    //                foreach (var tempHex in tempHexes)
-    //                {
-    //                    if (!adjacentHexes.Contains(tempHex) && tempHex != currentHex)
-    //                    {
-    //                        allHexes.Add(tempHex);
-    //                    }
-    //                }
-    //            }
-    //        }
-    //        adjacentHexes.AddRange(allHexes);
-    //    }
-    //    foreach (var item in adjacentHexes)
-    //    {
-    //        //Debug.Log(item);
-    //        item.GetComponent<HexProperties>().canAttack = true;
-    //        item.GetComponentInChildren<SpriteRenderer>().color = Color.red;
-    //    }
-    //    currentHex.GetComponentInChildren<SpriteRenderer>().color = Color.white;
-    //}
+    public void DisplayAvailableHexesToAttack()
+    {
+        GameObject currentCharacter = turnManager.GetCharacterInTurn();
+        GameObject currentHex = CharacterToHexPosition(currentCharacter);
+        Stats currentCharacterStats = currentCharacter.GetComponent<Stats>();
+        List<GameObject> attackableHexes = FindHexesAvailableForAttack(currentCharacterStats.range);
+        foreach (GameObject item in attackableHexes)
+        {
+            item.GetComponent<HexProperties>().canAttack = true;
+            item.GetComponentInChildren<SpriteRenderer>().color = Color.red;
+        }
+        currentHex.GetComponentInChildren<SpriteRenderer>().color = Color.white;
+    }
     public List<GameObject> ReturnShortestPathByBFS(GameObject startHex, GameObject goalHex)
     {
         Queue<GameObject> Q = new Queue<GameObject>();
@@ -115,7 +172,7 @@ public class Pathfinding : MonoBehaviour
                 shortestPath.RemoveAt(0);
                 return shortestPath;
             }
-            List<GameObject> adjacentHexes = FindAdjacentHexes(currentHex);
+            List<GameObject> adjacentHexes = FindAdjacentHexes(currentHex,false);
             foreach (GameObject adjacentHex in adjacentHexes)
             {
                 if (!discoveredNodes.Contains(adjacentHex))
@@ -131,7 +188,7 @@ public class Pathfinding : MonoBehaviour
         return shortestPath;
     }
     //Finds each hex adjacent to originHex
-    private List<GameObject> FindAdjacentHexes(GameObject currentHex)
+    public List<GameObject> FindAdjacentHexes(GameObject currentHex, bool ignoreCharacterInHex)
     {
         Vector3 currentHexPosition = currentHex.transform.position;
         List<GameObject> adjacentHexesList = new List<GameObject>();
@@ -147,45 +204,15 @@ public class Pathfinding : MonoBehaviour
         foreach (GameObject hex in gridHexesObjects)
         {
             Vector3 hexPosition = hex.transform.position;
-            if (hexPosition == northWestHexPosition)
+            if (hex.GetComponent<HexProperties>().characterInHex == null || ignoreCharacterInHex)
             {
-                adjacentHexesList.Add(hex);
-            }
-            else if (hexPosition == northEastHexPosition)
-            {
-                adjacentHexesList.Add(hex);
-            }
-            else if (hexPosition == westHexPosition)
-            {
-                adjacentHexesList.Add(hex);
-            }
-            else if (hexPosition == eastHexPosition)
-            {
-                adjacentHexesList.Add(hex);
-            }
-            else if (hexPosition == southWestHexPosition)
-            {
-                adjacentHexesList.Add(hex);
-            }
-            else if (hexPosition == southEastHexPosition)
-            {
-                adjacentHexesList.Add(hex);
+                if (hexPosition == northWestHexPosition || hexPosition == northEastHexPosition || hexPosition == westHexPosition || hexPosition == eastHexPosition || hexPosition == southWestHexPosition || hexPosition == southEastHexPosition)
+                {
+                    adjacentHexesList.Add(hex);
+                }
             }
         }
         return adjacentHexesList;
-    }
-    private void DisplayPath()
-    {
-        ClearAllHexes();
-        GameObject currentCharacter = turnManager.turnOrder[turnManager.turnIndex].Key;
-        GameObject currentHex = CharacterToHexPosition(currentCharacter);
-        List<GameObject> path = ReturnShortestPathByBFS(currentHex, inputManager.selectedGoal);
-        foreach (var item in path)
-        {
-            item.GetComponentsInChildren<SpriteRenderer>()[0].color = Color.yellow;
-        }
-        currentCharacter.GetComponentsInChildren<SpriteRenderer>()[0].color = Color.red;
-        inputManager.selectedGoal.GetComponentsInChildren<SpriteRenderer>()[0].color = Color.green;
     }
     public GameObject CharacterToHexPosition(GameObject character)
     {
@@ -216,19 +243,5 @@ public class Pathfinding : MonoBehaviour
             hexProperties.canMove = false;
             hexProperties.canAttack = false;
         }
-    }
-    private void CheckIfEnoughMovement(List<GameObject> path)
-    {
-        GameObject currentCharacter = turnManager.turnOrder[turnManager.turnIndex].Key;
-        Stats currentCharacterStats = currentCharacter.GetComponent<Stats>();
-        if (path.Count > currentCharacterStats.move)
-        {
-            Debug.Log("Impossivel");
-        }
-        else
-        {
-            Debug.Log("Possível");
-        }
-        //ao marcar o goal, faz o caminho até ele, se o caminho for maior que o move, nao permite!
     }
 }

@@ -6,43 +6,42 @@ public class InputManager : MonoBehaviour
     public GameObject selectedGoal;
     public Canvas canvas;
     public LayerMask hexLayer;
-    private GameObject currentHex;
+    public GameObject currentHex;
     private GameObject previousHex;
     private Pathfinding pathfinding;
     private TurnManager turnManager;
-    public bool moveButtonPressed = false;
-    public bool attackButtonPressed = false;
+    private CombatManager combatManager;
+    private CombatAnimationManager combatAnimationManager;
+    private CharacterMover characterMover;
     public Text movementPointsText;
     public Image bigIconArea;
     public Image smallIconArea;
     public GameObject pauseBackground;
+    public Button moveButton;
+    public Button attackButton;
+    public Button itemButton;
+    public Button skillButton;
+    public Button finishButton;
+    public bool MoveButtonPressed { get; set; } = false;
+    public bool AttackButtonPressed { get; set; } = false;
     private void Start()
     {
         pathfinding = GetComponent<Pathfinding>();
         turnManager = GetComponent<TurnManager>();
+        combatManager = GetComponent<CombatManager>();
+        combatAnimationManager = GetComponent<CombatAnimationManager>();
+        characterMover = GetComponent<CharacterMover>();
     }
     private void LateUpdate()
     {
-        if (moveButtonPressed)
+        if (MoveButtonPressed)
         {
             HighlightHexToMove();
         }
-        if (attackButtonPressed)
+        if (AttackButtonPressed)
         {
             HighlightHexToAttack();
         }
-    }
-    private void MoveToNewPosition()
-    {
-        GameObject player = turnManager.GetCharacterInTurn();
-        GameObject playerHex = pathfinding.CharacterToHexPosition(player);
-        turnManager.movementLeft -= pathfinding.ReturnShortestPathByBFS(playerHex, currentHex).Count;
-        movementPointsText.text = turnManager.movementLeft.ToString();
-        player.transform.position = currentHex.transform.position;
-        pathfinding.ClearAllHexes();
-        //pathfinding.DisplayAdjacentHexes();
-        pathfinding.CharacterToHexPosition(currentHex).GetComponentInChildren<SpriteRenderer>().color = Color.white; //deixa o hex em que o personagem está ,branco
-        moveButtonPressed = false;
     }
     public RaycastHit MousePositionToRaycastHit(LayerMask hexLayer)
     {
@@ -76,12 +75,14 @@ public class InputManager : MonoBehaviour
                     previousHex = currentHex;
                     currentHex = hit.collider.gameObject;
                 }
-                if (currentHex.GetComponent<HexProperties>().canMove)
+                HexProperties currentHexProperties = currentHex.GetComponent<HexProperties>();
+                if (currentHexProperties.canMove && currentHexProperties.characterInHex == null)
                 {
                     currentHex.GetComponentInChildren<SpriteRenderer>().color = Color.red;
+                    //combatAnimationManager.TurnTowardsTarget(turnManager.GetCharacterInTurn(), currentHex);
                     if (Input.GetMouseButtonDown(1))
                     {
-                        MoveToNewPosition();
+                        characterMover.MoveToNewPosition();
                     }
                 }
                 else
@@ -100,10 +101,6 @@ public class InputManager : MonoBehaviour
                     }
                 }
             }
-            else
-            {
-                Debug.Log("No Hex here");
-            }
         }
     }
     private void HighlightHexToAttack()
@@ -120,10 +117,16 @@ public class InputManager : MonoBehaviour
                 }
                 if (currentHex.GetComponent<HexProperties>().canAttack)
                 {
+                    //combatAnimationManager.TurnTowardsTarget(turnManager.GetCharacterInTurn(), currentHex);
                     currentHex.GetComponentInChildren<SpriteRenderer>().color = Color.green;
-                    if (Input.GetMouseButtonDown(1))
+                    if (currentHex.GetComponent<HexProperties>().characterInHex != null)
                     {
-                        Debug.Log("Attacking " + currentHex.name);
+                        if (Input.GetMouseButtonDown(1) && !turnManager.hasAttacked)
+                        {
+                            GameObject attacker = turnManager.GetCharacterInTurn();
+                            GameObject defender = currentHex.GetComponent<HexProperties>().characterInHex;
+                            AttackCharacter(attacker, defender);
+                        }
                     }
                 }
                 else
@@ -142,25 +145,14 @@ public class InputManager : MonoBehaviour
                     }
                 }
             }
-            else
-            {
-                Debug.Log("No Hex here");
-            }
         }
     }
     public void FinishButton()
     {
         pathfinding.ClearAllHexes();
-        GameObject currentCharacter = turnManager.GetCharacterInTurn();
-        currentCharacter.GetComponentInChildren<Canvas>().enabled = false;
         turnManager.NextTurn();
-        currentCharacter = turnManager.GetCharacterInTurn();
-        GameObject nextCharacter = turnManager.GetCharacterInNextTurn();
-        currentCharacter.GetComponentInChildren<Canvas>().enabled = true;
-        turnManager.movementLeft = currentCharacter.GetComponent<Stats>().move;
-        movementPointsText.text = turnManager.movementLeft.ToString();
-        bigIconArea.sprite = currentCharacter.GetComponent<Icon>().bigIcon;
-        smallIconArea.sprite = nextCharacter.GetComponent<Icon>().smallIcon;
+        turnManager.UpdateCombatUIValues(true);
+        turnManager.hasAttacked = false;
     }
     public void PauseButton()
     {
@@ -171,5 +163,22 @@ public class InputManager : MonoBehaviour
     {
         pauseBackground.SetActive(false);
         Time.timeScale = 1;
+    }
+    public void ChangeCombatButtonsTo(bool value)
+    {
+        moveButton.interactable = value;
+        attackButton.interactable = value;
+        itemButton.interactable = value;
+        skillButton.interactable = value;
+        finishButton.interactable = value;
+    }
+    public void AttackCharacter(GameObject attacker, GameObject defender)
+    {
+        Stats attackerStats = attacker.GetComponent<Stats>();
+        attackerStats.currentActionPoints -= 2;
+        combatManager.Combat(attacker, defender);
+        Animator attackerAnimator = attacker.GetComponent<Animator>();
+        Animator defenderAnimator = defender.GetComponent<Animator>();
+        combatAnimationManager.AttackAnimation(attackerAnimator, defenderAnimator);
     }
 }

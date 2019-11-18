@@ -1,21 +1,58 @@
 ﻿using UnityEngine;
-using System.Collections.Generic;
 public class CombatAnimationManager : MonoBehaviour
 {
-    private Animator playerAnimator;
-    private void Start()
+    public void AttackAnimation(Animator attackerAnimator, Animator defenderAnimator)
     {
-        playerAnimator = GameObject.FindWithTag("Player").GetComponent<Animator>();
-        foreach (GameObject item in GameObject.FindGameObjectsWithTag("Player"))
+        GameObject attacker = attackerAnimator.gameObject;
+        GameObject defender = defenderAnimator.gameObject;
+        attackerAnimator.SetTrigger("attacking");
+        TurnTowardsTarget(attacker, defender);
+        defenderAnimator.SetTrigger("defending");
+        TurnTowardsTarget(defenderAnimator.gameObject, attackerAnimator.gameObject);
+        if (defenderAnimator.gameObject.GetComponent<Stats>().currentHealthPoints > 0)
         {
-            playerAnimator = item.GetComponent<Animator>();
-            playerAnimator.SetBool("Parado", true);
-            playerAnimator.SetBool("Movendo", false);
+            defenderAnimator.SetBool("isAlive", true);
+        }
+        else
+        {
+            defenderAnimator.SetBool("isAlive", false);
         }
     }
-    public void Move()
+    public void EndAttackAnimation()
     {
-        playerAnimator.SetBool("Parado", false);
-        playerAnimator.SetBool("Movendo", true);
+        Camera.main.GetComponent<TurnManager>().hasAttacked = true;
+    }
+    public void MoveAnimation(Animator currentCharacter, bool isMoving)
+    {
+        currentCharacter.SetBool("moving", isMoving);
+    }
+    public void TurnTowardsTarget(GameObject character, GameObject target)
+    {
+        Vector3 characterPosition = character.transform.position;
+        Vector3 targetPosition = target.transform.position;
+        SpriteRenderer characterSprite = character.GetComponent<SpriteRenderer>();
+
+        if (characterPosition.x > targetPosition.x)//personagem está na direita do target
+        {
+            if (character.tag == "Enemy")
+            {
+                characterSprite.flipX = false;
+            }
+            else
+            {
+                characterSprite.flipX = true;
+            }
+        }
+        else if (characterPosition.x < targetPosition.x)
+        {
+            if (character.tag == "Enemy")
+            {
+                characterSprite.flipX = true;
+            }
+            else
+            {
+                characterSprite.flipX = false;
+            }
+        }
     }
 }

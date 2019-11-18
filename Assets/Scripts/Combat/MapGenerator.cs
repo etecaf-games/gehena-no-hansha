@@ -14,19 +14,33 @@ public class MapGenerator : MonoBehaviour
     public bool classroomFight = false;
     public bool corridorFight = false;
     public bool terraceFight = false;
+    private Pathfinding pathfinding;
     private void Start()
     {
-        if(classroomFight)
+        pathfinding = GetComponent<Pathfinding>();
+        if (classroomFight)
         {
             GenerateClassroomGrid();
         }
-        else if(corridorFight)
+        else if (corridorFight)
         {
             GenerateCorridorGrid();
         }
-        else if(terraceFight)
+        else if (terraceFight)
         {
             GenerateTerraceGrid();
+        }
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        foreach (GameObject player in players)
+        {
+            GameObject hexWithAPlayer = pathfinding.CharacterToHexPosition(player);
+            hexWithAPlayer.GetComponent<HexProperties>().characterInHex = player;
+        }
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (GameObject enemy in enemies)
+        {
+            GameObject hexWithAnEnemy = pathfinding.CharacterToHexPosition(enemy);
+            hexWithAnEnemy.GetComponent<HexProperties>().characterInHex = enemy;
         }
     }
     private void GenerateClassroomGrid()
@@ -368,11 +382,6 @@ public class MapGenerator : MonoBehaviour
         hexObject.name = "Hex (" + row + "," + column + ")" + " (" + gridHexesPositions.Count + ") ";
 
         hexObject.GetComponent<HexProperties>().initialHex = initialHex;
-
-        //if (initialHex)
-        //{
-        //    hexObject.GetComponentsInChildren<SpriteRenderer>()[0].color = Color.cyan;
-        //}
 
         gridHexesObjects.Add(hexObject);
     }

@@ -5,25 +5,24 @@ public class TurnManager : MonoBehaviour
 {
     public List<KeyValuePair<GameObject, int>> turnOrder = new List<KeyValuePair<GameObject, int>>();
     [HideInInspector]
+    public bool hasAttacked = false;
+    private bool isPlayerTurn = false;
     public int turnIndex = 0;
     public Text movementPointsText;
+    public Text actionPointsText;
+    public Text healthPointsText;
+    public Text soulPointsText;
     public Image bigIconArea;
     public Image smallIconArea;
-    public int movementLeft;
+    public Image healthBar;
+    public Image soulBar;
     private void Start()
     {
         turnOrder = DetermineTurnOrder();
-        GameObject currentCharacter = GetCharacterInTurn();
-        GameObject nextCharacter = GetCharacterInNextTurn();
-        movementLeft = currentCharacter.GetComponent<Stats>().move;
-        movementPointsText.text = movementLeft.ToString();
-        bigIconArea.sprite = currentCharacter.GetComponent<Icon>().bigIcon;
-        smallIconArea.sprite = nextCharacter.GetComponent<Icon>().smallIcon;
     }
     public List<KeyValuePair<GameObject, int>> DetermineTurnOrder()
     {
-        List<KeyValuePair<GameObject, int>> allAgilities = new List<KeyValuePair<GameObject, int>>();
-        allAgilities = GetAllAgilitiesInScene();
+        List<KeyValuePair<GameObject, int>> allAgilities = GetAllAgilitiesInScene();
 
         for (int i = 0; i < allAgilities.Count - 1; i++)
         {
@@ -99,85 +98,73 @@ public class TurnManager : MonoBehaviour
         }
         return agilitiesList;
     }
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            DebugShowTurnOrder();
-        }
-        if (Input.GetKeyDown(KeyCode.B))
-        {
-            NextRound();
-        }
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            NextTurn();
-        }
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            GetCharacterInTurn();
-        }
-    }
-    private void DebugShowTurnOrder()
-    {
-        Debug.Log("Turn Order: ");
-        int k = 0;
-        // print all element of list 
-        foreach (var value in turnOrder)
-        {
-            k++;
-            Debug.Log(k + "º: " + value.Key.name + " : " + value.Value + " ");
-        }
-    }
     private void NextRound()
     {
         if (turnIndex == turnOrder.Count - 1)//se for a vez da ultima pessoa a agir
         {
-            Debug.Log("Next Round");
             turnIndex = 0;
-        }
-        else if (turnIndex < turnOrder.Count)
-        {
-            Debug.Log("It is too soon to go to the next round");
-        }
-        else
-        {
-            Debug.Log("Something broke... the turn index is higher than the amount of playable characters in the scene");
         }
     }
     public void NextTurn()
     {
         if (turnIndex == turnOrder.Count - 1)
         {
-            Debug.Log("It is already the last person's turn");
             NextRound();
         }
         else if (turnIndex < turnOrder.Count)
         {
-            Debug.Log("Next Turn");
             turnIndex++;
-        }
-        else
-        {
-            Debug.Log("Something broke... the turn index is higher than the amount of playable characters in the scene");
         }
     }
     public GameObject GetCharacterInTurn()
     {
-        Debug.Log("It is " + turnOrder[turnIndex].Key.name + "'s turn");
         return turnOrder[turnIndex].Key;
     }
     public GameObject GetCharacterInNextTurn()
     {
         if (turnIndex == turnOrder.Count - 1)
         {
-            Debug.Log(turnOrder[0].Key);
             return turnOrder[0].Key;
         }
         else
         {
-            Debug.Log(turnOrder[turnIndex + 1].Key);
             return turnOrder[turnIndex + 1].Key;
         }
     }
+    public void UpdateCombatUIValues(bool nextTurn)
+    {
+        GameObject currentCharacter = GetCharacterInTurn();
+        GameObject nextCharacter = GetCharacterInNextTurn();
+        Stats currentCharacterStats = currentCharacter.GetComponent<Stats>();
+        int movementLeft;
+        int actionPointsLeft;
+        int maxHealthPoints;
+        int maxSoulPoints;
+        int currentHealthPoints;
+        int currentSoulPoints;
+        if (nextTurn)
+        {
+            currentCharacterStats.currentMove = currentCharacterStats.maxMove;
+            currentCharacterStats.currentActionPoints = currentCharacterStats.maxActionPoints;
+            movementLeft = currentCharacterStats.maxMove;
+            actionPointsLeft = currentCharacterStats.maxActionPoints;
+        }
+        else
+        {
+            movementLeft = currentCharacterStats.currentMove;
+            actionPointsLeft = currentCharacterStats.currentActionPoints;
+        }
+        maxHealthPoints = currentCharacterStats.maxHealthPoints;
+        maxSoulPoints = currentCharacterStats.maxSoulPoints;
+        currentHealthPoints = currentCharacterStats.currentHealthPoints;
+        currentSoulPoints = currentCharacterStats.currentSoulPoints;
+        healthBar.fillAmount = float.Parse(currentHealthPoints.ToString()) / float.Parse(maxHealthPoints.ToString());
+        movementPointsText.text = movementLeft.ToString();
+        actionPointsText.text = actionPointsLeft.ToString();
+        healthPointsText.text = "PV " + currentHealthPoints.ToString() + "/" + maxHealthPoints.ToString();
+        soulPointsText.text = "SP " + currentSoulPoints.ToString() + "/" + maxSoulPoints.ToString();
+        bigIconArea.sprite = currentCharacter.GetComponent<Icon>().bigIcon;
+        smallIconArea.sprite = nextCharacter.GetComponent<Icon>().smallIcon;
+    }
+
 }
