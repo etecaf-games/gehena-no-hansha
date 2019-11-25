@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 3788540933472757773}
   - component: {fileID: 3788540933472757770}
   - component: {fileID: 1918924421}
+  - component: {fileID: 7307181338056956947}
   - component: {fileID: 4092304114762541342}
-  - component: {fileID: 113116432}
-  - component: {fileID: 9206502748888397084}
   m_Layer: 0
   m_Name: Hellhound
   m_TagString: Enemy
@@ -102,6 +101,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7307181338056956947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3788540933472757771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40230d7b1037787449a8ea1976e9933a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bigIcon: {fileID: 0}
+  smallIcon: {fileID: 0}
 --- !u!114 &4092304114762541342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,29 +144,3 @@ MonoBehaviour:
   magic: 1
   vitality: 1
   spirit: 1
---- !u!114 &113116432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3788540933472757771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40230d7b1037787449a8ea1976e9933a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bigIcon: {fileID: 21300000, guid: e3808e68aecb3af489c2b14e9b70cb38, type: 3}
-  smallIcon: {fileID: 21300000, guid: e726fdbdbef60a141b2439d2fdef572a, type: 3}
---- !u!114 &9206502748888397084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3788540933472757771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b448fedbb3510ac46901223eaf2ea182, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

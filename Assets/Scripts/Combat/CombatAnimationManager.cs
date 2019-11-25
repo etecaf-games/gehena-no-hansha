@@ -20,7 +20,8 @@ public class CombatAnimationManager : MonoBehaviour
     }
     public void EndAttackAnimation()
     {
-        Camera.main.GetComponent<TurnManager>().hasAttacked = true;
+        TurnManager turnManager = Camera.main.GetComponent<TurnManager>();
+        turnManager.hasAttacked = true;
     }
     public void MoveAnimation(Animator currentCharacter, bool isMoving)
     {

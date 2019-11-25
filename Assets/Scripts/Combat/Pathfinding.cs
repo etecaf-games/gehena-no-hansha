@@ -21,14 +21,14 @@ public class Pathfinding : MonoBehaviour
         {
             if (i == 0)
             {
-                adjacentHexes = FindAdjacentHexes(currentHex,false);
+                adjacentHexes = FindAdjacentHexes(currentHex);
             }
             else
             {
                 foreach (GameObject adjacentHex in adjacentHexes)
                 {
                     List<GameObject> tempHexes = new List<GameObject>();
-                    tempHexes = FindAdjacentHexes(adjacentHex,false);
+                    tempHexes = FindAdjacentHexes(adjacentHex);
                     foreach (GameObject tempHex in tempHexes)
                     {
                         if (!adjacentHexes.Contains(tempHex) && tempHex != currentHex)
@@ -172,7 +172,7 @@ public class Pathfinding : MonoBehaviour
                 shortestPath.RemoveAt(0);
                 return shortestPath;
             }
-            List<GameObject> adjacentHexes = FindAdjacentHexes(currentHex,false);
+            List<GameObject> adjacentHexes = FindAdjacentHexes(currentHex);
             foreach (GameObject adjacentHex in adjacentHexes)
             {
                 if (!discoveredNodes.Contains(adjacentHex))
@@ -188,7 +188,7 @@ public class Pathfinding : MonoBehaviour
         return shortestPath;
     }
     //Finds each hex adjacent to originHex
-    public List<GameObject> FindAdjacentHexes(GameObject currentHex, bool ignoreCharacterInHex)
+    public List<GameObject> FindAdjacentHexes(GameObject currentHex)
     {
         Vector3 currentHexPosition = currentHex.transform.position;
         List<GameObject> adjacentHexesList = new List<GameObject>();
@@ -204,7 +204,7 @@ public class Pathfinding : MonoBehaviour
         foreach (GameObject hex in gridHexesObjects)
         {
             Vector3 hexPosition = hex.transform.position;
-            if (hex.GetComponent<HexProperties>().characterInHex == null || ignoreCharacterInHex)
+            if (hex.GetComponent<HexProperties>().characterInHex == null)
             {
                 if (hexPosition == northWestHexPosition || hexPosition == northEastHexPosition || hexPosition == westHexPosition || hexPosition == eastHexPosition || hexPosition == southWestHexPosition || hexPosition == southEastHexPosition)
                 {

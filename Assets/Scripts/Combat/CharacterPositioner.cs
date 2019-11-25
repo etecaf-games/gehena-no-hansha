@@ -4,14 +4,10 @@ public class CharacterPositioner : MonoBehaviour
 {
     private GameObject markedCharacter;
     private GameObject previousHex;
-    [SerializeField]
-    private LayerMask hexLayer;
-    [SerializeField]
-    private LayerMask characterLayer;
-    [SerializeField]
-    private GameObject gameScreen;
-    [SerializeField]
-    private GameObject characterPositioningScreen;
+    public LayerMask hexLayer;
+    public LayerMask characterLayer;
+    public GameObject gameScreen;
+    public GameObject characterPositioningScreen;
     private bool characterAtValidPosition = false;
     private TurnManager turnManager;
     private void Awake()
@@ -77,12 +73,15 @@ public class CharacterPositioner : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-                RaycastHit hit = HitCharacter();
-
-                if (hit.collider.gameObject.tag == "Player")
+                RaycastHit hit;
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                if (Physics.Raycast(ray, out hit, Mathf.Infinity, characterLayer))
                 {
-                    markedCharacter = hit.collider.gameObject;
-                    markedCharacter.GetComponent<SpriteRenderer>().color = Color.green;
+                    if (hit.collider.gameObject.tag == "Player")
+                    {
+                        markedCharacter = hit.collider.gameObject;
+                        markedCharacter.GetComponent<SpriteRenderer>().color = Color.green;
+                    }
                 }
             }
         }
@@ -94,16 +93,6 @@ public class CharacterPositioner : MonoBehaviour
         if (Physics.Raycast(ray, out hit, Mathf.Infinity, hexLayer))
         {
             //Debug.Log("hit something");
-        }
-        return hit;
-    }
-    private RaycastHit HitCharacter()
-    {
-        RaycastHit hit;
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out hit, Mathf.Infinity, characterLayer))
-        {
-            //hit something;
         }
         return hit;
     }

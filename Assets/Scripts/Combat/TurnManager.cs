@@ -3,10 +3,7 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 public class TurnManager : MonoBehaviour
 {
-    public List<KeyValuePair<GameObject, int>> turnOrder = new List<KeyValuePair<GameObject, int>>();
-    [HideInInspector]
     public bool hasAttacked = false;
-    private bool isPlayerTurn = false;
     public int turnIndex = 0;
     public Text movementPointsText;
     public Text actionPointsText;
@@ -16,6 +13,7 @@ public class TurnManager : MonoBehaviour
     public Image smallIconArea;
     public Image healthBar;
     public Image soulBar;
+    public List<KeyValuePair<GameObject, int>> turnOrder = new List<KeyValuePair<GameObject, int>>();
     private void Start()
     {
         turnOrder = DetermineTurnOrder();
@@ -107,6 +105,7 @@ public class TurnManager : MonoBehaviour
     }
     public void NextTurn()
     {
+        hasAttacked = false;
         if (turnIndex == turnOrder.Count - 1)
         {
             NextRound();
@@ -166,5 +165,4 @@ public class TurnManager : MonoBehaviour
         bigIconArea.sprite = currentCharacter.GetComponent<Icon>().bigIcon;
         smallIconArea.sprite = nextCharacter.GetComponent<Icon>().smallIcon;
     }
-
 }

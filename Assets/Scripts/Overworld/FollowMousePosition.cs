@@ -9,4 +9,4 @@ public class FollowMousePosition : MonoBehaviour
     {
         transform.position = Input.mousePosition;
 	}
-    }
+}

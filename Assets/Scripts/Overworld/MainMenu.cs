@@ -9,5 +9,13 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
- 
+    public void Creditos()
+    {
+        SceneManager.LoadScene("Creditos");
+    }
+
+    public void Sair()
+    {
+        Application.Quit();
+    }
 }

@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 public class CharacterMover : MonoBehaviour
 {
-    [SerializeField]
-    private float speed;
+    public float speed;
     private float interpolationAmount;
     private GameObject character;
     private GameObject starterHex;

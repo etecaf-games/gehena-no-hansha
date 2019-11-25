@@ -2,90 +2,100 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class Glenn : MonoBehaviour
 {
-
     public float velocidade = 1.5f;
     public SpriteRenderer spritePlayer;
-    public bool Furtividade = true;
-    public bool agil, confiavel, disciplinado = false;
-    public int SocialXp = 0;
-    public bool Furtivo = false;
-    public GameObject excalamacao;
-    // Start is called before the first frame update
+    public bool furtivo;
+    public bool agil, confiavel;
+    public int Xp;
+    public bool possoAndar = true;
+
+    private Animator GlennAnim;
+    private bool ToAndando = false;
+    public PartyManager PartyManager;
+    public Tutorial Tutorial;
+    public bool possoMudar = false;
+
+    public DialogueManager dialogueManager;
+    private void Awake()
+    {
+        GlennAnim = GetComponent<Animator>();
+    }
     void Start()
     {
-
+        Xp = GlobalControl.Instance.XpGlenn;
+        furtivo = GlobalControl.Instance.furtivo;
+        agil = GlobalControl.Instance.agil;
+        confiavel = GlobalControl.Instance.confiavel;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKey(KeyCode.K))
-        {
-            if (Furtividade == true)
-            {
-                Color Opacidade = spritePlayer.color;
-                Opacidade.a = 0.5f;
-                velocidade = 0.5f;
-                Furtivo = true;
-            }
-        }
-        else
-        {
-                velocidade = 1.5f;
-                Furtivo = false;
-        }
-        }
 
     void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.W))
+        if (ToAndando)
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y + velocidade * Time.fixedDeltaTime, transform.position.z);
+            GlennAnim.SetInteger("Transicao", 1);
         }
 
-        if (Input.GetKey(KeyCode.S))
+        else if (!ToAndando)
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y - velocidade * Time.fixedDeltaTime, transform.position.z);
+            GlennAnim.SetInteger("Transicao", 0);
         }
-
-        if (Input.GetKey(KeyCode.D))
+        if (!possoAndar)
         {
-            transform.position = new Vector3(transform.position.x + velocidade * Time.fixedDeltaTime, transform.position.y, transform.position.z);
-            spritePlayer.flipX = false;
+            ToAndando = false;
         }
-
-        if (Input.GetKey(KeyCode.A))
+        if (possoAndar)
         {
-            transform.position = new Vector3(transform.position.x - velocidade * Time.fixedDeltaTime, transform.position.y, transform.position.z);
-            spritePlayer.flipX = true;
+            if (Input.GetKey(KeyCode.W))
+            {
+                transform.position = new Vector3(transform.position.x, transform.position.y + velocidade * Time.fixedDeltaTime, transform.position.z);
+                ToAndando = true;
+            }
+            else
+            {
+                ToAndando = false;
+            }
+
+            if (Input.GetKey(KeyCode.S))
+            {
+                transform.position = new Vector3(transform.position.x, transform.position.y - velocidade * Time.fixedDeltaTime, transform.position.z);
+                ToAndando = true;
+            }
+
+            if (Input.GetKey(KeyCode.D))
+            {
+                transform.position = new Vector3(transform.position.x + velocidade * Time.fixedDeltaTime, transform.position.y, transform.position.z);
+                ToAndando = true;
+                spritePlayer.flipX = false;
+            }
+
+            if (Input.GetKey(KeyCode.A))
+            {
+                transform.position = new Vector3(transform.position.x - velocidade * Time.fixedDeltaTime, transform.position.y, transform.position.z);
+                ToAndando = true;
+                spritePlayer.flipX = true;
+            }
         }
     }
-
 
     void OnTriggerEnter2D(Collider2D quem)
     {
-        if (quem.tag == "Enemy" && Furtivo == false)
+        if (quem.tag == "Enemy")
         {
             SceneManager.LoadScene("CorridorCombat");
-        }
+            this.gameObject.GetComponent<Image>().enabled = false;
 
-        if (quem.tag == "Interagivel" || quem.tag == "Npc") 
-        {
-            excalamacao.SetActive(true);
-            
         }
-        
     }
 
-    void OnTriggerExit2D(Collider2D QUEM)
+    public void SavePlayer()
     {
-        if (QUEM.tag == "Npc" | QUEM.tag == "Interagivel")
-        {
-            excalamacao.SetActive(false);
-            
-        }
+        GlobalControl.Instance.XpGlenn = Xp;
+        GlobalControl.Instance.agil = agil;
+        GlobalControl.Instance.furtivo = furtivo;
+        GlobalControl.Instance.confiavel = confiavel;
     }
 }
 

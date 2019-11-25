@@ -5,45 +5,38 @@ using UnityEngine;
 public class CameraSegue : MonoBehaviour
 {
     public Transform Playertransform;
-    float limitedireita = 8.36f;
-    float limiteesquerda = -8.77f;
+    public float limitedireita;
+    public float limiteesquerda;
     public bool travaCamera;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        Playertransform = GameObject.FindWithTag("Player").transform;
     }
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        this.transform.position = new Vector3(Playertransform.position.x, this.transform.position.y, this.transform.position.z);
-
-        
-    }
-
-    private bool TravaNosLimitesHorizontais(float limiteEsquerda, float limiteDireita)
-    {
-        bool passouDosLimites = false;
-        if (Playertransform.position.x >= limiteDireita)
+        if (!travaCamera)
         {
-            transform.position = new Vector3(limiteDireita, transform.position.y, transform.position.z);
-            passouDosLimites = true;
-            
+            if (Playertransform.position.x <= limiteesquerda)
+            {
+                travaCamera = true;
+            }
+            else if (Playertransform.position.x >= limitedireita)
+            {
+                travaCamera = true;
+            }
         }
-        else if (Playertransform.position.x <= limiteEsquerda)
+        else if (Playertransform.position.x > limiteesquerda && Playertransform.position.x < limitedireita)
         {
-            transform.position = new Vector3(limiteEsquerda, transform.position.y, transform.position.z);
-            passouDosLimites = true;
+            travaCamera = false;
         }
-        return passouDosLimites;
     }
-    
     private void LateUpdate()
-{
-    travaCamera = TravaNosLimitesHorizontais(limiteesquerda,limitedireita);
-        if (!travaCamera){
-            this.transform.position = new Vector3(Playertransform.position.x, this.transform.position.y, this.transform.position.z);}
+    {
+        if (!travaCamera)
+        {
+            transform.position = new Vector3(Playertransform.position.x, this.transform.position.y, this.transform.position.z);
+        }
     }
 }
-

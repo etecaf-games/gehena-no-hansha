@@ -1,21 +1,15 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
-    public GameObject inventario, equips, pause;
+    public GameObject pause, tooltip, painelSlots, botaoVoltar;
+    public Image menuEquips;
     public List<Item> characterItems = new List<Item>();
     public ItemDatabase itemDatabase;
     public UIInventory inventoryUI;
 
-    void Start()
-    {
-        GiveItem(1);
-        GiveItem(0);
-        GiveItem(1);
-        GiveItem(2);
-        GiveItem(0);
-    }
     public void GiveItem(int id)
     {
         Item itemToAdd = itemDatabase.GetItem(id);
@@ -49,8 +43,10 @@ public class Inventory : MonoBehaviour
     }
     public void FechaInventario()
     {
-        inventario.SetActive(false);
-        equips.SetActive(false);
+        menuEquips.enabled = false;
+        botaoVoltar.SetActive(false);
+        painelSlots.SetActive(false);
+        tooltip.SetActive(false);
         pause.SetActive(true);
     }
 }

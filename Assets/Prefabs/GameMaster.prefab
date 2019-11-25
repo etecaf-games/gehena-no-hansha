@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3960682845712222064
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3960682845712222065}
+  - component: {fileID: 3960682845712222066}
+  - component: {fileID: 3960682845712222067}
+  m_Layer: 0
+  m_Name: GameMaster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3960682845712222065
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3960682845712222064}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.4436803, y: -2.1237173, z: -0.13774347}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3960682845712222066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3960682845712222064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c7100037f11f5447be9b2726c0c5fa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Mementos: 0
+  XpThiess: 0
+  vigoroso: 0
+  combatente: 0
+  irritado: 0
+  HPBaseHanzo: 3
+  SPBaseHanzo: 3
+  moveHanzo: 3
+  rangeHanzo: 2
+  actionPointsHanzo: 4
+  strengthHanzo: 2
+  attackHanzo: 3
+  resistanceHanzo: 1
+  defenseHanzo: 3
+  agilityHanzo: 3
+  magicHanzo: 2
+  vitalityHanzo: 1
+  spiritHanzo: 2
+  XpGlenn: 0
+  agil: 0
+  confiavel: 0
+  furtivo: 0
+  ganhouxp: 0
+  pegouGrampo: 0
+  falouThiess: 0
+  memento1: 0
+  entrouSala1: 0
+--- !u!114 &3960682845712222067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3960682845712222064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85310dcdc11cbeb4bb0ce0c8bbb1afb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pause: {fileID: 0}
+  tooltip: {fileID: 0}
+  painelSlots: {fileID: 0}
+  botaoVoltar: {fileID: 0}
+  menuEquips: {fileID: 0}
+  characterItems: []
+  itemDatabase: {fileID: 0}
+  inventoryUI: {fileID: 0}
