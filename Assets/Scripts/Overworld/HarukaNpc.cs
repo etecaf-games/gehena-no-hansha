@@ -5,25 +5,21 @@ using UnityEngine.UI;
 
 public class HarukaNpc : MonoBehaviour
 {
-    public Glenn glenn;
-    public Thiess thiess;
-    public ArmárioÁria armario;
     public PartyManager party;
     public GameObject exclamacao;
     public SpriteRenderer spriteHaruka;
     public Inventory inventoryscript;
-    public bool ganhouxp = false, pegouGrampo = false, falouThiess = false;
+    public bool falouThiess = false;
     public bool interacao = false;
     public Dialogo dialogo;
     public Dialogo dialogo2;
     public Dialogo dialogo3;
     public Dialogo dialogo4;
-    public DialogueManager dialogueManager;
+    private DialogueManager dialogueManager;
     // Start is called before the first frame update
     void Start()
     {
-        ganhouxp = GlobalControl.Instance.ganhouxp;
-        pegouGrampo = GlobalControl.Instance.pegouGrampo;
+        dialogueManager = FindObjectOfType<DialogueManager>();
         inventoryscript = FindObjectOfType<Inventory>();
     }
     // Update is called once per frame
@@ -35,19 +31,18 @@ public class HarukaNpc : MonoBehaviour
             {
                 if (party.liderDaParty == "Glenn")
                 {
-                    if (ganhouxp == false)
+                    if (GlobalControl.Instance.ganhouxp == false)
                     {
-                        glenn.Xp += 50;
-                        ganhouxp = true;
+                        GlobalControl.Instance.XpGlenn += 50;
+                        GlobalControl.Instance.ganhouxp = true;
                         GatilhoDialogo();
-                        SavePlayer();
+                        //SavePlayer();
                     }
-                    else if (ganhouxp == true && pegouGrampo == false)
+                    else if (GlobalControl.Instance.ganhouxp == true && GlobalControl.Instance.pegouGrampo == false)
                     {
-                        glenn.Xp += 25;
-                        pegouGrampo = true;
-                        armario.grampo = true;
-                        SavePlayer();
+                        GlobalControl.Instance.XpGlenn += 25;
+                        GlobalControl.Instance.pegouGrampo = true;
+                        //SavePlayer();
                         inventoryscript.GiveItem(8);
                         GatilhoDialogo2();
                     }
@@ -63,8 +58,8 @@ public class HarukaNpc : MonoBehaviour
                     {
                         GatilhoDialogo4();
                         falouThiess = true;
-                        thiess.Xp += 50;
-                        SavePlayer();
+                        GlobalControl.Instance.XpThiess += 50;
+                        //SavePlayer();
                     }
                     else
                     {
@@ -139,13 +134,13 @@ public class HarukaNpc : MonoBehaviour
         }
     }
 
-    public void SavePlayer()
-    {
-        GlobalControl.Instance.XpGlenn = glenn.Xp;
-        GlobalControl.Instance.XpThiess = thiess.Xp;
-        GlobalControl.Instance.pegouGrampo = pegouGrampo;
-        GlobalControl.Instance.ganhouxp = ganhouxp;
-        GlobalControl.Instance.falouThiess = falouThiess;
-    }
+    //public void SavePlayer()
+    //{
+    //    GlobalControl.Instance.XpGlenn = GlobalControl.Instance.XpGlenn;
+    //    GlobalControl.Instance.XpThiess = GlobalControl.Instance.XpThiess;
+    //    GlobalControl.Instance.pegouGrampo = pegouGrampo;
+    //    GlobalControl.Instance.ganhouxp = ganhouxp;
+    //    GlobalControl.Instance.falouThiess = falouThiess;
+    //}
 }
 

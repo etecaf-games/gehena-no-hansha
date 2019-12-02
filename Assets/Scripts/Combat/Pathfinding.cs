@@ -71,7 +71,7 @@ public class Pathfinding : MonoBehaviour
                 {
                     if (hexPosition == northWestHexPosition && hasNorthWestSight)
                     {
-                        if (hex.gameObject.GetComponent<HexProperties>().characterInHex != null)
+                        if (hex.gameObject.GetComponent<HexProperties>().CharacterInHex != null)
                         {
                             hasNorthWestSight = false;
                         }
@@ -79,7 +79,7 @@ public class Pathfinding : MonoBehaviour
                     }
                     else if (hexPosition == northEastHexPosition && hasNorthEastSight)
                     {
-                        if (hex.gameObject.GetComponent<HexProperties>().characterInHex != null)
+                        if (hex.gameObject.GetComponent<HexProperties>().CharacterInHex != null)
                         {
                             hasNorthEastSight = false;
                         }
@@ -87,7 +87,7 @@ public class Pathfinding : MonoBehaviour
                     }
                     else if (hexPosition == westHexPosition && hasWestSight)
                     {
-                        if (hex.gameObject.GetComponent<HexProperties>().characterInHex != null)
+                        if (hex.gameObject.GetComponent<HexProperties>().CharacterInHex != null)
                         {
                             hasWestSight = false;
                         }
@@ -95,7 +95,7 @@ public class Pathfinding : MonoBehaviour
                     }
                     else if (hexPosition == eastHexPosition && hasEastSight)
                     {
-                        if (hex.gameObject.GetComponent<HexProperties>().characterInHex != null)
+                        if (hex.gameObject.GetComponent<HexProperties>().CharacterInHex != null)
                         {
                             hasEastSight = false;
                         }
@@ -103,7 +103,7 @@ public class Pathfinding : MonoBehaviour
                     }
                     else if (hexPosition == southWestHexPosition && hasSouthWestSight)
                     {
-                        if (hex.gameObject.GetComponent<HexProperties>().characterInHex != null)
+                        if (hex.gameObject.GetComponent<HexProperties>().CharacterInHex != null)
                         {
                             hasSouthWestSight = false;
                         }
@@ -111,7 +111,7 @@ public class Pathfinding : MonoBehaviour
                     }
                     else if (hexPosition == southEastHexPosition && hasSouthEastSight)
                     {
-                        if (hex.gameObject.GetComponent<HexProperties>().characterInHex != null)
+                        if (hex.gameObject.GetComponent<HexProperties>().CharacterInHex != null)
                         {
                             hasSouthEastSight = false;
                         }
@@ -123,6 +123,7 @@ public class Pathfinding : MonoBehaviour
         }
         return adjacentHexes;
     }
+   
     public void DisplayAvailableHexesToMove()
     {
         GameObject currentCharacter = turnManager.GetCharacterInTurn();
@@ -149,6 +150,7 @@ public class Pathfinding : MonoBehaviour
         }
         currentHex.GetComponentInChildren<SpriteRenderer>().color = Color.white;
     }
+    
     public List<GameObject> ReturnShortestPathByBFS(GameObject startHex, GameObject goalHex)
     {
         Queue<GameObject> Q = new Queue<GameObject>();
@@ -204,7 +206,7 @@ public class Pathfinding : MonoBehaviour
         foreach (GameObject hex in gridHexesObjects)
         {
             Vector3 hexPosition = hex.transform.position;
-            if (hex.GetComponent<HexProperties>().characterInHex == null)
+            if (hex.GetComponent<HexProperties>().CharacterInHex == null)
             {
                 if (hexPosition == northWestHexPosition || hexPosition == northEastHexPosition || hexPosition == westHexPosition || hexPosition == eastHexPosition || hexPosition == southWestHexPosition || hexPosition == southEastHexPosition)
                 {
@@ -242,6 +244,7 @@ public class Pathfinding : MonoBehaviour
             HexProperties hexProperties = hex.GetComponent<HexProperties>();
             hexProperties.canMove = false;
             hexProperties.canAttack = false;
+            hexProperties.canSkill = false;
         }
     }
 }

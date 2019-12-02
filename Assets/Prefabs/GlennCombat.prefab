@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 6643283661181419187}
   - component: {fileID: 6643283661181419186}
   - component: {fileID: 1922924011}
-  - component: {fileID: 1412627147416917045}
   - component: {fileID: 9077034729860177148}
   - component: {fileID: 72928088}
   - component: {fileID: 3692789116281104796}
+  - component: {fileID: 6355427611065331970}
   m_Layer: 9
   m_Name: GlennCombat
   m_TagString: Player
@@ -32,8 +32,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 858398787}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -104,35 +103,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1412627147416917045
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6643283661181419196}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11fde51ef9348ca40b6322ead3182fa7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealthPoints: 0
-  currentHealthPoints: 0
-  maxSoulPoints: 0
-  currentSoulPoints: 0
-  maxMove: 0
-  currentMove: 0
-  range: 2
-  maxActionPoints: 0
-  currentActionPoints: 0
-  strength: 2
-  attack: 3
-  resistance: 1
-  defense: 3
-  agility: 3
-  magic: 2
-  vitality: 1
-  spirit: 2
 --- !u!114 &9077034729860177148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,133 +142,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bigIcon: {fileID: 21300000, guid: a8af28477d524f149ab46a5f1bcbc1ad, type: 3}
   smallIcon: {fileID: 21300000, guid: 3a5cc64565350444c9e635ac2a0bf4ae, type: 3}
---- !u!1001 &3333439804377355127
-PrefabInstance:
+--- !u!114 &6355427611065331970
+MonoBehaviour:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 6643283661181419187}
-    m_Modifications:
-    - target: {fileID: 3333439803623830283, guid: d585a6942a8ab1c49a615efab8d85a71,
-        type: 3}
-      propertyPath: m_Name
-      value: Action Wheel Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 3333439803623830324, guid: d585a6942a8ab1c49a615efab8d85a71,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3333439803623830324, guid: d585a6942a8ab1c49a615efab8d85a71,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3333439803623830324, guid: d585a6942a8ab1c49a615efab8d85a71,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3333439803623830324, guid: d585a6942a8ab1c49a615efab8d85a71,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3333439803623830324, guid: d585a6942a8ab1c49a615efab8d85a71,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3333439803623830324, guid: d585a6942a8ab1c49a615efab8d85a71,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3333439803623830324, guid: d585a6942a8ab1c49a615efab8d85a71,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3333439803623830324, guid: d585a6942a8ab1c49a615efab8d85a71,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3333439803623830324, guid: d585a6942a8ab1c49a615efab8d85a71,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3333439803623830324, guid: d585a6942a8ab1c49a615efab8d85a71,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3333439803623830324, guid: d585a6942a8ab1c49a615efab8d85a71,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3333439803623830324, guid: d585a6942a8ab1c49a615efab8d85a71,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3333439803623830324, guid: d585a6942a8ab1c49a615efab8d85a71,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.64
-      objectReference: {fileID: 0}
-    - target: {fileID: 3333439803623830324, guid: d585a6942a8ab1c49a615efab8d85a71,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3333439803623830324, guid: d585a6942a8ab1c49a615efab8d85a71,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3333439803623830324, guid: d585a6942a8ab1c49a615efab8d85a71,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3333439803623830324, guid: d585a6942a8ab1c49a615efab8d85a71,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3333439803623830324, guid: d585a6942a8ab1c49a615efab8d85a71,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3333439803623830324, guid: d585a6942a8ab1c49a615efab8d85a71,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3333439803623830324, guid: d585a6942a8ab1c49a615efab8d85a71,
-        type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3333439803623830324, guid: d585a6942a8ab1c49a615efab8d85a71,
-        type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3333439804020004826, guid: d585a6942a8ab1c49a615efab8d85a71,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AttackButton
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d585a6942a8ab1c49a615efab8d85a71, type: 3}
---- !u!224 &858398787 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3333439803623830324, guid: d585a6942a8ab1c49a615efab8d85a71,
-    type: 3}
-  m_PrefabInstance: {fileID: 3333439804377355127}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6643283661181419196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11fde51ef9348ca40b6322ead3182fa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Hanzo
+  maxHealthPoints: 1
+  currentHealthPoints: 1
+  maxSoulPoints: 1
+  currentSoulPoints: 1
+  maxMove: 1
+  currentMove: 1
+  range: 1
+  maxActionPoints: 1
+  currentActionPoints: 1
+  strength: 1
+  attack: 1
+  resistance: 1
+  defense: 1
+  agility: 1
+  magic: 1
+  vitality: 1
+  spirit: 1

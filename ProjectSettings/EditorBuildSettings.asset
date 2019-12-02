@@ -5,25 +5,43 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/ClassroomCombat.unity
-    guid: 1e2cc0c1a2fcc8c4fb362cba78f656cd
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 850b455758d59f948981bf270986277f
   - enabled: 1
+    path: Assets/Scenes/ClassroomCombat1.unity
+    guid: 1e2cc0c1a2fcc8c4fb362cba78f656cd
+  - enabled: 1
     path: Assets/Scenes/Corredor1.unity
     guid: 15b84b64b27794e4ebc36e18977b0dad
-  - enabled: 1
-    path: Assets/Scenes/CorridorCombat.unity
-    guid: 883ffa91b18cd2141a9f6b8c57dc84c9
   - enabled: 1
     path: Assets/Scenes/Classroom.unity
     guid: 14fc71d2ce20e2f409d43ff44f8f1f37
   - enabled: 1
     path: Assets/Scenes/Creditos.unity
     guid: 6a4b0fdd1eb71cf479d46ab4a59d204f
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TerraceCombat.unity
     guid: b8a836defe06b914b8479c9e5111dc23
+  - enabled: 1
+    path: Assets/Scenes/Terrace.unity
+    guid: abeefb930d6f87a47b58668850f19b7a
+  - enabled: 1
+    path: Assets/Scenes/Classroom2.unity
+    guid: 7eb22cacaecdd9641a68e9d996abfac6
+  - enabled: 1
+    path: Assets/Scenes/ClassroomCombat2.unity
+    guid: 1b0f8c9528c0fef4380f897b3c4c6dd5
+  - enabled: 1
+    path: Assets/Scenes/ComoJogar1.unity
+    guid: fe083fdff80e16c4791ead60a8988954
+  - enabled: 1
+    path: Assets/Scenes/Corredor2.unity
+    guid: f28c15ef072ea3647b04bbaf1b8e651f
+  - enabled: 1
+    path: Assets/Scenes/Sala1.unity
+    guid: 9faf4b22d1548a24a8b4665ff6d7e68c
+  - enabled: 1
+    path: Assets/Scenes/CorridorCombat.unity
+    guid: e8f0fd0755d90b249b2553d53d783d1b
   m_configObjects: {}

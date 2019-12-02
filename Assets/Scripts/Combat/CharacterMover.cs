@@ -30,8 +30,8 @@ public class CharacterMover : MonoBehaviour
             interpolationAmount += Time.deltaTime * speed;
             if (character.transform.position == nextHex.transform.position)
             {
-                starterHex.GetComponent<HexProperties>().characterInHex = null;
-                nextHex.GetComponent<HexProperties>().characterInHex = character;
+                starterHex.GetComponent<HexProperties>().CharacterInHex = null;
+                nextHex.GetComponent<HexProperties>().CharacterInHex = character;
                 interpolationAmount = 0;
                 starterHex = MovementPath[0];
                 MovementPath.RemoveAt(0);
@@ -59,8 +59,8 @@ public class CharacterMover : MonoBehaviour
         combatAnimationManager.MoveAnimation(character.GetComponent<Animator>(), true);
         combatAnimationManager.TurnTowardsTarget(character, nextHex);
         GameObject previousHex = pathfinding.CharacterToHexPosition(character);
-        previousHex.GetComponent<HexProperties>().characterInHex = null;
-        nextHex.GetComponent<HexProperties>().characterInHex = character;
+        previousHex.GetComponent<HexProperties>().CharacterInHex = null;
+        nextHex.GetComponent<HexProperties>().CharacterInHex = character;
         pathfinding.ClearAllHexes();
         pathfinding.CharacterToHexPosition(nextHex).GetComponentInChildren<SpriteRenderer>().color = Color.white; //deixa o hex em que o personagem está ,branco
         inputManager.MoveButtonPressed = false;

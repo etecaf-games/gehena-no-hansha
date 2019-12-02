@@ -4,21 +4,15 @@ public class ArmárioÁria : MonoBehaviour
 {
     public PartyManager party;
     private GameObject exclamacao;
-    public Glenn glenn;
-    public Thiess thiess;
     public HarukaNpc haruka;
     public Dialogo dialogoarmario1;
     public Dialogo dialogoarmario2;
-    public bool grampo = false;
     public bool interacao = false;
-    public bool memento = false;
 
     private Inventory inventoryScript;
     private DialogueManager dialogueManager;
     void Start()
     {
-        grampo = GlobalControl.Instance.pegouGrampo;
-        memento = GlobalControl.Instance.memento1;
 
         GameObject gameMaster = GameObject.Find("GameMaster");
         inventoryScript = gameMaster.GetComponent<Inventory>();
@@ -31,22 +25,21 @@ public class ArmárioÁria : MonoBehaviour
         {
             if (dialogueManager.PassandoDialogo == false)
             {
-                if (haruka.ganhouxp == true)
+                if (GlobalControl.Instance.ganhouxp == true)
                 {
-                    if (grampo == false)
+                    if (GlobalControl.Instance.pegouGrampo == false)
                     {
                         GatilhoDialogo();
                     }
                     else
                     {
-                        if (memento == false)
+                        if (GlobalControl.Instance.memento1 == false)
                         {
-                            glenn.Xp += 25;
-                            thiess.Xp += 25;
-                            memento = true;
+                           GlobalControl.Instance.XpGlenn += 25;
+                           GlobalControl.Instance.XpThiess += 25;
+                           GlobalControl.Instance.memento1 = true;
                             GlobalControl.Instance.Mementos++;
                             inventoryScript.GiveItem(6);
-                            SavePlayer();
                             GatilhoDialogo2();
                         }
                     }
@@ -74,7 +67,7 @@ public class ArmárioÁria : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D quem)
     {
-        if (quem.tag == "Player")
+        if (quem.tag == "Player" && GlobalControl.Instance.ganhouxp == true)
         {
             interacao = true;
             for (int i = 0; i < quem.transform.childCount; i++)
@@ -104,10 +97,5 @@ public class ArmárioÁria : MonoBehaviour
                 }
             }
         }
-    }
-
-    public void SavePlayer()
-    {
-        GlobalControl.Instance.memento1 = memento;
     }
 }

@@ -11,14 +11,14 @@ public class Item : ScriptableObject
     public Sprite icon;
     public Dictionary<string, int> stats = new Dictionary<string, int>();
     public bool equipavel;
-    public Item(int id, string title, string description, Dictionary<string, int> stats, bool equipavel)
+    public Item(int id, string title, string description, Dictionary<string, int> stats)
     {
         this.id = id;
         this.title = title;
         this.description = description;
         this.icon = Resources.Load<Sprite>("Sprites/Itens/" + title);
         this.stats = stats;
-        this.equipavel = equipavel;
+       
     }
 
     public Item(Item item)
@@ -28,7 +28,7 @@ public class Item : ScriptableObject
         this.description = item.description;
         this.icon = Resources.Load<Sprite>("Sprites/Itens/" + item.title);
         this.stats = item.stats;
-        this.equipavel = item.equipavel;
+       
     }
 }
 

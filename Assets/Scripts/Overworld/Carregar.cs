@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Carregar : MonoBehaviour
 {
-     public bool podeInteragir = false;
+    public bool podeInteragir = false;
     public GameObject Jogador;
     public string CenaACarregar;
 
@@ -12,7 +12,6 @@ public class Carregar : MonoBehaviour
     {
         if (podeInteragir == true && Input.GetKeyDown(KeyCode.E))
         {
-            Jogador.GetComponent<SalvarPosic>().SalvarLocalizacao();
             SceneManager.LoadScene(CenaACarregar);
             GlobalControl.entrouSala1 = true;
         }

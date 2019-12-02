@@ -10,7 +10,6 @@ public class PortaSalaCorredor1 : MonoBehaviour
         if (podeInteragir == true && Input.GetKeyDown(KeyCode.E))
         {
             SceneManager.LoadScene("Corredor1");
-            GlobalControl.entrouSala1 = false;
         }
     }
 

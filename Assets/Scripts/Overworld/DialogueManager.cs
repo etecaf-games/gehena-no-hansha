@@ -11,7 +11,9 @@ public class DialogueManager : MonoBehaviour
     public Text nameText;
     public Text dialogueText;
     private bool passandoDialogo = false;
-    private Glenn player;
+    //private Glenn glenn;
+    //private Thiess thiess;
+    private Player player;
 
     public bool PassandoDialogo
     {
@@ -22,15 +24,17 @@ public class DialogueManager : MonoBehaviour
         set
         {
             passandoDialogo = value;
-            player.possoAndar = !passandoDialogo;
-            Debug.Log(player.possoAndar);
+            Player.possoPausar = !passandoDialogo;
+            Player.possoAndar = !passandoDialogo;
+            Player.possoMudar = !passandoDialogo;
+            //Debug.Log(player.possoAndar);
         }
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        player = FindObjectOfType<Glenn>();
+        player = FindObjectOfType<Player>();
         sentences = new Queue<string>();
         nomes = new Queue<string>();
     }

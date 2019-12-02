@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Tutorial : MonoBehaviour
 {
-    private Glenn glenn;
-    public GameObject Tutorial01, Tutorial02;
-    public GameObject Fecha01, Fecha02;
+    //private Glenn glenn;
+    private Player player;
+    public GameObject Tutorial01, Tutorial02,TutorialMov;
+    public GameObject Fecha01, Fecha02,FechaMov;
     private bool tutorialAtivo = false;
-    public static bool fechei01 = false, fechei02 = false;
+    public bool fechei01 = false, fechei02 = false, fecheiMov = false;
 
     public bool TutorialAtivo
     {
@@ -19,26 +20,28 @@ public class Tutorial : MonoBehaviour
         set
         {
             tutorialAtivo = value;
-            glenn.possoAndar = !tutorialAtivo;
+            Player.possoAndar = !tutorialAtivo;
         }
     }
     private void Awake()
     {
-        glenn = FindObjectOfType<Glenn>();
+        player = FindObjectOfType<Player>();
     }
     void Update()
     {
-        if (glenn.transform.position.x >= -6.9 && !fechei01)
+        if (player.transform.position.x >= -6.9 && !fechei01 && GlobalControl.Instance.tutorial01 == false)
         {
             Tutorial01.SetActive(true);
+            GlobalControl.Instance.tutorial01 = true;
             TutorialAtivo = true;
         }
 
         //Por algum motivo ele tenque ativar o tutorial 2 primeiro que o 1
         //arrumei kkk??? coloquei o -6.9 lá em cima e o 8 aqui embaixo(estava ao contrário)
-        if (glenn.transform.position.x >= 8 && !fechei02)
+        if (player.transform.position.x >= 8 && !fechei02 && GlobalControl.Instance.tutorial02 == false)
         {
             Tutorial02.SetActive(true);
+            GlobalControl.Instance.tutorial02 = true;
             TutorialAtivo = true;
         }
     }
@@ -55,5 +58,12 @@ public class Tutorial : MonoBehaviour
         fechei02 = true;
         TutorialAtivo = false;
         Destroy(Tutorial02);
+    }
+
+    public void FechaMovi()
+    {
+        fecheiMov = true;
+        TutorialAtivo = false;
+        Destroy(TutorialMov);
     }
 }

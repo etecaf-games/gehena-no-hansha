@@ -29,13 +29,14 @@ public class TalentosGlenn : MonoBehaviour
 
     public void CompraConfiavel()
     {
-        if (glenn.Xp >= 50)
+        if (GlobalControl.Instance.XpGlenn >= 50)
         {
-            glenn.Xp -= 50;
-            glenn.confiavel = true;
+            GlobalControl.Instance.XpGlenn -= 50;
+            GlobalControl.Instance.rangeHanzo += 1;
+            GlobalControl.Instance.confiavel = true;
             AtualizaXP();
 
-            if (glenn.confiavel == true)
+            if (GlobalControl.Instance.confiavel == true)
             {
                 Destroy(BotaoCompra1);
             }
@@ -44,13 +45,13 @@ public class TalentosGlenn : MonoBehaviour
 
     public void CompraAgil()
     {
-        if (glenn.Xp >= 50)
+        if (GlobalControl.Instance.XpGlenn >= 50)
         {
-            glenn.Xp -= 50;
-            glenn.agil = true;
+            GlobalControl.Instance.XpGlenn -= 50;
+            GlobalControl.Instance.agil = true;
             AtualizaXP();
 
-            if (glenn.agil == true)
+            if (GlobalControl.Instance.agil == true)
             {
                 Destroy(BotaoCompra2);
             }
@@ -60,13 +61,13 @@ public class TalentosGlenn : MonoBehaviour
     //mudar as coisas do thiess, que ta com as coisas do glenn *
     public void CompraExplosivo()
     {
-        if (thiess.Xp >= 50)
+        if (GlobalControl.Instance.XpThiess >= 50)
         {
-            thiess.Xp -= 50;
-            thiess.confiavel = true;
+            GlobalControl.Instance.XpThiess -= 50;
+            GlobalControl.Instance.explosivo = true;
             AtualizaXP();
 
-            if (thiess.confiavel == true)
+            if (GlobalControl.Instance.explosivo == true)
             {
                 Destroy(BotaoCompra3);
             }
@@ -76,13 +77,13 @@ public class TalentosGlenn : MonoBehaviour
 
     public void CompraCombat()
     {
-        if (thiess.Xp >= 50)
+        if (GlobalControl.Instance.XpThiess >= 50)
         {
-            thiess.Xp -= 50;
-            thiess.agil = true;
+            GlobalControl.Instance.XpThiess -= 50;
+            GlobalControl.Instance.combatente = true;
             AtualizaXP();
 
-            if (thiess.agil == true)
+            if (GlobalControl.Instance.combatente == true)
             {
                 Destroy(BotaoCompra4);
             }
@@ -216,6 +217,6 @@ public class TalentosGlenn : MonoBehaviour
 
     public void AtualizaXP()
     {
-        valorSXP.text = "XP: " + glenn.Xp.ToString();
+        valorSXP.text = "XP: " + GlobalControl.Instance.XpGlenn.ToString();
     }
 }

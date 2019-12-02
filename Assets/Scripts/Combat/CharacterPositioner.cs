@@ -27,7 +27,7 @@ public class CharacterPositioner : MonoBehaviour
                     if (previousHex != null)
                     {
                         previousHex.GetComponentsInChildren<SpriteRenderer>()[0].color = Color.white;
-                        previousHex.GetComponent<HexProperties>().characterInHex = null;
+                        previousHex.GetComponent<HexProperties>().CharacterInHex = null;
                     }
                     if (hit.collider.gameObject.GetComponent<HexProperties>().initialHex)
                     {
@@ -55,12 +55,12 @@ public class CharacterPositioner : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 HexProperties hexProperties = previousHex.GetComponent<HexProperties>();
-                if (characterAtValidPosition && hexProperties.characterInHex == false)
+                if (characterAtValidPosition && hexProperties.CharacterInHex == false)
                 {
                     Debug.Log("cancela");
                     markedCharacter.GetComponent<SpriteRenderer>().color = Color.white;
                     previousHex.GetComponentsInChildren<SpriteRenderer>()[0].color = Color.white;
-                    previousHex.GetComponent<HexProperties>().characterInHex = markedCharacter;
+                    previousHex.GetComponent<HexProperties>().CharacterInHex = markedCharacter;
                     markedCharacter = null;
                 }
                 else
@@ -102,5 +102,17 @@ public class CharacterPositioner : MonoBehaviour
         characterPositioningScreen.SetActive(false);
         gameScreen.SetActive(true);
         turnManager.UpdateCombatUIValues(true);
+        GameObject currentCharacter = turnManager.GetCharacterInTurn();
+        if (currentCharacter.tag == "Enemy")
+        {
+            EnemyAI enemyAI = GetComponent<EnemyAI>();
+            Debug.Log("Vez de um inimigo");
+            enemyAI.InitiateAI();
+            turnManager.SetPlayerHUDActive(false);
+        }
+        else if (currentCharacter.tag == "Player")
+        {
+            turnManager.SetPlayerHUDActive(true);
+        }
     }
 }

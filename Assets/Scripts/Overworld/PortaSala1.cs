@@ -6,13 +6,14 @@ public class PortaSala1 : MonoBehaviour
 {
     public bool podeInteragir = false;
     public GameObject player;
-    public Transform porta;
+    public Transform porta1;
     // Start is called before the first frame update
     void Start()
     {
         if (GlobalControl.entrouSala1 == true)
         {
-            player.transform.position = porta.position;
+            player.transform.position = porta1.position;
+            GlobalControl.entrouSala1 = false;
         }
     }
 

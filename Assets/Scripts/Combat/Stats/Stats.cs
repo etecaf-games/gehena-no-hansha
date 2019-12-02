@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 public class Stats : MonoBehaviour
 {
+    public string characterName = null;
+
     public int maxHealthPoints;
     public int currentHealthPoints;
     public int maxSoulPoints;
@@ -19,6 +21,25 @@ public class Stats : MonoBehaviour
     public int magic;
     public int vitality;
     public int spirit;
+
+    private bool isAlive = true;
+    public bool IsAlive
+    {
+        get
+        {
+            return isAlive;
+        }
+        set
+        {
+            isAlive = value;
+            if (!value)
+            {
+                TurnManager turnManager = Camera.main.GetComponent<TurnManager>();
+                turnManager.RemoveCharacterFromQueue(gameObject);
+            }
+
+        }
+    }
 }
 public class Hanzo
 {

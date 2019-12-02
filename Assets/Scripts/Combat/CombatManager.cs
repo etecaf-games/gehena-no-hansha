@@ -23,34 +23,34 @@ public class CombatManager : MonoBehaviour
             {
                 case 1:
                     attackerMisses++;
-                    Debug.Log("1 - ERRO");
+                    ////Debug.Log("1 - ERRO");
                     break;
                 case 2:
                     attackerHits++;
-                    Debug.Log("2 - Acerto");
+                    ////Debug.Log("2 - Acerto");
                     break;
                 case 3:
                     attackerHits++;
-                    Debug.Log("3 - Acerto");
+                    ////Debug.Log("3 - Acerto");
                     break;
                 case 4:
                     attackerMagicHits++;
-                    Debug.Log("4 - Elemento");
+                    ////Debug.Log("4 - Elemento");
                     break;
                 case 5:
                     //attacker.Hansha();
-                    Debug.Log("5 - Hansha");
+                    ////Debug.Log("5 - Hansha");
                     break;
                 case 6:
                     if (attackerCriticalHits < attackerStats.agility)
                     {
                         attackerCriticalHits++;
                         rolls++;
-                        Debug.Log("6 - Crítico +1 Dado");
+                        //Debug.Log("6 - Crítico +1 Dado");
                     }
                     else
                     {
-                        Debug.Log("6 - Crítico sem dados");
+                        //Debug.Log("6 - Crítico sem dados");
                     }
                     break;
             }
@@ -71,49 +71,49 @@ public class CombatManager : MonoBehaviour
             {
                 case 1:
                     defenderMisses++;
-                    Debug.Log("1 - ERRO");
+                    //Debug.Log("1 - ERRO");
                     break;
                 case 2:
                     defenderHits++;
-                    Debug.Log("2 - Acerto");
+                    //Debug.Log("2 - Acerto");
                     break;
                 case 3:
                     defenderHits++;
-                    Debug.Log("3 - Acerto");
+                    //Debug.Log("3 - Acerto");
                     break;
                 case 4:
                     defenderMagicHits++;
-                    Debug.Log("4 - Elemento");
+                    //Debug.Log("4 - Elemento");
                     break;
                 case 5:
                     //attacker.Hansha();
-                    Debug.Log("5 - Hansha");
+                    //Debug.Log("5 - Hansha");
                     break;
                 case 6:
                     if (defenderCriticalHits < defenderStats.agility)
                     {
                         defenderCriticalHits++;
                         rolls++;
-                        Debug.Log("6 - Crítico +1 Dado");
+                        //Debug.Log("6 - Crítico +1 Dado");
                     }
                     else
                     {
-                        Debug.Log("6 - Crítico sem dados");
+                        //Debug.Log("6 - Crítico sem dados");
                     }
                     break;
             }
         }
         defenderReducedDamage = (defenderHits * defenderStats.resistance) + (defenderMagicHits * defenderStats.magic) + (defenderCriticalHits * defenderStats.resistance);
         totalDamage = attackerTotalDamage - defenderReducedDamage;
-        Debug.Log("attackerTotalDamage = " + attackerTotalDamage);
-        Debug.Log("defenderReducedDamage = " + defenderReducedDamage);
-        Debug.Log("totalDamage = " + totalDamage);
-        Debug.Log("minimumDamage = " + minimumDamage);
+        //Debug.Log("attackerTotalDamage = " + attackerTotalDamage);
+        //Debug.Log("defenderReducedDamage = " + defenderReducedDamage);
+        //Debug.Log("totalDamage = " + totalDamage);
+        //Debug.Log("minimumDamage = " + minimumDamage);
         if (totalDamage < minimumDamage)
         {
             totalDamage = minimumDamage;
         }
-        Debug.Log("totalDamage = " + totalDamage);
+        //Debug.Log("totalDamage = " + totalDamage);
         defenderStats.currentHealthPoints -= totalDamage;
         turnManager.UpdateCombatUIValues(false);
     }

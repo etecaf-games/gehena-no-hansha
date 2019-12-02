@@ -18,10 +18,21 @@ public class CombatAnimationManager : MonoBehaviour
             defenderAnimator.SetBool("isAlive", false);
         }
     }
-    public void EndAttackAnimation()
+    public void TakeDamage(Animator defenderAnimator)
     {
-        TurnManager turnManager = Camera.main.GetComponent<TurnManager>();
-        turnManager.hasAttacked = true;
+        defenderAnimator.SetTrigger("defending");
+        if (defenderAnimator.gameObject.GetComponent<Stats>().currentHealthPoints > 0)
+        {
+            defenderAnimator.SetBool("isAlive", true);
+        }
+        else
+        {
+            defenderAnimator.SetBool("isAlive", false);
+        }
+    }
+    public void FenrirSkill01Animation(Animator fenrirAnimator)
+    {
+        fenrirAnimator.SetTrigger("skill01");
     }
     public void MoveAnimation(Animator currentCharacter, bool isMoving)
     {

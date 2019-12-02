@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 public class InputManager : MonoBehaviour
 {
     [HideInInspector]
@@ -22,8 +23,38 @@ public class InputManager : MonoBehaviour
     public Button itemButton;
     public Button skillButton;
     public Button finishButton;
-    public bool MoveButtonPressed { get; set; } = false;
-    public bool AttackButtonPressed { get; set; } = false;
+    private bool moveButtonPressed = false;
+    private bool attackButtonPressed = false;
+    public bool MoveButtonPressed
+    {
+        get
+        {
+            return moveButtonPressed;
+        }
+        set
+        {
+            moveButtonPressed = value;
+            if (moveButtonPressed)
+            {
+                attackButtonPressed = false;
+            }
+        }
+    }
+    public bool AttackButtonPressed
+    {
+        get
+        {
+            return attackButtonPressed;
+        }
+        set
+        {
+            attackButtonPressed = value;
+            if (attackButtonPressed)
+            {
+                moveButtonPressed = false;
+            }
+        }
+    }
     private void Start()
     {
         pathfinding = GetComponent<Pathfinding>();
@@ -76,11 +107,11 @@ public class InputManager : MonoBehaviour
                     currentHex = hit.collider.gameObject;
                 }
                 HexProperties currentHexProperties = currentHex.GetComponent<HexProperties>();
-                if (currentHexProperties.canMove && currentHexProperties.characterInHex == null)
+                if (currentHexProperties.canMove && currentHexProperties.CharacterInHex == null)
                 {
                     currentHex.GetComponentInChildren<SpriteRenderer>().color = Color.red;
                     //combatAnimationManager.TurnTowardsTarget(turnManager.GetCharacterInTurn(), currentHex);
-                    if (Input.GetMouseButtonDown(1))
+                    if (Input.GetMouseButtonDown(0))
                     {
                         characterMover.MoveToNewPosition();
                     }
@@ -119,13 +150,19 @@ public class InputManager : MonoBehaviour
                 {
                     //combatAnimationManager.TurnTowardsTarget(turnManager.GetCharacterInTurn(), currentHex);
                     currentHex.GetComponentInChildren<SpriteRenderer>().color = Color.green;
-                    if (currentHex.GetComponent<HexProperties>().characterInHex != null)
+                    if (currentHex.GetComponent<HexProperties>().CharacterInHex != null)
                     {
-                        if (Input.GetMouseButtonDown(1) && !turnManager.hasAttacked)
+                        if (Input.GetMouseButtonDown(0) && !turnManager.HasAttacked)
                         {
-                            GameObject attacker = turnManager.GetCharacterInTurn();
-                            GameObject defender = currentHex.GetComponent<HexProperties>().characterInHex;
-                            AttackCharacter(attacker, defender);
+                            GameObject defender = currentHex.GetComponent<HexProperties>().CharacterInHex;
+                            if (defender.tag == "Enemy")
+                            {
+                                turnManager.HasAttacked = true;
+
+                                GameObject attacker = turnManager.GetCharacterInTurn();
+
+                                AttackCharacter(attacker, defender);
+                            }
                         }
                     }
                 }
@@ -147,12 +184,13 @@ public class InputManager : MonoBehaviour
             }
         }
     }
+    
     public void FinishButton()
     {
         pathfinding.ClearAllHexes();
         turnManager.NextTurn();
         turnManager.UpdateCombatUIValues(true);
-        turnManager.hasAttacked = false;
+        turnManager.HasAttacked = false;
     }
     public void PauseButton()
     {
@@ -175,10 +213,19 @@ public class InputManager : MonoBehaviour
     public void AttackCharacter(GameObject attacker, GameObject defender)
     {
         Stats attackerStats = attacker.GetComponent<Stats>();
+        Stats defenderStats = defender.GetComponent<Stats>();
         attackerStats.currentActionPoints -= 2;
         combatManager.Combat(attacker, defender);
         Animator attackerAnimator = attacker.GetComponent<Animator>();
         Animator defenderAnimator = defender.GetComponent<Animator>();
         combatAnimationManager.AttackAnimation(attackerAnimator, defenderAnimator);
+        if (defenderStats.currentHealthPoints > 0)
+        {
+            defenderStats.IsAlive = true;
+        }
+        else
+        {
+            defenderStats.IsAlive = false;
+        }
     }
 }

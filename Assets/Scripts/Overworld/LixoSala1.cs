@@ -10,14 +10,12 @@ public class LixoSala1 : MonoBehaviour
     public Thiess thiess;
     public Inventory inventoryscript;
     public Dialogo dialogo;
-    public bool jaInteragiu = false;
     private DialogueManager dialogueManager;
     public bool interacao = false;
     // Start is called before the first frame update
     void Start()
     {
         dialogueManager = FindObjectOfType<DialogueManager>();
-        jaInteragiu = GlobalControl.Instance.olhouLixo;
         inventoryscript = FindObjectOfType<Inventory>();
     }
 
@@ -28,10 +26,12 @@ public class LixoSala1 : MonoBehaviour
         {
             if (dialogueManager.PassandoDialogo == false)
             {
-                if (jaInteragiu == false)
+                if (GlobalControl.Instance.olhouLixo == false )
                 {
                     GlobalControl.Instance.XpGlenn += 25;
                     GlobalControl.Instance.XpThiess += 25;
+                    GlobalControl.Instance.olhouLixo = true;
+                    GlobalControl.Instance.Mementos++;
                     GatilhoDialogo();
                     inventoryscript.GiveItem(9);
                 }
@@ -56,11 +56,11 @@ public class LixoSala1 : MonoBehaviour
             for (int i = 0; i < quem.transform.childCount; i++)
             {
                 Transform filho = quem.transform.GetChild(i);
-                if (filho.name == "exclamacao_v1")
-                {
-                    GameObject exclamacao = filho.gameObject;
-                    exclamacao.SetActive(true);
-                }
+                //if (filho.name == "exclamacao_v1")
+                //{
+                //    GameObject exclamacao = filho.gameObject;
+                //    exclamacao.SetActive(true);
+                //}
             }
         }
     }
@@ -72,12 +72,12 @@ public class LixoSala1 : MonoBehaviour
             interacao = false;
             for (int i = 0; i < quem.transform.childCount; i++)
             {
-                Transform filho = quem.transform.GetChild(i);
-                if (filho.name == "exclamacao_v1")
-                {
-                    GameObject exclamacao = filho.gameObject;
-                    exclamacao.SetActive(false);
-                }
+                //Transform filho = quem.transform.GetChild(i);
+                //if (filho.name == "exclamacao_v1")
+                //{
+                //    GameObject exclamacao = filho.gameObject;
+                //    exclamacao.SetActive(false);
+                //}
             }
         }
     }

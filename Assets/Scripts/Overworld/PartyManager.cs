@@ -5,17 +5,22 @@ using UnityEngine.UI;
 
 public class PartyManager : MonoBehaviour
 {
+    public Inventory inventario;
     public string liderDaParty = "Glenn";
     private bool pause = false;
-    public GameObject menuPause, menuTalentos, carinhaItem;
-    //public Image menuEquips;
-
+    public GameObject menuPause, menuTalentos, statusHanzo, statusFenrir, menuSkills;
+    public Image menuEquips, botaoVoltar, Slots;
+    //public DialogueManager dialogueManager;
+    public GameObject carinha, furry;
     public Glenn glenn;
-    public Thiess thiess;
+    private Player player;
+    //public Thiess thiess;
+ 
     private void Awake()
     {
+        player = FindObjectOfType<Player>();
         glenn = GetComponentInChildren<Glenn>(true);
-        thiess = GetComponentInChildren<Thiess>(true);
+        //thiess = GetComponentInChildren<Thiess>(true);
     }
     public bool Pause
     {
@@ -26,56 +31,59 @@ public class PartyManager : MonoBehaviour
         set
         {
             pause = value;
-            glenn.possoAndar = true;
+            Player.possoAndar = true;
         }
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && Player.possoPausar == true)
         {
             if (Pause == true)
             {
                 Pause = false;
-                //menuPause.SetActive(false);
-                //menuEquips.enabled = false;
-                //menuTalentos.SetActive(false);
-
-                glenn.possoAndar = true;
-                thiess.possoAndar = true;
-                //carinhaItem.SetActive(false);
+                menuSkills.SetActive(false);
+                menuPause.SetActive(false);
+                menuEquips.enabled = false;
+                menuTalentos.SetActive(false);
+                statusHanzo.SetActive(false);
+                statusFenrir.SetActive(false);
+                inventario.FechaInventario();
+                Player.possoAndar = true;
+                //thiess.possoAndar = true;
             }
             else
             {
                 Pause = true;
-                //menuPause.SetActive(true);
+                menuPause.SetActive(true);
 
-                glenn.possoAndar = false;
-                thiess.possoAndar = false;
+                Player.possoAndar = false;
+                //thiess.possoAndar = false;
                 //carinhaItem.SetActive(true);
             }
         }
 
         if (Input.GetKeyDown(KeyCode.J) || Input.GetKeyDown(KeyCode.Tab))
         {
-            if (liderDaParty == "Glenn" && (glenn.possoAndar || thiess.possoAndar))
+            if (liderDaParty == "Glenn" && (Player.possoMudar))
             {
                 liderDaParty = "Thiess";
                 Debug.Log("O lider da party é " + liderDaParty);
-                thiess.gameObject.SetActive(true);
-                thiess.transform.position = new Vector3(glenn.transform.position.x, glenn.transform.position.y, glenn.transform.position.z);
+                
+                furry.SetActive(true);
+                furry.transform.position = new Vector3(carinha.transform.position.x, carinha.transform.position.y, carinha.transform.position.z);
 
-                glenn.gameObject.SetActive(false);
+                carinha.gameObject.SetActive(false);
 
             }
 
-            else if (liderDaParty == "Thiess" && (glenn.possoAndar || thiess.possoAndar))
+            else if (liderDaParty == "Thiess" && (Player.possoMudar))
             {
                 liderDaParty = "Glenn";
                 Debug.Log("O lider da party é " + liderDaParty);
-                glenn.gameObject.SetActive(true);
-                glenn.transform.position = new Vector3(thiess.transform.position.x, thiess.transform.position.y, thiess.transform.position.z);
-                thiess.gameObject.SetActive(false);
+                carinha.SetActive(true);
+                carinha.transform.position = new Vector3(furry.transform.position.x, furry.transform.position.y, furry.transform.position.z);
+                furry.gameObject.SetActive(false);
 
             }
         }

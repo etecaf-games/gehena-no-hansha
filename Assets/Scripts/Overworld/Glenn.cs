@@ -7,10 +7,7 @@ public class Glenn : MonoBehaviour
 {
     public float velocidade = 1.5f;
     public SpriteRenderer spritePlayer;
-    public bool furtivo;
-    public bool agil, confiavel;
-    public int Xp;
-    public bool possoAndar = true;
+    public  bool possoAndar = true;
 
     private Animator GlennAnim;
     private bool ToAndando = false;
@@ -25,10 +22,7 @@ public class Glenn : MonoBehaviour
     }
     void Start()
     {
-        Xp = GlobalControl.Instance.XpGlenn;
-        furtivo = GlobalControl.Instance.furtivo;
-        agil = GlobalControl.Instance.agil;
-        confiavel = GlobalControl.Instance.confiavel;
+
     }
 
     void FixedUpdate()
@@ -90,12 +84,12 @@ public class Glenn : MonoBehaviour
         }
     }
 
-    public void SavePlayer()
-    {
-        GlobalControl.Instance.XpGlenn = Xp;
-        GlobalControl.Instance.agil = agil;
-        GlobalControl.Instance.furtivo = furtivo;
-        GlobalControl.Instance.confiavel = confiavel;
-    }
+    //public void SavePlayer()
+    //{
+    //    GlobalControl.Instance.XpGlenn = Xp;
+    //    GlobalControl.Instance.agil = agil;
+    //    GlobalControl.Instance.furtivo = furtivo;
+    //    GlobalControl.Instance.confiavel = confiavel;
+    //}
 }
 

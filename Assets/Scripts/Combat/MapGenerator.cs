@@ -34,13 +34,13 @@ public class MapGenerator : MonoBehaviour
         foreach (GameObject player in players)
         {
             GameObject hexWithAPlayer = pathfinding.CharacterToHexPosition(player);
-            hexWithAPlayer.GetComponent<HexProperties>().characterInHex = player;
+            hexWithAPlayer.GetComponent<HexProperties>().CharacterInHex = player;
         }
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
         foreach (GameObject enemy in enemies)
         {
             GameObject hexWithAnEnemy = pathfinding.CharacterToHexPosition(enemy);
-            hexWithAnEnemy.GetComponent<HexProperties>().characterInHex = enemy;
+            hexWithAnEnemy.GetComponent<HexProperties>().CharacterInHex = enemy;
         }
     }
     private void GenerateClassroomGrid()
@@ -381,7 +381,10 @@ public class MapGenerator : MonoBehaviour
 
         hexObject.name = "Hex (" + row + "," + column + ")" + " (" + gridHexesPositions.Count + ") ";
 
-        hexObject.GetComponent<HexProperties>().initialHex = initialHex;
+        HexProperties hexProperties = hexObject.GetComponent<HexProperties>();
+        hexProperties.initialHex = initialHex;
+        hexProperties.row = row;
+        hexProperties.column = column;
 
         gridHexesObjects.Add(hexObject);
     }

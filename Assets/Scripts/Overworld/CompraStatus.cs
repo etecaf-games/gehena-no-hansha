@@ -9,9 +9,10 @@ public class CompraStatus : MonoBehaviour
     //public Glenn glenn;
     //public GameObject Botao1, Botao2, Botao3, Botao4, Botao5, Botao6, Botao7,Botao8, Botao9, Botao10, Botao11, Botao12;
     public GameObject menuPause;
-    public GameObject painelStatus;
+    public GameObject painelStatusHanzo, painelStatusFenrir;
     public int valor, custo;
     public Text valorSXP, ValorHp, ValorSp, ValorMove, ValorAp, ValorAtk, ValorFor, ValorDef, ValorRes, ValorAgi, ValorVit, ValorEsp, ValorMag;
+    //public Text valorSXP2, ValorHp2, ValorSp2, ValorMove2, ValorAp2, ValorAtk2, ValorFor2, ValorDef2, ValorRes2, ValorAgi2, ValorVit2, ValorEsp2, ValorMag2;
 
     void Start()
     {
@@ -590,7 +591,7 @@ public class CompraStatus : MonoBehaviour
 
     //public void Atualiza()
     //{
-    //    valorSXP.text = "XP: " + glenn.Xp.ToString();
+    //    valorSXP.text = "XP: " + GlobalControl.Instance.XpGlenn.ToString();
     //    ValorAtk.text = "Ataque: " + Hanzo.attack.ToString();
     //    ValorDef.text = "Defesa: " + Hanzo.defense.ToString();
     //    ValorFor.text = "Força: " + Hanzo.strength.ToString();
@@ -624,13 +625,33 @@ public class CompraStatus : MonoBehaviour
 
     public void ExitTStatus()
     {
-        painelStatus.SetActive(false);
+        painelStatusHanzo.SetActive(false);
+        painelStatusFenrir.SetActive(false);
         menuPause.SetActive(true);
     }
 
+    //public void Change()
+    //{
+    //    valorSXP2.text = "XP: " + GlobalControl.Instance.XpThiess.ToString();
+    //    ValorAtk2.text = "Ataque: " + GlobalControl.Instance.attackFenrir.ToString();
+    //    ValorDef2.text = "Defesa: " + GlobalControl.Instance.defenseFenrir.ToString();
+    //    ValorFor2.text = "Força: " + GlobalControl.Instance.strengthFenrir.ToString();
+    //    ValorRes2.text = "Resistência: " + GlobalControl.Instance.resistanceFenrir.ToString();
+    //    ValorAgi2.text = "Agilidade: " + GlobalControl.Instance.agilityFenrir.ToString();
+    //    ValorVit2.text = "Vitalidade: " + GlobalControl.Instance.vitalityFenrir.ToString();
+    //    ValorEsp2.text = "Espírito: " + GlobalControl.Instance.spiritFenrir.ToString();
+    //    ValorMag2.text = "Magia: " + GlobalControl.Instance.magicFenrir.ToString();
+    //    ValorHp2.text = "HP Base: " + GlobalControl.Instance.HPBaseFenrir.ToString();
+    //    ValorSp2.text = "SP Base: " + GlobalControl.Instance.SPBaseFenrir.ToString();
+    //    ValorMove2.text = "Move: " + GlobalControl.Instance.moveFenrir.ToString();
+    //    ValorAp2.text = "PA: " + GlobalControl.Instance.actionPointsFenrir.ToString();
+    //    painelStatusFenrir.SetActive(true);
+    //    painelStatusHanzo.SetActive(false);
+    //}
+
     //public void SavePlayer()
     //{
-    //    GlobalControl.Instance.XpGlenn = glenn.Xp;
+    //    GlobalControl.Instance.XpGlenn = GlobalControl.Instance.XpGlenn;
     //    GlobalControl.Instance.HPBaseHanzo = Hanzo.HPBase;
     //    GlobalControl.Instance.SPBaseHanzo = Hanzo.SPBase;
     //    GlobalControl.Instance.moveHanzo = Hanzo.move;

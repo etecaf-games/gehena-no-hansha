@@ -1,0 +1,498 @@
+fileFormatVersion: 2
+guid: c6708ad9aa061ec44a7402d648695e4a
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Fenrir (HAB01) (ALINHADO) (256X64)_0
+    21300002: Fenrir (HAB01) (ALINHADO) (256X64)_1
+    21300004: Fenrir (HAB01) (ALINHADO) (256X64)_2
+    21300006: Fenrir (HAB01) (ALINHADO) (256X64)_3
+    21300008: Fenrir (HAB01) (ALINHADO) (256X64)_4
+    21300010: Fenrir (HAB01) (ALINHADO) (256X64)_5
+    21300012: Fenrir (HAB01) (ALINHADO) (256X64)_6
+    21300014: Fenrir (HAB01) (ALINHADO) (256X64)_7
+    21300016: Fenrir (HAB01) (ALINHADO) (256X64)_8
+    21300018: Fenrir (HAB01) (ALINHADO) (256X64)_9
+    21300020: Fenrir (HAB01) (ALINHADO) (256X64)_10
+    21300022: Fenrir (HAB01) (ALINHADO) (256X64)_11
+    21300024: Fenrir (HAB01) (ALINHADO) (256X64)_12
+    21300026: Fenrir (HAB01) (ALINHADO) (256X64)_13
+    21300028: Fenrir (HAB01) (ALINHADO) (256X64)_14
+    21300030: Fenrir (HAB01) (ALINHADO) (256X64)_15
+    21300032: Fenrir (HAB01) (ALINHADO) (256X64)_16
+    21300034: Fenrir (HAB01) (ALINHADO) (256X64)_17
+    21300036: Fenrir (HAB01) (ALINHADO) (256X64)_18
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fenrir (HAB01) (ALINHADO) (256X64)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 512
+        height: 128
+      alignment: 9
+      pivot: {x: 0.125, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a71e1f411148d844db34ce7488eb5609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fenrir (HAB01) (ALINHADO) (256X64)_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 512
+        height: 128
+      alignment: 9
+      pivot: {x: 0.125, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9542f16f4194f4daba6afe05b840c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fenrir (HAB01) (ALINHADO) (256X64)_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 128
+        width: 512
+        height: 128
+      alignment: 9
+      pivot: {x: 0.125, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e70258ec9870b346831021c90e0c9f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fenrir (HAB01) (ALINHADO) (256X64)_3
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 128
+        width: 512
+        height: 128
+      alignment: 9
+      pivot: {x: 0.125, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da5bc26755eff31488a139415d6329cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fenrir (HAB01) (ALINHADO) (256X64)_4
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 128
+        width: 512
+        height: 128
+      alignment: 9
+      pivot: {x: 0.125, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9511f3d3d46212f4ea8a29580ba7e5e4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fenrir (HAB01) (ALINHADO) (256X64)_5
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 128
+        width: 512
+        height: 128
+      alignment: 9
+      pivot: {x: 0.125, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6128d6a8f72a1c4fa7c1a10612d1d48
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fenrir (HAB01) (ALINHADO) (256X64)_6
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 128
+        width: 512
+        height: 128
+      alignment: 9
+      pivot: {x: 0.125, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b552da931df59854f85afa1a1f4ad100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fenrir (HAB01) (ALINHADO) (256X64)_7
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 128
+        width: 512
+        height: 128
+      alignment: 9
+      pivot: {x: 0.125, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b0316a9d27b98e44ad24a58eee558c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fenrir (HAB01) (ALINHADO) (256X64)_8
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 128
+        width: 512
+        height: 128
+      alignment: 9
+      pivot: {x: 0.125, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32498eb83fe6f774e8b8d526143cf647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fenrir (HAB01) (ALINHADO) (256X64)_9
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 128
+        width: 512
+        height: 128
+      alignment: 9
+      pivot: {x: 0.125, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9bdd22aa4b024448a77c1ac841582b0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fenrir (HAB01) (ALINHADO) (256X64)_10
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 128
+        width: 512
+        height: 128
+      alignment: 9
+      pivot: {x: 0.125, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc92b3d9642f48548b5292f47c93529c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fenrir (HAB01) (ALINHADO) (256X64)_11
+      rect:
+        serializedVersion: 2
+        x: 5632
+        y: 128
+        width: 512
+        height: 128
+      alignment: 9
+      pivot: {x: 0.125, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d74368a97b031645bd548e28cbcba45
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fenrir (HAB01) (ALINHADO) (256X64)_12
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 128
+        width: 512
+        height: 128
+      alignment: 9
+      pivot: {x: 0.125, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 224ce390536516e45aa472d8fd8667db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fenrir (HAB01) (ALINHADO) (256X64)_13
+      rect:
+        serializedVersion: 2
+        x: 6656
+        y: 128
+        width: 512
+        height: 128
+      alignment: 9
+      pivot: {x: 0.125, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e94cd7ecce92321469d18ef0f13ded1b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fenrir (HAB01) (ALINHADO) (256X64)_14
+      rect:
+        serializedVersion: 2
+        x: 7168
+        y: 128
+        width: 512
+        height: 128
+      alignment: 9
+      pivot: {x: 0.125, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51475323b16d0174794221469aaca792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fenrir (HAB01) (ALINHADO) (256X64)_15
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 128
+        width: 512
+        height: 128
+      alignment: 9
+      pivot: {x: 0.125, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 881ec36e39dd56e40ae913071c929cf1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fenrir (HAB01) (ALINHADO) (256X64)_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 128
+      alignment: 9
+      pivot: {x: 0.125, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b6d55b09cb5ec409e21046d09fc217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fenrir (HAB01) (ALINHADO) (256X64)_17
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 128
+      alignment: 9
+      pivot: {x: 0.125, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e8d07edc989f8a409ef2f8156991b2d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fenrir (HAB01) (ALINHADO) (256X64)_18
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 512
+        height: 128
+      alignment: 9
+      pivot: {x: 0.125, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a1fd81c610a8e4da6ab65de543db44
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 3a96779fff7346a4d951d979cff6a11a
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

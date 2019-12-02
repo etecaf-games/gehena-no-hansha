@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Corredor1");
     }
     public void Creditos()
     {
@@ -17,5 +17,10 @@ public class MainMenu : MonoBehaviour
     public void Sair()
     {
         Application.Quit();
+    }
+
+    public void ComoJogar()
+    {
+        SceneManager.LoadScene("ComoJogar1");
     }
 }
